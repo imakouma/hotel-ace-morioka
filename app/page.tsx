@@ -8,9 +8,9 @@ import { useLanguage, type LanguageCode } from '@/contexts/LanguageContext';
 const translations = {
   ja: {
     hotelName: '',
-    hotelTitle: 'ホテルグランテラス仙台国分町',
+    hotelTitle: 'ホテルエース盛岡',
     heroTitle: 'ホテル館内のご案内',
-    welcomeMessage: '本日は「ホテルグランテラス仙台国分町」をご利用いただき誠にありがとうございます。',
+    welcomeMessage: '本日は「ホテルエース盛岡」をご利用いただき誠にありがとうございます。',
     welcomeMessage2: 'ご不明な点がございましたらフロントスタッフまでお気軽にお尋ねください。',
     restaurantCoupon: '飲食店クーポン',
     checkInOut: '入退館時間',
@@ -36,10 +36,10 @@ const translations = {
     lobbyDesc2: '都会の謙遜を忘れる落ち着いた空間です。',
     lobbyDesc3: '「スターバックス コーヒー」はロビーから直接お入りいただけます。',
     breakfastVenue: '朝食会場',
-    breakfastFloor: '10階',
+    breakfastFloor: '1階レストラン',
     breakfastTime: '営業時間',
-    breakfastTimeDetail: '6:45～9:00（最終入場8:45）',
-    breakfastDesc: '地元の食材を活かした、栄養満点の朝食バイキングをお召し上がりいただけます。',
+    breakfastTimeDetail: '6:00～9:00（最終入店8:45）',
+    breakfastDesc: '地元岩手の食材を活かした、栄養満点の朝食バイキングをお召し上がりいただけます。',
     breakfastNotice: '営業時間は予告なく変更となる場合もございます。',
     bathTitle: 'ロビー・施設',
     bathDescription: '男女別大浴場 9F',
@@ -98,9 +98,9 @@ const translations = {
   },
   en: {
     hotelName: '',
-    hotelTitle: 'Dormy Inn Sendai ANNEX',
+    hotelTitle: 'Hotel Ace Morioka',
     heroTitle: 'Hotel Guide',
-    welcomeMessage: 'Thank you very much for staying with us today.',
+    welcomeMessage: 'Thank you very much for staying with us at Hotel Ace Morioka today.',
     welcomeMessage2: 'If you have any questions, please feel free to ask our front desk staff.',
     restaurantCoupon: 'Restaurant Coupon',
     checkInOut: 'Check-in/Check-out',
@@ -126,10 +126,10 @@ const translations = {
     lobbyDesc2: 'A calm space where you can forget the hustle and bustle of the city.',
     lobbyDesc3: 'You can enter "Starbucks Coffee" directly from the lobby.',
     breakfastVenue: 'Breakfast Venue',
-    breakfastFloor: '10th Floor',
+    breakfastFloor: '1st Floor Restaurant',
     breakfastTime: 'Operating Hours',
-    breakfastTimeDetail: '6:45-9:00 (Last entry 8:45)',
-    breakfastDesc: 'Enjoy a nutritious breakfast buffet featuring local ingredients.',
+    breakfastTimeDetail: '6:00-9:00 (Last entry 8:45)',
+    breakfastDesc: 'Enjoy a nutritious breakfast buffet featuring local Iwate ingredients.',
     breakfastNotice: 'Operating hours are subject to change without notice.',
     bathTitle: 'Public Bath',
     bathDescription: 'Separate men\'s and women\'s public bath 9F',
@@ -185,9 +185,9 @@ const translations = {
   },
   zh: {
     hotelName: '',
-    hotelTitle: '仙台国分町格兰露台酒店',
+    hotelTitle: '盛冈Ace酒店',
     heroTitle: '酒店馆内指南',
-    welcomeMessage: '感谢您今天入住"仙台国分町格兰露台酒店"。',
+    welcomeMessage: '感谢您今天入住"盛冈Ace酒店"。',
     welcomeMessage2: '如有任何疑问，请随时咨询前台工作人员。',
     restaurantCoupon: '餐饮优惠券',
     checkInOut: '入住/退房时间',
@@ -213,10 +213,10 @@ const translations = {
     lobbyDesc2: '让您忘却都市喧嚣的宁静空间。',
     lobbyDesc3: '可从大堂直接进入"星巴克咖啡"。',
     breakfastVenue: '早餐会场',
-    breakfastFloor: '10楼',
+    breakfastFloor: '1楼餐厅',
     breakfastTime: '营业时间',
-    breakfastTimeDetail: '6:45～9:00（最终入场8:45）',
-    breakfastDesc: '可享用使用当地食材、营养丰富的自助早餐。',
+    breakfastTimeDetail: '6:00～9:00（最终入店8:45）',
+    breakfastDesc: '可享用使用岩手当地食材、营养丰富的自助早餐。',
     breakfastNotice: '营业时间可能会在不另行通知的情况下更改。',
     bathTitle: '大堂・设施',
     bathDescription: '男女分开大浴场 9F',
@@ -272,9 +272,9 @@ const translations = {
   },
   ko: {
     hotelName: '',
-    hotelTitle: '호텔 그랑테라스 센다이 고쿠분초',
+    hotelTitle: '호텔 에이스 모리오카',
     heroTitle: '호텔 관내 안내',
-    welcomeMessage: '오늘 "호텔 그랑테라스 센다이 고쿠분초"를 이용해 주셔서 진심으로 감사드립니다.',
+    welcomeMessage: '오늘 "호텔 에이스 모리오카"를 이용해 주셔서 진심으로 감사드립니다.',
     welcomeMessage2: '궁금하신 점이 있으시면 프런트 데스크 직원에게 언제든지 문의해 주세요.',
     restaurantCoupon: '음식점 쿠폰',
     checkInOut: '입실/퇴실 시간',
@@ -300,10 +300,10 @@ const translations = {
     lobbyDesc2: '도시의 번잡함을 잊게 하는 편안한 공간입니다.',
     lobbyDesc3: '"스타벅스 커피"는 로비에서 직접 입장하실 수 있습니다.',
     breakfastVenue: '조식 장소',
-    breakfastFloor: '10층',
+    breakfastFloor: '1층 레스토랑',
     breakfastTime: '운영 시간',
-    breakfastTimeDetail: '6:45～9:00 (최종 입장 8:45)',
-    breakfastDesc: '현지 식재료를 활용한 영양 만점 조식 뷔페를 즐기실 수 있습니다.',
+    breakfastTimeDetail: '6:00～9:00 (최종 입장 8:45)',
+    breakfastDesc: '이와테 현지 식재료를 활용한 영양 만점 조식 뷔페를 즐기실 수 있습니다。',
     breakfastNotice: '운영 시간은 예고 없이 변경될 수 있습니다.',
     bathTitle: '로비・시설',
     bathDescription: '남녀 분리 대욕장 9F',
@@ -1119,9 +1119,9 @@ const translations = {
   },
   'zh-TW': {
     hotelName: '',
-    hotelTitle: '仙台國分町格蘭露台酒店',
+    hotelTitle: '盛岡Ace酒店',
     heroTitle: '酒店館內指南',
-    welcomeMessage: '感謝您今天入住「仙台國分町格蘭露台酒店」。',
+    welcomeMessage: '感謝您今天入住「盛岡Ace酒店」。',
     welcomeMessage2: '如有任何疑問，請隨時諮詢前台工作人員。',
     restaurantCoupon: '餐飲優惠券',
     checkInOut: '入住/退房時間',
@@ -1147,10 +1147,10 @@ const translations = {
     lobbyDesc2: '讓您忘卻都市喧囂的寧靜空間。',
     lobbyDesc3: '可從大廳直接進入「星巴克咖啡」。',
     breakfastVenue: '早餐會場',
-    breakfastFloor: '10樓',
+    breakfastFloor: '1樓餐廳',
     breakfastTime: '營業時間',
-    breakfastTimeDetail: '6:45～9:00（最終入場8:45）',
-    breakfastDesc: '可享用使用當地食材、營養豐富的自助早餐。',
+    breakfastTimeDetail: '6:00～9:00（最終入店8:45）',
+    breakfastDesc: '可享用使用岩手當地食材、營養豐富的自助早餐。',
     breakfastNotice: '營業時間可能會在不另行通知的情況下更改。',
     bathTitle: '大廳・設施',
     bathDescription: '男女分開大浴場 9F',
@@ -1232,24 +1232,24 @@ export default function Home() {
   const [visibleServices, setVisibleServices] = useState<Set<string>>(new Set());
 
   const heroImages = [
-    '/hero-picture/top_main_img01.jpg',
-    '/hero-picture/top_main_img02.jpg',
-    '/hero-picture/top_main_img03.jpg',
-    '/hero-picture/top_main_img04.jpg',
-    '/hero-picture/top_main_img05.jpg',
-    '/hero-picture/top_main_img06.jpg',
-    '/hero-picture/top_main_img07.jpg',
+    '/main-page/hero-picture/top_main_img01.jpg',
+    '/main-page/hero-picture/top_main_img02.jpg',
+    '/main-page/hero-picture/top_main_img03.jpg',
+    '/main-page/hero-picture/top_main_img04.jpg',
+    '/main-page/hero-picture/top_main_img05.jpg',
+    '/main-page/hero-picture/top_main_img06.jpg',
+    '/main-page/hero-picture/top_main_img07.jpg',
   ];
 
   const breakfastImages = [
-    '/morning-picture/breakfast003.jpg',
-    '/morning-picture/breakfast004.jpg',
-    '/morning-picture/breakfast005.jpg',
-    '/morning-picture/breakfast006.jpg',
-    '/morning-picture/breakfast007.jpg',
-    '/morning-picture/breakfast008.jpg',
-    '/morning-picture/breakfast012.jpg',
-    '/morning-picture/breakfast013.jpg',
+    '/main-page/10-topic-picture/morning-picture/breakfast003.jpg',
+    '/main-page/10-topic-picture/morning-picture/breakfast004.jpg',
+    '/main-page/10-topic-picture/morning-picture/breakfast005.jpg',
+    '/main-page/10-topic-picture/morning-picture/breakfast006.jpg',
+    '/main-page/10-topic-picture/morning-picture/breakfast007.jpg',
+    '/main-page/10-topic-picture/morning-picture/breakfast008.jpg',
+    '/main-page/10-topic-picture/morning-picture/breakfast012.jpg',
+    '/main-page/10-topic-picture/morning-picture/breakfast013.jpg',
   ];
 
   const t = getTranslations(selectedLanguage);
@@ -1326,7 +1326,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center">
           <Image
-            src="/icon-matome/icon-carry.svg"
+            src="/main-page/icon-matome/icon-carry.svg"
             alt={t.checkInOut}
             width={112}
             height={112}
@@ -1343,7 +1343,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center scale-75">
           <Image
-            src="/icon-matome/file.svg"
+            src="/main-page/icon-matome/file.svg"
             alt={t.bath}
             width={112}
             height={112}
@@ -1360,7 +1360,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center">
           <Image
-            src="/icon-matome/icon-food.svg"
+            src="/main-page/icon-matome/icon-food.svg"
             alt={t.breakfast}
             width={112}
             height={112}
@@ -1377,7 +1377,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center">
           <Image
-            src="/icon-matome/icon-beer.svg"
+            src="/main-page/icon-matome/icon-beer.svg"
             alt={t.dinner}
             width={112}
             height={112}
@@ -1395,7 +1395,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center">
           <Image
-            src="/icon-matome/icon-washmachine.svg"
+            src="/main-page/icon-matome/icon-washmachine.svg"
             alt={t.service}
             width={112}
             height={112}
@@ -1412,7 +1412,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center">
           <Image
-            src="/icon-matome/icon-Wifi.svg"
+            src="/main-page/icon-matome/icon-Wifi.svg"
             alt={t.wifi}
             width={112}
             height={112}
@@ -1429,7 +1429,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center">
           <Image
-            src="/icon-matome/icon-light.svg"
+            src="/main-page/icon-matome/icon-light.svg"
             alt={t.lighting}
             width={112}
             height={112}
@@ -1446,7 +1446,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center">
           <Image
-            src={encodeURI('/icon-matome/icon-bed (1).svg')}
+            src={encodeURI('/main-page/icon-matome/icon-bed (1).svg')}
             alt={t.longstay}
             width={112}
             height={112}
@@ -1463,7 +1463,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center">
           <Image
-            src="/icon-matome/icon-tool.svg"
+            src="/main-page/icon-matome/icon-tool.svg"
             alt={t.lost}
             width={112}
             height={112}
@@ -1480,7 +1480,7 @@ export default function Home() {
       icon: (
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center">
           <Image
-            src="/icon-matome/icon-parking.svg"
+            src="/main-page/icon-matome/icon-parking.svg"
             alt={t.parking}
             width={112}
             height={112}
@@ -1522,29 +1522,19 @@ return (
     <header className="bg-white/98 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-1.5 sm:px-4 md:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-1 py-1.5 sm:gap-2 sm:py-2">
-          {/* 左側：ロゴとホテル名 */}
+          {/* 左側：ホテル名 */}
             <div className="flex items-center gap-1 sm:gap-2 shrink min-w-0 flex-1">
-              <div className="relative w-7 h-7 sm:w-12 sm:h-12 md:w-14 md:h-14 shrink-0">
-              <Image
-                src={encodeURI('/スクリーンショット 2026-02-06 1.21.09.png')}
-                alt="GH"
-                fill
-                className="object-contain"
-                  sizes="(max-width: 640px) 28px, (max-width: 768px) 48px, 56px"
-                unoptimized
-              />
-            </div>
               <div className="min-w-0 flex-1 overflow-hidden">
               <h1 className="sr-only">
                 {t.hotelName} {t.hotelTitle}
               </h1>
-                <div className="relative h-5 w-full max-w-[140px] sm:h-7 sm:max-w-[240px] md:h-9 md:max-w-[320px]">
+                <div className="relative h-16 w-full max-w-[400px] sm:h-24 sm:max-w-[600px] md:h-28 md:max-w-[800px]">
                 <Image
-                  src={encodeURI('/スクリーンショット 2026-02-06 1.21.18.png')}
+                  src={encodeURI('/main-page/3B689010-FA74-4F11-8B5C-FC184E45F759.PNG')}
                   alt={`${t.hotelName} ${t.hotelTitle}`}
                   fill
-                  className="object-contain object-left"
-                    sizes="(max-width: 640px) 140px, (max-width: 768px) 240px, 320px"
+                  className="object-contain object-left scale-110"
+                    sizes="(max-width: 640px) 400px, (max-width: 768px) 600px, 800px"
                   unoptimized
                 />
               </div>
@@ -1870,7 +1860,7 @@ return (
                   <div className="rounded-lg overflow-hidden">
                     <div className="relative w-full h-64">
                       <Image
-                        src="/facility001.jpg"
+                        src="/main-page/10-topic-picture/facility001.jpg"
                         alt="Facility"
                         fill
                         className="object-cover"
@@ -2075,8 +2065,8 @@ return (
                   <div className="rounded-lg overflow-hidden border border-gray-200">
                     <div className="relative w-full h-auto">
                       <Image
-                        src={encodeURI("/icon-matome/81DA2A29-508F-4CE2-A164-50487C07036A.PNG")}
-                        alt={t.lightingTitle}
+                      src={encodeURI("/main-page/10-topic-picture/81DA2A29-508F-4CE2-A164-50487C07036A.PNG")}
+                      alt={t.lightingTitle}
                         width={800}
                         height={600}
                         className="w-full h-auto object-contain"
@@ -2101,7 +2091,7 @@ return (
                 <div className="mb-6 rounded-lg overflow-hidden border border-gray-200">
                   <div className="relative w-full h-auto">
                       <Image
-                      src="/unnamed.jpg"
+                      src="/main-page/10-topic-picture/unnamed.jpg"
                       alt="連泊のお客様へ - エコプランのご案内"
                       width={1000}
                       height={800}
@@ -2295,7 +2285,7 @@ return (
                 >
                   <div className="relative w-20 h-20">
                     <Image
-                      src={encodeURI('/スクリーンショット 2026-02-06 1.21.09.png')}
+                      src={encodeURI('/main-page/Gemini_Generated_Image_i9zvggi9zvggi9zv.png')}
                       alt={selectedLanguage === 'ja' ? '鳥のキャラクター' : selectedLanguage === 'en' ? 'Bird Character' : selectedLanguage === 'zh' ? '鸟角色' : selectedLanguage === 'ko' ? '새 캐릭터' : 'Bird Character'}
                       fill
                       className="object-contain"
