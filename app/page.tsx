@@ -1528,13 +1528,18 @@ return (
               <h1 className="sr-only">
                 {t.hotelName} {t.hotelTitle}
               </h1>
-                <div className="relative h-16 w-full max-w-[400px] sm:h-24 sm:max-w-[600px] md:h-28 md:max-w-[800px]">
+                <div className="relative h-16 w-full max-w-[450px] sm:h-24 sm:max-w-[650px] md:h-32 md:max-w-[850px] overflow-hidden">
                 <Image
                   src={encodeURI('/main-page/3B689010-FA74-4F11-8B5C-FC184E45F759.PNG')}
                   alt={`${t.hotelName} ${t.hotelTitle}`}
                   fill
-                  className="object-contain object-left scale-110"
-                    sizes="(max-width: 640px) 400px, (max-width: 768px) 600px, 800px"
+                  className="object-cover object-left"
+                    style={{ 
+                      clipPath: 'inset(8% 45% 8% 0)',
+                      transform: 'scale(1.5)',
+                      transformOrigin: 'left center'
+                    }}
+                    sizes="(max-width: 640px) 450px, (max-width: 768px) 650px, 850px"
                   unoptimized
                 />
               </div>
@@ -2165,7 +2170,7 @@ return (
                 <div className="mb-6 rounded-lg overflow-hidden border border-gray-200 bg-gray-100">
                   <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
                       <Image
-                      src="/coupon-site/スクリーンショット 2026-02-06 3.15.05.png"
+                      src="/coupon-page/スクリーンショット 2026-02-06 3.15.05.png"
                       alt={t.parking}
                       fill
                       className="object-contain"
@@ -2177,54 +2182,62 @@ return (
 
                 {/* 駐車場情報 */}
                 <div className="space-y-6 text-sm text-gray-800">
+                  {/* 共通注意事項 */}
+                  <div className="bg-yellow-50 rounded-lg p-4 border-2 border-yellow-300">
+                    <div className="font-bold text-base mb-2 text-center text-red-600">
+                      P1～P5は全て1泊900円
+                    </div>
+                    <p className="text-xs text-gray-700 text-center">
+                      宿泊当日は当該駐車場にお車を駐車して駅からの徒歩や市内電車のご利用をお勧めします
+                    </p>
+                  </div>
+
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <div className="font-semibold text-lg mb-2">1. パーキングタウンマギー</div>
+                    <div className="font-semibold text-lg mb-2">P1 ホテルエース駐車場</div>
                     <div className="space-y-1 text-sm">
-                      <p>仙台市青葉区国分町1丁目7-22</p>
-                      <p>TEL: 022-261-3750</p>
-                      <p className="font-semibold">■{t.parkingFee}：2,000円</p>
-                      <p>■{t.heightLimit}：2.40m</p>
-                      <p>■{t.hours24}</p>
-                      <p>■{t.discountTime}：{t.parkingDiscount1}</p>
+                      <p className="font-semibold text-red-600">■利用時間：16:00～翌11:00</p>
+                      <p className="font-semibold">■台数：30台</p>
                       <p className="text-xs text-gray-600 mt-2">
-                        {t.parkingNote1}
+                        ※1台2,100円
                       </p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <div className="font-semibold text-lg mb-2">2. いなりパーキング</div>
+                    <div className="font-semibold text-lg mb-2">P2 リリオ駐車場</div>
                     <div className="space-y-1 text-sm">
-                      <p>仙台市青葉区国分町2丁目2-9</p>
-                      <p>TEL: 090-3120-2011</p>
-                      <p className="font-semibold">■{t.parkingFee}：1,200円</p>
-                      <p>■{t.heightLimit}：1.78m</p>
-                      <p>■{t.hours24}</p>
-                      <p>■{t.discountTime}：{t.parkingDiscount2}</p>
+                      <p className="font-semibold text-red-600">■利用時間：16:00～翌11:00</p>
+                      <p className="font-semibold">■台数：2,200台</p>
+                      <p className="text-xs text-gray-600 mt-2">
+                        ※1台2,000円
+                      </p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <div className="font-semibold text-lg mb-2">3. 大仙台駐車場</div>
+                    <div className="font-semibold text-lg mb-2">P3 三井のリパーク</div>
                     <div className="space-y-1 text-sm">
-                      <p>仙台市青葉区立町1-23</p>
-                      <p>TEL: 022-222-7643</p>
-                      <p className="font-semibold">■{t.parkingFee}：1,200円</p>
-                      <p>■{t.heightLimit}：2.40m</p>
-                      <p>■{t.hours24}</p>
-                      <p>■{t.discountTime}：{t.parkingDiscount3}</p>
+                      <p className="font-semibold text-red-600">■利用時間：16:00～翌11:00</p>
+                      <p className="font-semibold">■台数：698台/82L</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <div className="font-semibold text-lg mb-2">P4 MOSS駐車場</div>
+                    <div className="space-y-1 text-sm">
+                      <p className="font-semibold text-red-600">■利用時間：18:00～翌11:00</p>
+                      <p className="font-semibold">■台数：2,200台</p>
                       <p className="text-xs text-gray-600 mt-2">
-                        {t.parkingNote2}
+                        ※1台2,000円
                       </p>
-                      <p className="text-xs text-gray-600">
-                        {t.parkingNote1}
-                      </p>
-                      <p className="text-xs text-gray-600">
-                        {t.parkingNote3}
-                      </p>
-                      <p className="text-xs text-gray-600">
-                        {t.parkingNote4}
-                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <div className="font-semibold text-lg mb-2">P5 クロステラス駐車場</div>
+                    <div className="space-y-1 text-sm">
+                      <p className="font-semibold text-red-600">■利用時間：16:00～翌10:00</p>
+                      <p className="font-semibold">■台数：2,100台</p>
                     </div>
                   </div>
                 </div>

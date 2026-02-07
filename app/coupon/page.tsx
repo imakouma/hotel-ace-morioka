@@ -16,7 +16,7 @@ const COUPON_BG = "#90846c";
 const COUPON_TEXT_COLOR = "#EEE3C4";
 const MAP_BTN_BG = "#F5A623";
 
-const COUPON_SITE = "/coupon-site";
+const COUPON_SITE = "/coupon-page";
 const bannerImage = `${COUPON_SITE}/スクリーンショット 2026-02-06 5.10.38.png`;
 const parkingImage = `${COUPON_SITE}/スクリーンショット 2026-02-06 3.15.05.png`;
 const shopImages = [
@@ -31,7 +31,7 @@ const shopModalImages: string[][] = [
     `${COUPON_SITE}/スクリーンショット 2026-02-06 5.32.43.png`,
     `${COUPON_SITE}/スクリーンショット 2026-02-06 5.32.32.png`,
   ],
-  [`${COUPON_SITE}/スクリーンショット 2026-02-01 23.10.55-903b6d91-1ead-4274-9bed-07cea68945a8.png`],
+  [`${COUPON_SITE}/rikyuu/スクリーンショット 2026-02-01 23.10.55-903b6d91-1ead-4274-9bed-07cea68945a8.png`],
   [`${COUPON_SITE}/スクリーンショット 2026-02-06 5.42.41.png`, `${COUPON_SITE}/スクリーンショット 2026-02-06 5.42.52.png`],
 ];
 
