@@ -1535,8 +1535,8 @@ return (
                   fill
                   className="object-cover object-left"
                     style={{ 
-                      clipPath: 'inset(8% 45% 8% 0)',
-                      transform: 'scale(1.5)',
+                      clipPath: 'inset(2% 60% 2% 0)',
+                      transform: 'scale(1.0)',
                       transformOrigin: 'left center'
                     }}
                     sizes="(max-width: 640px) 450px, (max-width: 768px) 650px, 850px"
