@@ -14,7 +14,7 @@ const translations = {
     welcomeMessage2: 'ご不明な点がございましたらフロントスタッフまでお気軽にお尋ねください。',
     restaurantCoupon: '飲食店クーポン',
     checkInOut: '入退館時間',
-    bath: 'ロビー・施設',
+    bath: 'アメニティ',
     breakfast: '朝食',
     dinner: '夕食・お得なクーポン',
     service: 'サービスコーナー',
@@ -35,13 +35,25 @@ const translations = {
     lobbyDesc1: 'ヨーロピアン・アンティークの調度品が優雅なロビー。',
     lobbyDesc2: '都会の謙遜を忘れる落ち着いた空間です。',
     lobbyDesc3: '「スターバックス コーヒー」はロビーから直接お入りいただけます。',
+    amenitiesTitle: '全部屋タイプ共通',
+    amenitiesNote: '※アメニティは1Fにご用意しております。',
+    amenityTowel: 'タオル',
+    amenityBathTowel: 'バスタオル',
+    amenityDryer: 'ドライヤー',
+    amenityDeodorant: '消臭スプレー',
+    amenityShampoo: 'シャンプー',
+    amenityConditioner: 'リンス',
+    amenityHandSoap: 'ハンドソープ',
+    amenityToothbrush: 'ハミガキセット',
+    amenityBodySoap: 'ボディーソープ',
     breakfastVenue: '朝食会場',
     breakfastFloor: '1階レストラン',
     breakfastTime: '営業時間',
-    breakfastTimeDetail: '6:00～9:00（最終入店8:45）',
-    breakfastDesc: '地元岩手の食材を活かした、栄養満点の朝食バイキングをお召し上がりいただけます。',
+    breakfastTimeDetail: '6:30～10:00（9:30最終入店）',
+    breakfastDesc: 'バランス良く、栄養もしっかり摂れる30種類のバイキング',
+    breakfastCatchphrase: '「華麗（カレー）なる朝食」を存分に味わってください！',
     breakfastNotice: '営業時間は予告なく変更となる場合もございます。',
-    bathTitle: 'ロビー・施設',
+    bathTitle: 'アメニティ',
     bathDescription: '男女別大浴場 9F',
     operatingHours: '営業時間:',
     bathHours: '15:00~翌10:00',
@@ -51,7 +63,7 @@ const translations = {
     bathNotice2: '※女性大浴場へ入場する際は暗証番号が必要です。暗証番号はフロントにてお渡しします。',
     freeService: '無料サービス',
     bathServiceDesc: '乳酸菌飲料とアイスキャンディーを無料で提供しております。',
-    breakfastTitle: 'ご朝食 (1F レストラン)',
+    breakfastTitle: 'ご朝食のご案内',
     breakfastPrice: '大人 1,200円（税込）／子供（小学生）800円（税込）',
     breakfastHours: '6:15~9:30 (最終入店9:00)',
     breakfastNote1: '※満席の場合はお待ちいただくことがございます。',
@@ -60,15 +72,23 @@ const translations = {
     sobaHours: '21:30~23:00',
     sobaNote: '※営業時間は変更になる場合がございます。',
     serviceTitle: 'サービスコーナー',
-    vendingMachine: '自動販売機',
-    alcoholNote: '(アルコール類は5・7・9F)',
+    floor1F: '■ 1F',
+    freeSpaceNote: '（毎月第2・4土曜日 8:30～16:30 は中央通まちかどマルシェ開催の為、フリースペースはご利用いただけません）',
+    freeSpace: 'フリースペース（WiFi・コンセント）',
+    freeSpaceHours: 'ご利用時間帯 6:30～22:00',
     microwave: '電子レンジ',
-    iceMaker: '製氷機',
+    iwateSachiko: '岩手県公認VTuber「岩手さちこ」',
+    wrappingVending: 'ラッピング自販機（初号機・4面ラッピング）',
+    souvenirVending1: 'ご当地自販機（岩手のお土産）',
+    souvenirVending2: 'ご当地自販機（お土産）',
+    floor2F: '■ 2F',
+    vendingMachine: '自動販売機（冷凍食品・ドリンク・アルコール）',
+    iceMaker: '製氷機（別館3Fにもございます）',
+    vendingMachineNote: '自動販売機は別館3F・6Fにもございます',
+    laundry: 'コインランドリー',
+    laundryHours: 'ご利用時間帯 10:00～22:00',
+    alcoholNote: '(アルコール類は5・7・9F)',
     smoking: '喫煙コーナー',
-    trouserPress: 'ズボンプレッサー',
-    trouserPressLocation: '各階エレベーター前',
-    laundry: 'ランドリーコーナー',
-    laundryNote: '※洗濯機/1回200円 乾燥機/10分100円（洗剤はフロントにて無料配布）',
     wifiTitle: 'Wi-Fi',
     password: 'Password :',
     lostTitle: 'お忘れ物',
@@ -125,11 +145,23 @@ const translations = {
     lobbyDesc1: 'An elegant lobby with European antique furnishings.',
     lobbyDesc2: 'A calm space where you can forget the hustle and bustle of the city.',
     lobbyDesc3: 'You can enter "Starbucks Coffee" directly from the lobby.',
+    amenitiesTitle: 'Common to all room types',
+    amenitiesNote: '※Amenities are available on the 1st floor.',
+    amenityTowel: 'Towel',
+    amenityBathTowel: 'Bath towel',
+    amenityDryer: 'Hair dryer',
+    amenityDeodorant: 'Deodorizing spray',
+    amenityShampoo: 'Shampoo',
+    amenityConditioner: 'Conditioner',
+    amenityHandSoap: 'Hand soap',
+    amenityToothbrush: 'Toothbrush set',
+    amenityBodySoap: 'Body soap',
     breakfastVenue: 'Breakfast Venue',
     breakfastFloor: '1st Floor Restaurant',
     breakfastTime: 'Operating Hours',
-    breakfastTimeDetail: '6:00-9:00 (Last entry 8:45)',
-    breakfastDesc: 'Enjoy a nutritious breakfast buffet featuring local Iwate ingredients.',
+    breakfastTimeDetail: '6:30-10:00 (Last entry 9:30)',
+    breakfastDesc: 'Enjoy a well-balanced buffet with 30 varieties for proper nutrition',
+    breakfastCatchphrase: 'Experience our "Gorgeous Curry Breakfast" to the fullest!',
     breakfastNotice: 'Operating hours are subject to change without notice.',
     bathTitle: 'Public Bath',
     bathDescription: 'Separate men\'s and women\'s public bath 9F',
@@ -147,15 +179,23 @@ const translations = {
     breakfastNote1: '*You may be asked to wait if the restaurant is full.',
     breakfastNote2: '*Operating hours may change depending on congestion.',
     serviceTitle: 'Service Corner',
-    vendingMachine: 'Vending Machine',
-    alcoholNote: '(Alcoholic beverages: 5F, 9F)',
+    floor1F: '■ 1F',
+    freeSpaceNote: '(Free space is unavailable on the 2nd and 4th Saturdays of every month from 8:30 to 16:30 due to the Chuo-dori Machikado Marche event)',
+    freeSpace: 'Free Space (WiFi & Power outlets)',
+    freeSpaceHours: 'Available hours: 6:30～22:00',
     microwave: 'Microwave',
-    iceMaker: 'Ice Maker',
+    iwateSachiko: 'Iwate Prefecture Official VTuber "Iwate Sachiko"',
+    wrappingVending: 'Wrapped vending machine (First unit, 4-sided wrap)',
+    souvenirVending1: 'Local vending machine (Iwate souvenirs)',
+    souvenirVending2: 'Local vending machine (Souvenirs)',
+    floor2F: '■ 2F',
+    vendingMachine: 'Vending machines (Frozen food, drinks, alcohol)',
+    iceMaker: 'Ice maker (Also available on Annex 3F)',
+    vendingMachineNote: 'Vending machines are also available on Annex 3F and 6F',
+    laundry: 'Coin laundry',
+    laundryHours: 'Available hours: 10:00～22:00',
+    alcoholNote: '(Alcoholic beverages: 5F, 9F)',
     smoking: 'Smoking Area',
-    trouserPress: 'Trouser Press',
-    trouserPressLocation: 'In front of elevator on each floor',
-    laundry: 'Laundry Corner',
-    laundryNote: '*Detergent, washing machine/free, dryer/paid ($100 per 30 minutes)',
     wifiTitle: 'Wi-Fi',
     password: 'Password:',
     lostTitle: 'Lost & Found',
@@ -1232,24 +1272,23 @@ export default function Home() {
   const [visibleServices, setVisibleServices] = useState<Set<string>>(new Set());
 
   const heroImages = [
-    '/main-page/hero-picture/top_main_img01.jpg',
-    '/main-page/hero-picture/top_main_img02.jpg',
-    '/main-page/hero-picture/top_main_img03.jpg',
-    '/main-page/hero-picture/top_main_img04.jpg',
-    '/main-page/hero-picture/top_main_img05.jpg',
-    '/main-page/hero-picture/top_main_img06.jpg',
-    '/main-page/hero-picture/top_main_img07.jpg',
+    '/main-page/hero-picture/Y341439427.jpg',
+    '/main-page/hero-picture/スクリーンショット 2026-02-08 2.03.32.png',
+    '/main-page/hero-picture/スクリーンショット 2026-02-08 2.03.44.png',
+    '/main-page/hero-picture/スクリーンショット 2026-02-08 2.04.01.png',
+    '/main-page/hero-picture/スクリーンショット 2026-02-08 2.04.15.png',
+    '/main-page/hero-picture/download.jpg',
   ];
 
   const breakfastImages = [
-    '/main-page/10-topic-picture/morning-picture/breakfast003.jpg',
-    '/main-page/10-topic-picture/morning-picture/breakfast004.jpg',
     '/main-page/10-topic-picture/morning-picture/breakfast005.jpg',
-    '/main-page/10-topic-picture/morning-picture/breakfast006.jpg',
-    '/main-page/10-topic-picture/morning-picture/breakfast007.jpg',
     '/main-page/10-topic-picture/morning-picture/breakfast008.jpg',
     '/main-page/10-topic-picture/morning-picture/breakfast012.jpg',
     '/main-page/10-topic-picture/morning-picture/breakfast013.jpg',
+    '/main-page/10-topic-picture/morning-picture/スクリーンショット 2026-02-08 2.32.54.png',
+    '/main-page/10-topic-picture/morning-picture/スクリーンショット 2026-02-08 2.33.05.png',
+    '/main-page/10-topic-picture/morning-picture/スクリーンショット 2026-02-08 2.33.11.png',
+    '/main-page/10-topic-picture/morning-picture/スクリーンショット 2026-02-08 2.33.21.png',
   ];
 
   const t = getTranslations(selectedLanguage);
@@ -1843,25 +1882,60 @@ return (
               <>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{t.bathTitle}</h3>
                 
-                <div className="border-t border-gray-200 pt-4 mb-4">
-                  <div className="space-y-1 text-gray-700 leading-relaxed">
-                    <p>{t.lobbyDesc1}</p>
-                    <p>{t.lobbyDesc3}</p>
-                  </div>
+                <div className="bg-gray-50 rounded-lg p-6 mb-6">
+                  <h4 className="font-bold text-lg text-gray-900 mb-4">{t.amenitiesTitle}</h4>
+                  <ul className="space-y-3">
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.amenityTowel}
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.amenityBathTowel}
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.amenityDryer}
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.amenityDeodorant}
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.amenityShampoo}
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.amenityConditioner}
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.amenityHandSoap}
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.amenityToothbrush}
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.amenityBodySoap}
+                    </li>
+                  </ul>
+                  <p className="text-sm text-gray-600 mt-4 pl-5">{t.amenitiesNote}</p>
                 </div>
 
-                <div className="space-y-4 mb-6">
-                  <div className="rounded-lg overflow-hidden">
-                    <div className="relative w-full h-64">
-                      <Image
-                        src="/main-page/10-topic-picture/facility001.jpg"
-                        alt="Facility"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 672px"
-                        unoptimized
-                      />
-                    </div>
+                {/* アメニティ画像 */}
+                <div className="mb-6 rounded-lg overflow-hidden border border-gray-200">
+                  <div className="relative w-full h-64">
+                    <Image
+                      src={encodeURI('/main-page/10-topic-picture/スクリーンショット 2026-02-08 2.24.32.png')}
+                      alt="アメニティコーナー"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 672px"
+                      unoptimized
+                    />
                   </div>
                 </div>
 
@@ -1934,7 +2008,8 @@ return (
                     </div>
                   </div>
                     <div className="space-y-2 text-gray-700">
-                    <p>{t.breakfastDesc}</p>
+                    <p className="font-semibold text-lg">{t.breakfastDesc}</p>
+                    <p className="text-[#3E8668] font-bold text-base">{t.breakfastCatchphrase}</p>
                     <p className="text-sm text-gray-600">{t.breakfastNotice}</p>
                     </div>
                 </div>
@@ -1950,32 +2025,74 @@ return (
             {selectedService === 'service' && (
               <>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{t.serviceTitle}</h3>
-                <div className="border-t border-gray-200 pt-4">
+                
+                {/* 1F */}
+                <div className="mb-6">
+                  <h4 className="font-bold text-lg text-gray-900 mb-3">{t.floor1F}</h4>
+                  <div className="bg-yellow-50 rounded-lg p-4 mb-4 border border-yellow-200">
+                    <p className="text-sm text-gray-700 leading-relaxed">{t.freeSpaceNote}</p>
+                  </div>
                   <ul className="space-y-3 text-gray-700">
-                    <li>
-                      <span className="font-semibold">{t.vendingMachine}</span>: 5・7・9F
-                      <span className="text-sm text-gray-600 ml-2">{t.alcoholNote}</span>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3 mt-2 shrink-0"></span>
+                      <div>
+                        <div className="font-semibold">{t.freeSpace}</div>
+                        <div className="text-sm text-gray-600 mt-1">{t.freeSpaceHours}</div>
+                      </div>
                     </li>
-                    <li>
-                      <span className="font-semibold">{t.microwave}</span>: 10F
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.microwave}
                     </li>
-                    <li>
-                      <span className="font-semibold">{t.iceMaker}</span>: 7・9F
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.iwateSachiko}
                     </li>
-                    <li>
-                      <span className="font-semibold">{t.smoking}</span>: 9F
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.wrappingVending}
                     </li>
-                    <li>
-                      <span className="font-semibold">{t.trouserPress}</span>: {t.trouserPressLocation}
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.souvenirVending1}
                     </li>
-                    <li>
-                      <span className="font-semibold">{t.laundry}</span>: 5F
-                      <p className="text-sm text-gray-600 mt-1 ml-4">
-                        {t.laundryNote}
-                      </p>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.souvenirVending2}
                     </li>
                   </ul>
                 </div>
+
+                {/* 2F */}
+                <div className="mb-6">
+                  <h4 className="font-bold text-lg text-gray-900 mb-3">{t.floor2F}</h4>
+                  <ul className="space-y-3 text-gray-700">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.vendingMachine}
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.iceMaker}
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.vendingMachineNote}
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
+                      {t.microwave}
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3 mt-2 shrink-0"></span>
+                      <div>
+                        <div className="font-semibold">{t.laundry}</div>
+                        <div className="text-sm text-gray-600 mt-1">{t.laundryHours}</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
                 <button
                   onClick={() => setSelectedService(null)}
                   className="mt-6 w-full bg-white hover:bg-gray-50 text-gray-600 border border-gray-300 px-4 py-2 rounded-lg font-medium transition-colors"
