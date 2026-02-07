@@ -72,9 +72,9 @@ const translations = {
     wifiTitle: 'Wi-Fi',
     password: 'Password :',
     lostTitle: 'お忘れ物',
-    lostText1: '忘れ物等については、原則ホテルからの連絡は致しません。',
-    lostText2: 'またご連絡が無い場合は、遺失物法に基づき3ヶ月経過後処分させていただきます。',
-    lostText3: 'ただし、飲食物につきましては即日処分させていただきます。',
+    lostText1: 'お客様がチェックアウトしたあと、手荷物又は携帯品が当ホテルに保管の依頼が無く残置されていた場合、所有者が破棄したものとして当ホテルの規定に基づき処分させていただきます。',
+    lostText2: '',
+    lostText3: '',
     lightingTitle: '室内照明',
     lightingDesc: '入室後、入口脇の電源ソケットにお部屋のキーホルダーを差し込む事で室内照明は点灯致します。',
     lightingNote: '※キーを電源ソケットに差し込みます。',
@@ -159,9 +159,9 @@ const translations = {
     wifiTitle: 'Wi-Fi',
     password: 'Password:',
     lostTitle: 'Lost & Found',
-    lostText1: 'As a rule, the hotel will not contact you regarding lost items.',
-    lostText2: 'If there is no contact, items will be disposed of after 3 months in accordance with the Lost Property Act.',
-    lostText3: 'However, food and beverages will be disposed of on the same day.',
+    lostText1: 'If luggage or personal belongings are left behind at our hotel without a request for storage after checkout, they will be disposed of in accordance with hotel regulations, assuming the owner has discarded them.',
+    lostText2: '',
+    lostText3: '',
     lightingTitle: 'Room Lighting',
     lightingDesc: 'After entering the room, insert your room key holder into the power socket next to the entrance to turn on the room lighting.',
     lightingNote: '*Insert the key into the power socket.',
@@ -1337,7 +1337,7 @@ export default function Home() {
       ), 
       titleKey: 'checkInOut' as const,
       id: 'checkin',
-      textColor: 'text-[#A387]'
+      textColor: 'text-[#3E8668]'
     },
     { 
       icon: (
@@ -1354,7 +1354,7 @@ export default function Home() {
       ), 
       titleKey: 'bath' as const,
       id: 'bath',
-      textColor: 'text-[#A3879D]'
+      textColor: 'text-[#3E8668]'
     },
     { 
       icon: (
@@ -1371,7 +1371,7 @@ export default function Home() {
       ), 
       titleKey: 'breakfast' as const,
       id: 'breakfast',
-      textColor: 'text-[#A387]'
+      textColor: 'text-[#3E8668]'
     },
     { 
       icon: (
@@ -1406,7 +1406,7 @@ export default function Home() {
       ), 
       titleKey: 'service' as const,
       id: 'service',
-      textColor: 'text-[#A387]'
+      textColor: 'text-[#3E8668]'
     },
     { 
       icon: (
@@ -1423,7 +1423,7 @@ export default function Home() {
       ), 
       titleKey: 'wifi' as const,
       id: 'wifi',
-      textColor: 'text-[#A387]'
+      textColor: 'text-[#3E8668]'
     },
     { 
       icon: (
@@ -1440,7 +1440,7 @@ export default function Home() {
       ), 
       titleKey: 'lighting' as const,
       id: 'lighting',
-      textColor: 'text-[#A387]'
+      textColor: 'text-[#3E8668]'
     },
     { 
       icon: (
@@ -1457,7 +1457,7 @@ export default function Home() {
       ), 
       titleKey: 'longstay' as const,
       id: 'longstay',
-      textColor: 'text-[#A387]'
+      textColor: 'text-[#3E8668]'
     },
     { 
       icon: (
@@ -1474,7 +1474,7 @@ export default function Home() {
       ), 
       titleKey: 'lost' as const,
       id: 'lost',
-      textColor: 'text-[#A387]'
+      textColor: 'text-[#3E8668]'
     },
     { 
       icon: (
@@ -1491,7 +1491,7 @@ export default function Home() {
       ), 
       titleKey: 'parking' as const,
       id: 'parking',
-      textColor: 'text-[#A387]'
+      textColor: 'text-[#3E8668]'
     },
   ];
 
@@ -1528,18 +1528,13 @@ return (
               <h1 className="sr-only">
                 {t.hotelName} {t.hotelTitle}
               </h1>
-                <div className="relative h-16 w-full max-w-[450px] sm:h-24 sm:max-w-[650px] md:h-32 md:max-w-[850px] overflow-hidden">
+                <div className="relative h-14 w-full max-w-[380px] sm:h-20 sm:max-w-[550px] md:h-28 md:max-w-[750px]">
                 <Image
-                  src={encodeURI('/main-page/3B689010-FA74-4F11-8B5C-FC184E45F759.PNG')}
+                  src={encodeURI('/main-page/1141FB0E-4155-4A97-97AA-1726C242D2AF.JPG')}
                   alt={`${t.hotelName} ${t.hotelTitle}`}
                   fill
-                  className="object-cover object-left"
-                    style={{ 
-                      clipPath: 'inset(2% 60% 2% 0)',
-                      transform: 'scale(1.0)',
-                      transformOrigin: 'left center'
-                    }}
-                    sizes="(max-width: 640px) 450px, (max-width: 768px) 650px, 850px"
+                  className="object-contain object-left"
+                    sizes="(max-width: 640px) 380px, (max-width: 768px) 550px, 750px"
                   unoptimized
                 />
               </div>
@@ -1688,7 +1683,7 @@ return (
                       : 'opacity-0 translate-y-4'
                   }`}
                   style={{ 
-                    backgroundColor: '#A3879D',
+                    backgroundColor: '#3E8668',
                     boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2)',
                     transitionDelay: visibleServices.has(service.id) ? `${index * 100}ms` : '0ms'
                   }}
@@ -1831,12 +1826,6 @@ return (
                   </div>
                   <div className="text-sm sm:text-base text-gray-700">
                     <span className="font-semibold">{t.checkOut}</span> 〜11:00
-                  </div>
-                  <div className="text-sm sm:text-base text-gray-700">
-                    <span className="font-semibold">{t.bbhMember}</span> 13:00〜 / 〜12:00
-                  </div>
-                  <div className="text-sm sm:text-base text-gray-700">
-                    <span className="font-semibold">{t.earlyCheckin}</span> {t.earlyCheckinFee}
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-gray-500">
@@ -2003,17 +1992,17 @@ return (
                     アクセスポイントはお部屋に設置の「客室インターネットのご案内」をご覧くださいませ。
                   </p>
                   <div className="space-y-3">
-                    <div className="rounded-lg bg-pink-50 border border-pink-200 px-4 py-3 flex items-center justify-between">
+                    <div className="rounded-lg bg-[#E8F5F0] border border-[#3E8668] px-4 py-3 flex items-center justify-between">
                       <div className="flex items-center">
                     <span className="font-bold text-gray-900">{t.password}</span>
-                        <span className="font-bold text-[#A4879D] ml-2">hgts7755</span>
+                        <span className="font-bold text-[#3E8668] ml-2">0196543811</span>
                       </div>
                       <button
                         onClick={() => {
-                          navigator.clipboard.writeText('hgts7755');
+                          navigator.clipboard.writeText('0196543811');
                           alert('パスワードをコピーしました！');
                         }}
-                        className="ml-4 bg-[#A4879D] hover:bg-[#8B6E83] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center gap-1 shrink-0"
+                        className="ml-4 bg-[#3E8668] hover:bg-[#2D6550] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center gap-1 shrink-0"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -2042,12 +2031,16 @@ return (
                     <p>
                       {t.lostText1}
                     </p>
-                    <p>
-                      {t.lostText2}
-                    </p>
-                    <p>
-                      {t.lostText3}
-                    </p>
+                    {t.lostText2 && (
+                      <p>
+                        {t.lostText2}
+                      </p>
+                    )}
+                    {t.lostText3 && (
+                      <p>
+                        {t.lostText3}
+                      </p>
+                    )}
                   </div>
                 </div>
                 <button
@@ -2091,65 +2084,14 @@ return (
             {selectedService === 'longstay' && (
               <>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{t.longstayTitle}</h3>
-                
-                {/* 説明画像 */}
-                <div className="mb-6 rounded-lg overflow-hidden border border-gray-200">
-                  <div className="relative w-full h-auto">
-                      <Image
-                      src="/main-page/10-topic-picture/unnamed.jpg"
-                      alt="連泊のお客様へ - エコプランのご案内"
-                      width={1000}
-                      height={800}
-                        className="w-full h-auto object-contain"
-                        unoptimized
-                      />
-                    </div>
-                  </div>
 
-                <div className="space-y-6">
-                  {/* 清掃について */}
-                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <h4 className="font-bold text-lg text-gray-900 mb-3">清掃ご希望の方へ</h4>
-                    <p className="text-sm text-gray-700 leading-relaxed mb-2">
-                      清掃ご希望の方は緑のマグネット<span className="font-semibold text-green-700">「清掃してください」</span>を<span className="font-semibold text-red-600">朝9時まで</span>に入口ドア廊下側にお貼りください。
+                <div className="space-y-4">
+                  <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                    <p className="text-base text-gray-700 leading-relaxed mb-4">
+                      清掃時間は<span className="font-semibold text-[#3E8668]">11:00～15:00まで</span>となっております。
                     </p>
-                    <p className="text-xs text-gray-600 mt-2">
-                      ※朝9時以降にお貼りいただいても清掃には入りませんのでご注意ください。
-                    </p>
-                    <p className="text-xs text-gray-600">
-                      ※清掃ご希望の方は11:00～14:00は清掃のお時間の為ご在室できませんのでご注意ください。
-                    </p>
-                  </div>
-
-                  {/* 清掃不要の場合 */}
-                  <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                    <h4 className="font-bold text-lg text-gray-900 mb-3">緑マグネット「清掃してください」が貼られていない場合</h4>
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                      部屋の前に新しいタオルのみ置かせていただきます。
-                    </p>
-                    <p className="text-xs text-gray-600 mt-2">
-                      ※使用済みタオル、ゴミ箱を<span className="font-semibold">13時まで</span>に部屋の外へ出して頂ければ回収致します。
-                  </p>
-                </div>
-
-                  {/* エコプランの説明 */}
-                  <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                    <h4 className="font-bold text-lg text-gray-900 mb-3">※連泊エコプランのお客様へ</h4>
-                    <p className="text-sm text-gray-700 leading-relaxed mb-2">
-                      連泊エコプランのお客様は清掃は3日に1回となります。
-                    </p>
-                    <p className="text-sm text-gray-700">
-                      （2泊目までは使用済みタオル、ゴミ箱を部屋の外へお出しください。備品のみ交換します。3泊目は通常清掃を致します。4泊目以降はその繰り返しです。）
-                    </p>
-                    <p className="text-xs text-gray-600 mt-2">
-                      通常清掃への変更をご希望の場合はフロントまでご連絡下さい。1回につき500円にて承ります。
-                    </p>
-                  </div>
-
-                  {/* ミネラルウォータープレゼント */}
-                  <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
-                    <p className="text-sm text-gray-700 leading-relaxed">
-                      ※滞在中、<span className="font-semibold">「清掃してください」マグネットを朝9時までに入口ドアに貼らずエコ清掃にご協力いただいたお客様</span>へは<span className="font-semibold text-[#A4879D] text-base">ミネラルウォーター500mlを1本プレゼント</span>いたします。
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      ご清掃をご希望の場合は、ドンデスカードの<span className="font-semibold text-[#3E8668]">「清掃して下さい」</span>を<span className="font-semibold text-red-600">11:00まで</span>に外側ドアノブへ掛けて頂きますようお願いいたします。
                     </p>
                   </div>
                 </div>
@@ -2165,20 +2107,6 @@ return (
             {selectedService === 'parking' && (
               <>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{t.parking}</h3>
-                
-                {/* 駐車場画像 */}
-                <div className="mb-6 rounded-lg overflow-hidden border border-gray-200 bg-gray-100">
-                  <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
-                      <Image
-                      src="/coupon-page/スクリーンショット 2026-02-06 3.15.05.png"
-                      alt={t.parking}
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 768px) 100vw, 768px"
-                        unoptimized
-                      />
-                    </div>
-                  </div>
 
                 {/* 駐車場情報 */}
                 <div className="space-y-6 text-sm text-gray-800">

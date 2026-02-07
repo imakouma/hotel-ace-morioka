@@ -378,7 +378,7 @@ export default function ChatBot() {
         <button
           type="button"
           onClick={() => setIsOpen((o) => !o)}
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#A3879D] text-white shadow-lg transition-all hover:bg-[#8D7389] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#A3879D] focus:ring-offset-2"
+          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#3E8668] text-white shadow-lg transition-all hover:bg-[#2D6550] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#3E8668] focus:ring-offset-2"
           aria-label={isOpen ? t.closeAria : t.openAria}
         >
           {isOpen ? (
@@ -397,7 +397,7 @@ export default function ChatBot() {
           )}
         </button>
         {!isOpen && !hintDismissed && (
-          <div className="relative max-w-[160px] rounded-lg border border-gray-200 bg-white px-3 py-2.5 pr-6 text-left text-[11px] leading-tight text-[#A3879D] shadow-sm">
+          <div className="relative max-w-[160px] rounded-lg border border-gray-200 bg-white px-3 py-2.5 pr-6 text-left text-[11px] leading-tight text-gray-700 shadow-sm">
             <button
               type="button"
               onClick={() => setHintDismissed(true)}
@@ -427,7 +427,7 @@ export default function ChatBot() {
       {isOpen && (
         <div className="fixed bottom-24 right-6 z-50 flex h-[420px] max-h-[min(420px,80dvh)] w-[360px] max-w-[calc(100vw-3rem)] flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-xl">
           {/* ヘッダー */}
-          <div className="flex items-center justify-between border-b border-gray-100 bg-[#A3879D] px-4 py-3 text-white">
+          <div className="flex items-center justify-between border-b border-gray-100 bg-[#3E8668] px-4 py-3 text-white">
             <span className="font-semibold">{t.headerTitle}</span>
             <button
               type="button"
@@ -451,7 +451,7 @@ export default function ChatBot() {
                 <div
                   className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm ${
                     msg.role === "user"
-                      ? "bg-[#A3879D] text-white"
+                      ? "bg-[#3E8668] text-white"
                       : "bg-white text-gray-800 shadow-sm border border-gray-100"
                   }`}
                 >
@@ -490,14 +490,14 @@ export default function ChatBot() {
                 rows={2}
                 disabled={isLoading}
                 readOnly={isLoading}
-                className="flex-1 min-h-0 resize-none rounded-lg border border-gray-200 px-3 py-2 text-base placeholder-gray-400 focus:border-[#A3879D] focus:outline-none focus:ring-1 focus:ring-[#A3879D] disabled:bg-gray-50 disabled:cursor-not-allowed"
+                className="flex-1 min-h-0 resize-none rounded-lg border border-gray-200 px-3 py-2 text-base placeholder-gray-400 focus:border-[#3E8668] focus:outline-none focus:ring-1 focus:ring-[#3E8668] disabled:bg-gray-50 disabled:cursor-not-allowed"
                 style={{ fontSize: "16px" }}
               />
               <button
                 type="button"
                 onClick={() => !isLoading && sendMessage()}
                 disabled={!input.trim() || isLoading}
-                className="self-end rounded-lg bg-[#A3879D] px-4 py-2 text-white transition-colors hover:bg-[#8D7389] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#A3879D]"
+                className="self-end rounded-lg bg-[#3E8668] px-4 py-2 text-white transition-colors hover:bg-[#2D6550] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#3E8668]"
                 aria-label={t.sendAria}
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">

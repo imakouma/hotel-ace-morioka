@@ -21,7 +21,7 @@ const bannerImage = `${COUPON_SITE}/スクリーンショット 2026-02-06 5.10.
 const parkingImage = `${COUPON_SITE}/スクリーンショット 2026-02-06 3.15.05.png`;
 const shopImages = [
   `${COUPON_SITE}/unnamed.jpg`, // とり鉄
-  `${COUPON_SITE}/Gemini_Generated_Image_ps8193ps8193ps81.png`, // 利久
+  `${COUPON_SITE}/rikyuu/Gemini_Generated_Image_ps8193ps8193ps81.png`, // 利久
   `${COUPON_SITE}/unnamed-1.jpg`, // たま（暫定）
 ];
 
