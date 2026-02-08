@@ -2218,6 +2218,18 @@ return (
               <>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{t.parking}</h3>
 
+                {/* 駐車場マップ画像 */}
+                <div className="mb-6 w-full">
+                  <Image
+                    src="/main-page/スクリーンショット 2026-02-08 23.49.16.png"
+                    alt="提携駐車場マップ"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto rounded-lg border border-gray-200"
+                    priority
+                  />
+                </div>
+
                 {/* 駐車場情報 */}
                 <div className="space-y-6 text-sm text-gray-800">
                   {/* 共通注意事項 */}
