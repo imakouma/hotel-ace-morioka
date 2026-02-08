@@ -2022,6 +2022,29 @@ return (
                 {/* 1F */}
                 <div className="mb-6">
                   <h4 className="font-bold text-lg text-gray-900 mb-3">{t.floor1F}</h4>
+                  
+                  {/* 1F画像 */}
+                  <div className="mb-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="w-full">
+                      <Image
+                        src="/main-page/10-topic-picture/431503.jpg"
+                        alt="1Fサービスコーナー"
+                        width={600}
+                        height={400}
+                        className="w-full h-auto rounded-lg border border-gray-200"
+                      />
+                    </div>
+                    <div className="w-full">
+                      <Image
+                        src="/main-page/10-topic-picture/431504.jpg"
+                        alt="1Fサービスコーナー"
+                        width={600}
+                        height={400}
+                        className="w-full h-auto rounded-lg border border-gray-200"
+                      />
+                    </div>
+                  </div>
+                  
                   <div className="bg-yellow-50 rounded-lg p-4 mb-4 border border-yellow-200">
                     <p className="text-sm text-gray-700 leading-relaxed">{t.freeSpaceNote}</p>
                   </div>
@@ -2059,6 +2082,18 @@ return (
                 {/* 2F */}
                 <div className="mb-6">
                   <h4 className="font-bold text-lg text-gray-900 mb-3">{t.floor2F}</h4>
+                  
+                  {/* 2F画像 */}
+                  <div className="mb-4 w-full">
+                    <Image
+                      src="/main-page/10-topic-picture/431506.jpg"
+                      alt="2Fサービスコーナー"
+                      width={800}
+                      height={600}
+                      className="w-full h-auto rounded-lg border border-gray-200"
+                    />
+                  </div>
+                  
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3"></span>
