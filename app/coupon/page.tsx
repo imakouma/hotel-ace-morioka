@@ -686,10 +686,10 @@ export default function CouponPage() {
                         )}
                         <p className="mt-1">{b.address}</p>
                         <p className="mt-0.5">{t.tel} {b.tel}</p>
-                        {"validity" in b && b.validity != null && (
+                        {"validity" in b && b.validity != null && typeof b.validity === "string" && (
                           <p className="mt-1 text-xs">{b.validity}</p>
                         )}
-                        {"distance" in b && b.distance != null && (
+                        {"distance" in b && b.distance != null && typeof b.distance === "string" && (
                           <p className="mt-0.5 text-xs">{b.distance}</p>
                         )}
                       </div>
