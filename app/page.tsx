@@ -1957,13 +1957,6 @@ return (
                 <div className="mb-6">
                     <div className="space-y-4 mb-4">
                       <div className="text-gray-700">
-                        {t.breakfastPrice}
-                      </div>
-                      <div>
-                      <div className="text-xl font-bold text-gray-900">{t.breakfastVenue}</div>
-                      <div className="text-gray-700">{t.breakfastFloor}</div>
-                      </div>
-                      <div className="text-gray-700">
                       <span className="font-semibold">{t.breakfastTime}</span> {t.breakfastTimeDetail}
                       </div>
                     </div>
