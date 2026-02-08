@@ -17,29 +17,40 @@ const COUPON_TEXT_COLOR = "#EEE3C4";
 const MAP_BTN_BG = "#F5A623";
 
 const COUPON_SITE = "/coupon-page";
-const bannerImage = `${COUPON_SITE}/スクリーンショット 2026-02-06 5.10.38.png`;
+const bannerImage = `${COUPON_SITE}/title.png`;
 const parkingImage = `${COUPON_SITE}/スクリーンショット 2026-02-06 3.15.05.png`;
 const shopImages = [
-  `${COUPON_SITE}/unnamed.jpg`, // とり鉄
-  `${COUPON_SITE}/rikyuu/Gemini_Generated_Image_ps8193ps8193ps81.png`, // 利久
-  `${COUPON_SITE}/unnamed-1.jpg`, // たま（暫定）
+  `${COUPON_SITE}/morioka-genkaitiba/IMG_2058.PNG`, // もりおか炭火居酒屋原価市場
+  `${COUPON_SITE}/itiya/スクリーンショット 2026-02-08 17.09.17.png`, // 魚処　壱や　大通り店
+  `${COUPON_SITE}/rikyuu/スクリーンショット 2026-02-08 17.09.30.png`, // やみつきホルモン利久
 ];
 
 /** モーダル用の店舗詳細画像（MAP押下時に表示） */
 const shopModalImages: string[][] = [
   [
-    `${COUPON_SITE}/スクリーンショット 2026-02-06 5.32.43.png`,
-    `${COUPON_SITE}/スクリーンショット 2026-02-06 5.32.32.png`,
+    `${COUPON_SITE}/morioka-genkaitiba/スクリーンショット 2026-02-08 17.54.41.png`,
+    `${COUPON_SITE}/morioka-genkaitiba/スクリーンショット 2026-02-08 17.55.24.png`,
+    `${COUPON_SITE}/morioka-genkaitiba/スクリーンショット 2026-02-08 17.56.02.png`,
   ],
-  [`${COUPON_SITE}/rikyuu/スクリーンショット 2026-02-01 23.10.55-903b6d91-1ead-4274-9bed-07cea68945a8.png`],
-  [`${COUPON_SITE}/スクリーンショット 2026-02-06 5.42.41.png`, `${COUPON_SITE}/スクリーンショット 2026-02-06 5.42.52.png`],
+  [
+    `${COUPON_SITE}/itiya/スクリーンショット 2026-02-08 18.02.07.png`,
+    `${COUPON_SITE}/itiya/スクリーンショット 2026-02-08 18.02.20.png`,
+    `${COUPON_SITE}/itiya/スクリーンショット 2026-02-08 18.02.33.png`,
+    `${COUPON_SITE}/itiya/スクリーンショット 2026-02-08 18.02.45.png`,
+  ],
+  [
+    `${COUPON_SITE}/rikyuu/スクリーンショット 2026-02-08 18.07.13.png`,
+    `${COUPON_SITE}/rikyuu/スクリーンショット 2026-02-08 18.07.26.png`,
+    `${COUPON_SITE}/rikyuu/スクリーンショット 2026-02-08 18.07.52.png`,
+    `${COUPON_SITE}/rikyuu/スクリーンショット 2026-02-08 18.08.10.png`,
+  ],
 ];
 
 /** モーダル用の店舗説明文（参考画像の雰囲気に合わせる） */
 const shopModalDescriptions = [
-  "注文時スタッフに提示で店内おまかせ一品料理無料。",
-  "注文時スタッフに提示で店内おまかせ一品料理無料。",
-  "注文時スタッフに提示でお刺身5種盛り無料。",
+  "注文時スタッフに提示でどどか無料丼（産地選べる無料丼！岩手牛丼OR三陸大漁丼）。",
+  "注文時スタッフに提示でファーストドリンクとお刺身3点盛り無料。",
+  "注文時スタッフに提示で店舗おまかせ一品料理無料。",
 ];
 
 /** クーポンページの多言語翻訳 */
@@ -325,77 +336,67 @@ const shopsBase = [
     imageSrc: shopImages[0],
     branches: [
       {
-        name: "とり鉄 仙台国分町店",
-        address: "宮城県仙台市青葉区一番町4-4-20",
-        tel: "022-216-2020",
-        hours: "16:00~23:00（L.O.22:00）",
-        holiday: "年中無休",
+        name: "もりおか炭火居酒屋原価市場",
+        address: "盛岡市大通1丁目9-16",
+        tel: "019-601-9700",
+        hours: "16:00～23:00（L.O.22:30）／土日祝 15:00～23:00",
+        holiday: "月曜定休（月曜祝日の場合は営業、火曜休み）",
         validity: "チェックアウト当日まで有効",
-        distance: "ホテルより徒歩4分",
-        lat: 38.2616247,
-        lng: 140.8715841,
-        placeUrl: "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%8A%E9%89%84%20%E4%BB%99%E5%8F%B0%E5%9B%BD%E5%88%86%E7%94%BA%E5%BA%97",
+        distance: "ホテルより徒歩約5分",
+        lat: 39.7013056,
+        lng: 141.1526944,
+        placeUrl: "https://www.google.com/maps/search/?api=1&query=%E7%9B%9B%E5%B2%A1%E5%B8%82%E5%A4%A7%E9%80%9A1%E4%B8%81%E7%9B%AE9-16",
       },
     ],
-    hours: "16:00~23:00（L.O.22:00）",
-    holiday: "年中無休",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%8A%E9%89%84%20%E4%BB%99%E5%8F%B0%E5%9B%BD%E5%88%86%E7%94%BA%E5%BA%97",
+    hours: "16:00～23:00（L.O.22:30）／土日祝 15:00～23:00",
+    holiday: "月曜定休（月曜祝日の場合は営業、火曜休み）",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E7%9B%9B%E5%B2%A1%E5%B8%82%E5%A4%A7%E9%80%9A1%E4%B8%81%E7%9B%AE9-16",
   },
   {
     nameKey: "shop2" as const,
     imageSrc: shopImages[1],
     branches: [
       {
-        name: "利久 一番町店",
-        address: "仙台市青葉区一番町4-4-32",
-        tel: "022-217-3270",
-        hours: "昼 11:30~15:00（L.O.14:30）\n夜 17:00～23:00（L.O.22:30）",
-        lat: 38.2614856,
-        lng: 140.8717123,
-        holiday: undefined,
-        placeUrl: "https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E4%B9%85%20%E4%B8%80%E7%95%AA%E7%94%BA%E5%BA%97%20%E4%BB%99%E5%8F%B0",
-      },
-      {
-        name: "利久食堂 国分町店",
-        address: "仙台市青葉区国分町2-10-1 袋ビル1F",
-        tel: "022-398-4855",
-        hours: "11:30〜22:30（L.O.22:00）",
-        lat: 38.2603145,
-        lng: 140.8716892,
-        holiday: undefined,
-        placeUrl: "https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E4%B9%85%E9%A3%9F%E5%A0%82%20%E4%BB%99%E5%8F%B0",
+        name: "魚処　壱や　大通り店",
+        address: "盛岡市大通1丁目7-18",
+        tel: "019-601-3166",
+        hours: "17:00～24:00（L.O.23:00）",
+        lat: 39.7016,
+        lng: 141.1530,
+        holiday: "月曜定休（月曜祝日の場合は営業、火曜休み）",
+        placeUrl: "https://www.google.com/maps/search/?api=1&query=%E9%AD%9A%E5%87%A6+%E5%A3%B1%E3%82%84+%E5%A4%A7%E9%80%9A%E3%82%8A%E5%BA%97+%E7%9B%9B%E5%B2%A1",
       },
     ],
-    hours: undefined,
-    holiday: undefined,
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E4%B9%85%20%E4%BB%99%E5%8F%B0",
+    hours: "17:00～24:00（L.O.23:00）",
+    holiday: "月曜定休（月曜祝日の場合は営業、火曜休み）",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E9%AD%9A%E5%87%A6+%E5%A3%B1%E3%82%84+%E5%A4%A7%E9%80%9A%E3%82%8A%E5%BA%97+%E7%9B%9B%E5%B2%A1",
   },
   {
     nameKey: "shop3" as const,
     imageSrc: shopImages[2],
     branches: [
       {
-        name: "たま 国分町店",
-        address: "仙台市青葉区国分町2丁目1-3 エニークス国分町ビル5F",
-        tel: "022-797-3199",
-        hours: "日〜木・祝日 16:00～翌1:00（L.O.料理20:15、ドリンク翌0:30）\n金・土・祝前日 16:00～翌3:00（料理L.O.2:15、ドリンクL.O.2:30）",
+        name: "やみつきホルモン利久　大通り店",
+        address: "盛岡市中央通2丁目8-18",
+        tel: "019-613-2929",
+        hours: "17:00～23:30（L.O.23:00）",
         holiday: "年中無休",
-        lat: 38.2614284,
-        lng: 140.8713438,
+        lat: 39.7020,
+        lng: 141.1535,
         placeUrl:
-          "https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%81%BE%20%E5%9B%BD%E5%88%86%E7%94%BA%E5%BA%97%20%E4%BB%99%E5%8F%B0",
+          "https://www.google.com/maps/search/?api=1&query=%E3%82%84%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3%E5%88%A9%E4%B9%85+%E5%A4%A7%E9%80%9A%E3%82%8A%E5%BA%97+%E7%9B%9B%E5%B2%A1",
       },
     ],
-    hours: undefined,
+    hours: "17:00～23:30（L.O.23:00）",
     holiday: "年中無休",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%81%BE%20%E5%9B%BD%E5%88%86%E7%94%BA%E5%BA%97%20%E4%BB%99%E5%8F%B0",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E3%82%84%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3%E5%88%A9%E4%B9%85+%E5%A4%A7%E9%80%9A%E3%82%8A%E5%BA%97+%E7%9B%9B%E5%B2%A1",
   },
 ];
 
 const shopNames: Record<string, string> = {
-  shop1: "とり鉄",
-  shop2: "利久",
-  shop3: "たま",
+  shop1: "もりおか炭火居酒屋原価市場",
+  shop2: "魚処　壱や",
+  shop3: "やみつきホルモン利久",
 };
 
 const mainLanguages: Array<{ code: LanguageCode; flag: string; label: string }> = [
@@ -423,6 +424,7 @@ export default function CouponPage() {
   const { language: selectedLanguage, setLanguage: setSelectedLanguage } = useLanguage();
   const [showOtherLanguages, setShowOtherLanguages] = useState(false);
   const [openModalShopIndex, setOpenModalShopIndex] = useState<number | null>(null);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const languageDropdownRef = useRef<HTMLDivElement>(null);
   const t = getCouponT(selectedLanguage);
 
@@ -441,6 +443,21 @@ export default function CouponPage() {
     }
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [showOtherLanguages]);
+
+  // 全店舗のスライドショー（3秒ごとに自動切り替え）
+  useEffect(() => {
+    if (openModalShopIndex !== null && (openModalShopIndex === 0 || openModalShopIndex === 1 || openModalShopIndex === 2)) {
+      const modalImages = shopModalImages[openModalShopIndex] ?? [];
+      if (modalImages.length > 1) {
+        const interval = setInterval(() => {
+          setCurrentSlideIndex((prev) => (prev + 1) % modalImages.length);
+        }, 3000);
+        return () => clearInterval(interval);
+      }
+    } else {
+      setCurrentSlideIndex(0);
+    }
+  }, [openModalShopIndex]);
 
   return (
     <div className="min-h-screen bg-[#F2EDCF]">
@@ -739,7 +756,44 @@ export default function CouponPage() {
               </div>
               <div className="flex-1 min-w-0 overflow-y-auto overflow-x-hidden">
                 {/* モーダル用画像（横長画像も全体が見えるよう object-contain） */}
-                {modalImages.length <= 1 ? (
+                {(openModalShopIndex === 0 || openModalShopIndex === 1 || openModalShopIndex === 2) && modalImages.length > 1 ? (
+                  // 全店舗：スライドショー
+                  <div className="relative w-full min-h-[200px] overflow-hidden bg-gray-100" style={{ aspectRatio: "16/9" }}>
+                    {modalImages.map((src, idx) => (
+                      <div
+                        key={`${src}-${idx}`}
+                        className={`absolute inset-0 transition-opacity duration-1000 ${
+                          idx === currentSlideIndex ? "opacity-100" : "opacity-0"
+                        }`}
+                      >
+                        <Image
+                          src={encodeURI(src)}
+                          alt={`${modalName} ${idx + 1}`}
+                          fill
+                          className="object-contain"
+                          sizes="(max-width: 768px) 100vw, 800px"
+                          unoptimized
+                        />
+                      </div>
+                    ))}
+                    {/* インジケーター */}
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                      {modalImages.map((_, idx) => (
+                        <button
+                          key={idx}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setCurrentSlideIndex(idx);
+                          }}
+                          className={`h-2 rounded-full transition-all ${
+                            idx === currentSlideIndex ? "w-8 bg-white" : "w-2 bg-white/50"
+                          }`}
+                          aria-label={`スライド ${idx + 1}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ) : modalImages.length <= 1 ? (
                   <div
                     className={`relative w-full min-h-[200px] overflow-hidden ${openModalShopIndex === 1 ? '' : 'bg-gray-100'}`}
                     style={{ aspectRatio: "16/9" }}
@@ -779,7 +833,7 @@ export default function CouponPage() {
                   </p>
                   {openModalShopIndex === 0 && (
                     <a
-                      href="http://www.tori-tetsu.com/shop/238p/"
+                      href="https://www.hotpepper.jp/strJ001143787/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-2 inline-block text-sm font-semibold text-[#304E84] underline underline-offset-2"
@@ -789,7 +843,7 @@ export default function CouponPage() {
                   )}
                   {openModalShopIndex === 2 && (
                     <a
-                      href="https://www.hotpepper.jp/strJ001194890/"
+                      href="https://www.hotpepper.jp/strJ001185245/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-2 inline-block text-sm font-semibold text-[#304E84] underline underline-offset-2"
@@ -799,7 +853,7 @@ export default function CouponPage() {
                   )}
                   {openModalShopIndex === 1 && (
                     <a
-                      href="https://www.rikyu-gyutan.co.jp/"
+                      href="https://www.hotpepper.jp/strJ001250661/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-2 inline-block text-sm font-semibold text-[#304E84] underline underline-offset-2"

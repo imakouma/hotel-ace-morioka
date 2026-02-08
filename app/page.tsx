@@ -2223,59 +2223,55 @@ return (
                   {/* 共通注意事項 */}
                   <div className="bg-yellow-50 rounded-lg p-4 border-2 border-yellow-300">
                     <div className="font-bold text-base mb-2 text-center text-red-600">
-                      P1～P5は全て1泊900円
+                      P1～P5は全て1泊900円（延長30分100円）
                     </div>
-                    <p className="text-xs text-gray-700 text-center">
-                      宿泊当日は当該駐車場にお車を駐車して駅からの徒歩や市内電車のご利用をお勧めします
-                    </p>
+                    <div className="text-xs text-gray-700 space-y-1 mt-2">
+                      <p>※途中出庫の際は課金額が発生します。</p>
+                      <p>※時間帯によっては駐車場車庫がありますのでお問い合わせください。</p>
+                    </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <div className="font-semibold text-lg mb-2">P1 ホテルエース駐車場</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：16:00～翌11:00</p>
-                      <p className="font-semibold">■台数：30台</p>
-                      <p className="text-xs text-gray-600 mt-2">
-                        ※1台2,100円
-                      </p>
+                      <p className="font-semibold text-red-600">■利用時間：15:00～翌11:00</p>
+                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <div className="font-semibold text-lg mb-2">P2 リリオ駐車場</div>
+                    <div className="font-semibold text-lg mb-2">P2 リリカ駐車場</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：16:00～翌11:00</p>
-                      <p className="font-semibold">■台数：2,200台</p>
-                      <p className="text-xs text-gray-600 mt-2">
-                        ※1台2,000円
-                      </p>
+                      <p className="font-semibold text-red-600">■利用時間：15:00～翌11:00</p>
+                      <p className="font-semibold">■車高制限：2.30mまで</p>
+                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <div className="font-semibold text-lg mb-2">P3 三井のリパーク</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：16:00～翌11:00</p>
-                      <p className="font-semibold">■台数：698台/82L</p>
+                      <p className="font-semibold text-red-600">■利用時間：15:00～翌11:00</p>
+                      <p className="font-semibold">■事前予約：利用なし</p>
+                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <div className="font-semibold text-lg mb-2">P4 MOSS駐車場</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：18:00～翌11:00</p>
-                      <p className="font-semibold">■台数：2,200台</p>
-                      <p className="text-xs text-gray-600 mt-2">
-                        ※1台2,000円
-                      </p>
+                      <p className="font-semibold text-red-600">■利用時間：16:00～翌11:00</p>
+                      <p className="font-semibold">■車高制限：2.50mまで</p>
+                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <div className="font-semibold text-lg mb-2">P5 クロステラス駐車場</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：16:00～翌10:00</p>
-                      <p className="font-semibold">■台数：2,100台</p>
+                      <p className="font-semibold text-red-600">■利用時間：17:00～翌11:00</p>
+                      <p className="font-semibold">■車高制限：2.10mまで</p>
+                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
                     </div>
                   </div>
                 </div>
@@ -2324,8 +2320,8 @@ return (
                 )}
               </h3>
               <div className="space-y-2 text-sm text-gray-700 mb-6">
-                <p>〒980-0803<br />{selectedLanguage === 'ja' ? '宮城県仙台市青葉区国分町2-2-2' : selectedLanguage === 'en' ? '2-2-2 Kokubuncho, Aoba-ku, Sendai, Miyagi 980-0803' : selectedLanguage === 'zh' ? '宫城县仙台市青叶区国分町2-2-2' : '미야기현 센다이시 아오바구 고쿠분초 2-2-2'}</p>
-                <p>TEL 022-262-7755</p>
+                <p>〒020-0021<br />{selectedLanguage === 'ja' ? '岩手県盛岡市中央通２丁目１１−３５' : selectedLanguage === 'en' ? '2-11-35 Chuo-dori, Morioka, Iwate 020-0021' : selectedLanguage === 'zh' ? '岩手县盛冈市中央通2丁目11-35' : '이와테현 모리오카시 추오도리 2-11-35'}</p>
+                <p>TEL 019-654-3811</p>
               </div>
               <div className="mt-6">
                 <Link
@@ -2353,7 +2349,7 @@ return (
             <div className="md:col-span-3">
               <div className="w-full h-64 sm:h-80 bg-gray-200 rounded-lg overflow-hidden border border-gray-300 shadow-sm">
                 <iframe
-                  src={`https://www.google.com/maps?q=${encodeURIComponent('宮城県仙台市青葉区国分町2-2-2 ホテルグランテラス仙台国分町')}&output=embed&hl=ja&z=17`}
+                  src={`https://www.google.com/maps?q=${encodeURIComponent('岩手県盛岡市中央通2丁目11-35 ホテルエース盛岡')}&output=embed&hl=ja&z=17`}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -2361,7 +2357,7 @@ return (
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
-                  title="ホテルグランテラス仙台国分町"
+                  title="ホテルエース盛岡"
                 ></iframe>
               </div>
             </div>

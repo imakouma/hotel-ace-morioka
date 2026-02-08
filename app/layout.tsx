@@ -44,7 +44,7 @@ export default function RootLayout({
       "addressCountry": "JP",
       "addressRegion": "岩手県",
       "addressLocality": "盛岡市",
-      "streetAddress": "中央通2丁目11-35",
+      "streetAddress": "中央通２丁目１１−３５",
       "postalCode": "020-0021"
     },
     "telephone": "019-654-3811",
