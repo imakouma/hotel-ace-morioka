@@ -50,7 +50,7 @@ const shopModalImages: string[][] = [
 const shopModalDescriptions = [
   "配布のクーポン券持参または、この画面の提示で岩手名物盛岡冷麺(ハーフ)か前沢牛60gどちらか無料!!",
   "注文時スタッフに提示でファーストドリンクかお刺身三点盛り人数分無料。",
-  "注文時スタッフに提示で店舗お任せ一品料理無料!!",
+  "配布のクーポン券持参または、この画面の提示でファーストドリンクかお刺身三点盛り人数分無料！",
 ];
 
 /** クーポンページの多言語翻訳 */
@@ -83,7 +83,7 @@ const couponTranslations: Record<
     shop2Offer1: "ファーストドリンクかお刺身三点盛り人数分無料",
     shop2Or: "",
     shop2Offer2: "",
-    shop3Offer: "店舗お任せ一品料理無料!!",
+    shop3Offer: "ファーストドリンクかお刺身三点盛り人数分無料！",
     map: "MAP",
     tel: "TEL",
     showLargerMap: "拡大地図を表示",
@@ -864,15 +864,14 @@ export default function CouponPage() {
                   {/* 全店舗分を表示（利久は4店舗・晴れの日2店舗・ぼんてん1店舗） */}
                   {shop.branches.map((branch, branchIndex) => {
                     const branchAddress = branch.address || ("name" in branch && typeof branch.name === "string" ? branch.name : "") || modalName;
+                    const branchName = ("name" in branch && typeof branch.name === "string" ? branch.name : "") || modalName;
                     const branchMapUrl =
                       "placeUrl" in branch && typeof branch.placeUrl === "string"
                         ? branch.placeUrl
-                        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(branchAddress)}`;
+                        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(branchName)}`;
                     
-                    // 緯度経度がある場合はそれを使用、ない場合は住所で検索
-                    const branchMapEmbedUrl = ("lat" in branch && "lng" in branch && branch.lat !== 0 && branch.lng !== 0)
-                      ? `https://www.google.com/maps?q=${branch.lat},${branch.lng}&z=17&output=embed`
-                      : `https://www.google.com/maps?q=${encodeURIComponent(branchAddress)}&z=17&output=embed`;
+                    // 店舗名で検索（ホームページと同様）
+                    const branchMapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(branchName)}&output=embed&hl=ja&z=17`;
                     
                     const branchLabel = "name" in branch && branch.name != null ? branch.name : `${modalName} ${branchIndex + 1}`;
                     return (
