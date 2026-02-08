@@ -49,8 +49,8 @@ const shopModalImages: string[][] = [
 /** モーダル用の店舗説明文（参考画像の雰囲気に合わせる） */
 const shopModalDescriptions = [
   "配布のクーポン券持参または、この画面の提示で岩手名物盛岡冷麺(ハーフ)か前沢牛60gどちらか無料!!",
-  "注文時スタッフに提示でファーストドリンクとお刺身3点盛り無料。",
-  "注文時スタッフに提示で店舗おまかせ一品料理無料。",
+  "注文時スタッフに提示でファーストドリンクかお刺身三点盛り人数分無料。",
+  "注文時スタッフに提示で店舗お任せ一品料理無料!!",
 ];
 
 /** クーポンページの多言語翻訳 */
@@ -80,10 +80,10 @@ const couponTranslations: Record<
     usageNote: "※利用条件等は配布のクーポン券をご確認ください。",
     bringCoupon: "配布のクーポン券持参または、この画面の提示で",
     shop1Offer: "岩手名物盛岡冷麺(ハーフ)か前沢牛60gどちらか無料!!",
-    shop2Offer1: "店内おまかせ一品料理無料",
+    shop2Offer1: "ファーストドリンクかお刺身三点盛り人数分無料",
     shop2Or: "",
     shop2Offer2: "",
-    shop3Offer: "お刺身5種盛り無料!!",
+    shop3Offer: "店舗お任せ一品料理無料!!",
     map: "MAP",
     tel: "TEL",
     showLargerMap: "拡大地図を表示",
@@ -337,20 +337,20 @@ const shopsBase = [
     branches: [
       {
         name: "もりおか炭火居酒屋原価市場",
-        address: "盛岡市大通1丁目9-16",
+        address: "〒020-0022 岩手県盛岡市大通２丁目７−１９ 白崎二番館 2F",
         tel: "019-601-9700",
         hours: "16:00～23:00（L.O.22:30）／土日祝 15:00～23:00",
-        holiday: "月曜定休（月曜祝日の場合は営業、火曜休み）",
+        holiday: "年中無休（12/31〜1/1は休み）",
         validity: "チェックアウト当日まで有効",
         distance: "ホテルより徒歩約5分",
         lat: 39.7013056,
         lng: 141.1526944,
-        placeUrl: "https://www.google.com/maps/search/?api=1&query=%E7%9B%9B%E5%B2%A1%E5%B8%82%E5%A4%A7%E9%80%9A1%E4%B8%81%E7%9B%AE9-16",
+        placeUrl: "https://www.google.com/maps/place/%E7%9B%9B%E5%B2%A1%E7%82%AD%E7%81%AB%E5%B1%85%E9%85%92%E5%B1%8B+%E5%8E%9F%E4%BE%A1%E5%B8%82%E5%A0%B4/@39.7032885,141.1425842,17z/data=!3m2!4b1!5s0x5f85763011491bbb:0xe500d3922afd3b00!4m6!3m5!1s0x5f857630140187d5:0x3bb559f06d95d0fc!8m2!3d39.7032885!4d141.1451645!16s%2Fg%2F1hc629f8n?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D",
       },
     ],
     hours: "16:00～23:00（L.O.22:30）／土日祝 15:00～23:00",
-    holiday: "月曜定休（月曜祝日の場合は営業、火曜休み）",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E7%9B%9B%E5%B2%A1%E5%B8%82%E5%A4%A7%E9%80%9A1%E4%B8%81%E7%9B%AE9-16",
+    holiday: "年中無休（12/31〜1/1は休み）",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E3%80%92020-0022%20%E5%B2%A9%E6%89%8B%E7%9C%8C%E7%9B%9B%E5%B2%A1%E5%B8%82%E5%A4%A7%E9%80%9A%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%97%E2%88%92%EF%BC%91%EF%BC%99%20%E7%99%BD%E5%B4%8E%E4%BA%8C%E7%95%AA%E9%A4%A8%202F",
   },
   {
     nameKey: "shop2" as const,
@@ -358,18 +358,18 @@ const shopsBase = [
     branches: [
       {
         name: "魚処　壱や　大通り店",
-        address: "盛岡市大通1丁目7-18",
+        address: "〒020-0022 岩手県盛岡市大通り２丁目３−１４ 1F",
         tel: "019-601-3166",
-        hours: "17:00～24:00（L.O.23:00）",
+        hours: "月〜土 18:00〜26:00(LO25:00)\n日曜日 18:00〜24:00",
         lat: 39.7016,
         lng: 141.1530,
-        holiday: "月曜定休（月曜祝日の場合は営業、火曜休み）",
-        placeUrl: "https://www.google.com/maps/search/?api=1&query=%E9%AD%9A%E5%87%A6+%E5%A3%B1%E3%82%84+%E5%A4%A7%E9%80%9A%E3%82%8A%E5%BA%97+%E7%9B%9B%E5%B2%A1",
+        holiday: "木曜日 定休日",
+        placeUrl: "https://www.google.com/maps/place/%E9%AD%9A%E5%87%A6+%E5%A3%B1%E3%82%84+%E5%A4%A7%E9%80%9A%E3%82%8A%E5%BA%97/data=!4m2!3m1!1s0x5f85770f102c181f:0x9ee4bf44873b2ebb?sa=X&ved=1t:242&ictx=111",
       },
     ],
-    hours: "17:00～24:00（L.O.23:00）",
-    holiday: "月曜定休（月曜祝日の場合は営業、火曜休み）",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E9%AD%9A%E5%87%A6+%E5%A3%B1%E3%82%84+%E5%A4%A7%E9%80%9A%E3%82%8A%E5%BA%97+%E7%9B%9B%E5%B2%A1",
+    hours: "月〜土 18:00〜26:00(LO25:00)\n日曜日 18:00〜24:00",
+    holiday: "木曜日 定休日",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E3%80%92020-0022%20%E5%B2%A9%E6%89%8B%E7%9C%8C%E7%9B%9B%E5%B2%A1%E5%B8%82%E5%A4%A7%E9%80%9A%E3%82%8A%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%91%EF%BC%94%201F",
   },
   {
     nameKey: "shop3" as const,
@@ -377,19 +377,19 @@ const shopsBase = [
     branches: [
       {
         name: "やみつきホルモン利久　大通り店",
-        address: "盛岡市中央通2丁目8-18",
+        address: "〒020-0022 岩手県盛岡市大通１丁目１０−２１ PIVOT盛岡大通りビル 2 1F",
         tel: "019-613-2929",
-        hours: "17:00～23:30（L.O.23:00）",
+        hours: "日・土 11:30～22:30\n月〜金 11:30～14:30, 17:00～22:30",
         holiday: "年中無休",
         lat: 39.7020,
         lng: 141.1535,
         placeUrl:
-          "https://www.google.com/maps/search/?api=1&query=%E3%82%84%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3%E5%88%A9%E4%B9%85+%E5%A4%A7%E9%80%9A%E3%82%8A%E5%BA%97+%E7%9B%9B%E5%B2%A1",
+          "https://www.google.com/maps/place/%E3%82%84%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3+%E5%88%A9%E4%B9%85+%E7%9B%9B%E5%B2%A1%E5%A4%A7%E9%80%9A%E5%BA%97/data=!4m2!3m1!1s0x0:0xd4a293075b50f790?sa=X&ved=1t:2428&ictx=111",
       },
     ],
-    hours: "17:00～23:30（L.O.23:00）",
+    hours: "日・土 11:30～22:30\n月〜金 11:30～14:30, 17:00～22:30",
     holiday: "年中無休",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E3%82%84%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3%E5%88%A9%E4%B9%85+%E5%A4%A7%E9%80%9A%E3%82%8A%E5%BA%97+%E7%9B%9B%E5%B2%A1",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E3%80%92020-0022%20%E5%B2%A9%E6%89%8B%E7%9C%8C%E7%9B%9B%E5%B2%A1%E5%B8%82%E5%A4%A7%E9%80%9A%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%90%E2%88%92%EF%BC%92%EF%BC%91%20PIVOT%E7%9B%9B%E5%B2%A1%E5%A4%A7%E9%80%9A%E3%82%8A%E3%83%93%E3%83%AB%202%201F",
   },
 ];
 
@@ -428,6 +428,16 @@ export default function CouponPage() {
   const languageDropdownRef = useRef<HTMLDivElement>(null);
   const t = getCouponT(selectedLanguage);
 
+  const openModal = (index: number) => {
+    setCurrentSlideIndex(0);
+    setOpenModalShopIndex(index);
+  };
+
+  const closeModal = () => {
+    setCurrentSlideIndex(0);
+    setOpenModalShopIndex(null);
+  };
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -454,8 +464,6 @@ export default function CouponPage() {
         }, 3000);
         return () => clearInterval(interval);
       }
-    } else {
-      setCurrentSlideIndex(0);
     }
   }, [openModalShopIndex]);
 
@@ -673,7 +681,7 @@ export default function CouponPage() {
                           <p className="font-semibold text-gray-900">{b.name}</p>
                         )}
                         {"hours" in b && b.hours != null && (
-                          <p className="mt-1 text-xs">{b.hours}</p>
+                          <p className="mt-1 text-xs whitespace-pre-line">{b.hours}</p>
                         )}
                         {"holiday" in b && b.holiday != null && (
                           <p className="mt-0.5 text-xs">定休日：{b.holiday}</p>
@@ -688,18 +696,12 @@ export default function CouponPage() {
                         )}
                       </div>
                     ))}
-                    {shop.hours != null && (
-                      <p className="mt-2 text-xs whitespace-pre-line">{shop.hours}</p>
-                    )}
-                    {shop.holiday != null && (
-                      <p className="mt-0.5 text-xs whitespace-pre-line">{shop.holiday}</p>
-                    )}
                   </div>
 
                   {/* MAPボタン（モーダルを開く・外部へ飛ばない） */}
                   <button
                     type="button"
-                    onClick={() => setOpenModalShopIndex(i)}
+                    onClick={() => openModal(i)}
                     className="mt-4 flex w-full shrink-0 items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
                     style={{ backgroundColor: MAP_BTN_BG }}
                   >
@@ -726,7 +728,7 @@ export default function CouponPage() {
         return (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
-            onClick={() => setOpenModalShopIndex(null)}
+            onClick={closeModal}
             role="dialog"
             aria-modal="true"
             aria-labelledby="modal-title"
@@ -745,7 +747,7 @@ export default function CouponPage() {
                 </h2>
                 <button
                   type="button"
-                  onClick={() => setOpenModalShopIndex(null)}
+                  onClick={closeModal}
                   className="rounded p-1 text-white/90 transition-colors hover:bg-white/20 hover:text-white"
                   aria-label={t.close}
                 >
