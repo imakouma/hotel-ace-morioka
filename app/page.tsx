@@ -2045,9 +2045,6 @@ return (
                     </div>
                   </div>
                   
-                  <div className="bg-yellow-50 rounded-lg p-4 mb-4 border border-yellow-200">
-                    <p className="text-sm text-gray-700 leading-relaxed">{t.freeSpaceNote}</p>
-                  </div>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-[#3E8668] rounded-full mr-3 mt-2 shrink-0"></span>
@@ -2077,6 +2074,11 @@ return (
                       {t.souvenirVending2}
                     </li>
                   </ul>
+                  
+                  {/* 注意書き */}
+                  <div className="bg-yellow-50 rounded-lg p-4 mt-4 border border-yellow-200">
+                    <p className="text-sm text-gray-700 leading-relaxed">{t.freeSpaceNote}</p>
+                  </div>
                 </div>
 
                 {/* 2F */}
