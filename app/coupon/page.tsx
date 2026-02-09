@@ -46,12 +46,6 @@ const shopModalImages: string[][] = [
   ],
 ];
 
-/** モーダル用の店舗説明文（参考画像の雰囲気に合わせる） */
-const shopModalDescriptions = [
-  "配布のクーポン券持参または、この画面の提示で岩手名物盛岡冷麺(ハーフ)か前沢牛60gどちらか無料!!",
-  "注文時スタッフに提示でファーストドリンクかお刺身三点盛り人数分無料。",
-  "配布のクーポン券持参または、この画面の提示でファーストドリンクかお刺身三点盛り人数分無料！",
-];
 
 /** クーポンページの多言語翻訳 */
 const couponTranslations: Record<
@@ -71,6 +65,22 @@ const couponTranslations: Record<
     tel: string;
     showLargerMap: string;
     close: string;
+    holidayLabel: string;
+    shopModalDescription1: string;
+    shopModalDescription2: string;
+    shopModalDescription3: string;
+    shop1Name: string;
+    shop1Hours: string;
+    shop1Holiday: string;
+    shop1Address: string;
+    shop2Name: string;
+    shop2Hours: string;
+    shop2Holiday: string;
+    shop2Address: string;
+    shop3Name: string;
+    shop3Hours: string;
+    shop3Holiday: string;
+    shop3Address: string;
   }
 > = {
   ja: {
@@ -88,6 +98,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "拡大地図を表示",
     close: "閉じる",
+    holidayLabel: "定休日：",
+    shopModalDescription1: "配布のクーポン券持参または、この画面の提示で岩手名物盛岡冷麺(ハーフ)か前沢牛60gどちらか無料!!",
+    shopModalDescription2: "注文時スタッフに提示でファーストドリンクかお刺身三点盛り人数分無料。",
+    shopModalDescription3: "配布のクーポン券持参または、この画面の提示でファーストドリンクかお刺身三点盛り人数分無料！",
+    shop1Name: "もりおか炭火居酒屋原価市場",
+    shop1Hours: "16:00～23:00（L.O.22:30）／土日祝 15:00～23:00",
+    shop1Holiday: "年中無休（12/31〜1/1は休み）",
+    shop1Address: "〒020-0022 岩手県盛岡市大通２丁目７−１９ 白崎二番館 2F",
+    shop2Name: "魚処　壱や　大通り店",
+    shop2Hours: "月〜土 18:00〜26:00(LO25:00)\n日曜日 18:00〜24:00",
+    shop2Holiday: "木曜日 定休日",
+    shop2Address: "〒020-0022 岩手県盛岡市大通り２丁目３−１４ 1F",
+    shop3Name: "やみつきホルモン利久　大通り店",
+    shop3Hours: "日・土 11:30～22:30\n月〜金 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "年中無休",
+    shop3Address: "〒020-0022 岩手県盛岡市大通１丁目１０−２１ PIVOT盛岡大通りビル 2 1F",
   },
   en: {
     pageTitle: "Restaurant Coupon",
@@ -104,6 +130,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Show larger map",
     close: "Close",
+    holidayLabel: "Holiday:",
+    shopModalDescription1: "With your coupon ticket or by showing this screen, get either Morioka cold noodles (half size) or Maesawa beef 60g free!!",
+    shopModalDescription2: "Show to staff when ordering to get first drink or 3-piece sashimi platter free per person.",
+    shopModalDescription3: "With your coupon ticket or by showing this screen, get first drink or 3-piece sashimi platter free per person!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (L.O. 22:30) / Weekends & Holidays: 15:00～23:00",
+    shop1Holiday: "Open all year (Closed Dec 31 - Jan 1)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Iwate Prefecture, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori Store",
+    shop2Hours: "Mon-Sat: 18:00～26:00 (L.O. 25:00)\nSunday: 18:00～24:00",
+    shop2Holiday: "Closed on Thursdays",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Iwate Prefecture 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori Store",
+    shop3Hours: "Sun & Sat: 11:30～22:30\nMon-Fri: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Open all year",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Iwate Prefecture, PIVOT Morioka Odori Building 2 1F",
   },
   zh: {
     pageTitle: "餐饮优惠券",
@@ -120,6 +162,22 @@ const couponTranslations: Record<
     tel: "电话",
     showLargerMap: "显示大地图",
     close: "关闭",
+    holidayLabel: "定休日：",
+    shopModalDescription1: "持发放的优惠券或出示此画面，可免费获得岩手名物盛冈冷面（半份）或前泽牛60g任选其一!!",
+    shopModalDescription2: "点餐时向工作人员出示，可免费获得首杯饮品或三片刺身拼盘（按人数）。",
+    shopModalDescription3: "持发放的优惠券或出示此画面，可免费获得首杯饮品或三片刺身拼盘（按人数）！",
+    shop1Name: "盛冈炭火居酒屋原价市场",
+    shop1Hours: "16:00～23:00（最后点餐22:30）／周末及节假日 15:00～23:00",
+    shop1Holiday: "全年无休（12/31～1/1休息）",
+    shop1Address: "〒020-0022 岩手县盛冈市大通2丁目7-19 白崎二番馆 2F",
+    shop2Name: "鱼处 壱や 大通店",
+    shop2Hours: "周一～周六 18:00～26:00（最后点餐25:00）\n周日 18:00～24:00",
+    shop2Holiday: "周四定休",
+    shop2Address: "〒020-0022 岩手县盛冈市大通2丁目3-14 1F",
+    shop3Name: "病みつきホルモン利久 大通店",
+    shop3Hours: "周日・周六 11:30～22:30\n周一～周五 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "全年无休",
+    shop3Address: "〒020-0022 岩手县盛冈市大通1丁目10-21 PIVOT盛冈大通大厦 2 1F",
   },
   "zh-TW": {
     pageTitle: "餐飲優惠券",
@@ -136,6 +194,22 @@ const couponTranslations: Record<
     tel: "電話",
     showLargerMap: "顯示大地圖",
     close: "關閉",
+    holidayLabel: "定休日：",
+    shopModalDescription1: "持發放的優惠券或出示此畫面，可免費獲得岩手名物盛岡冷麵（半份）或前澤牛60g任選其一!!",
+    shopModalDescription2: "點餐時向工作人員出示，可免費獲得首杯飲品或三片刺身拼盤（按人數）。",
+    shopModalDescription3: "持發放的優惠券或出示此畫面，可免費獲得首杯飲品或三片刺身拼盤（按人數）！",
+    shop1Name: "盛岡炭火居酒屋原價市場",
+    shop1Hours: "16:00～23:00（最後點餐22:30）／週末及節假日 15:00～23:00",
+    shop1Holiday: "全年無休（12/31～1/1休息）",
+    shop1Address: "〒020-0022 岩手縣盛岡市大通2丁目7-19 白崎二番館 2F",
+    shop2Name: "魚處 壱や 大通店",
+    shop2Hours: "週一～週六 18:00～26:00（最後點餐25:00）\n週日 18:00～24:00",
+    shop2Holiday: "週四定休",
+    shop2Address: "〒020-0022 岩手縣盛岡市大通2丁目3-14 1F",
+    shop3Name: "病みつきホルモン利久 大通店",
+    shop3Hours: "週日・週六 11:30～22:30\n週一～週五 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "全年無休",
+    shop3Address: "〒020-0022 岩手縣盛岡市大通1丁目10-21 PIVOT盛岡大通大廈 2 1F",
   },
   ko: {
     pageTitle: "식당 쿠폰",
@@ -152,6 +226,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "지도 크게 보기",
     close: "닫기",
+    holidayLabel: "정기 휴일:",
+    shopModalDescription1: "배포 쿠폰을 지참하거나 이 화면을 제시하면 이와테 명물 모리오카 냉면(하프) 또는 마에사와 소고기 60g 중 하나를 무료로 받을 수 있습니다!!",
+    shopModalDescription2: "주문 시 스태프에게 제시하면 첫 음료 또는 사시미 3점 모둠을 인원수만큼 무료로 받을 수 있습니다.",
+    shopModalDescription3: "배포 쿠폰을 지참하거나 이 화면을 제시하면 첫 음료 또는 사시미 3점 모둠을 인원수만큼 무료로 받을 수 있습니다!",
+    shop1Name: "모리오카 숯불 이자카야 원가 시장",
+    shop1Hours: "16:00～23:00（마지막 주문 22:30）／주말 및 공휴일 15:00～23:00",
+    shop1Holiday: "연중 무휴（12/31～1/1 휴무）",
+    shop1Address: "〒020-0022 이와테현 모리오카시 오도리 2정목 7-19 시라사키 니반칸 2F",
+    shop2Name: "어처 이치야 오도리점",
+    shop2Hours: "월～토 18:00～26:00（마지막 주문 25:00）\n일요일 18:00～24:00",
+    shop2Holiday: "목요일 정기 휴무",
+    shop2Address: "〒020-0022 이와테현 모리오카시 오도리 2정목 3-14 1F",
+    shop3Name: "야미츠키 호르몬 리큐 오도리점",
+    shop3Hours: "일・토 11:30～22:30\n월～금 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "연중 무휴",
+    shop3Address: "〒020-0022 이와테현 모리오카시 오도리 1정목 10-21 PIVOT 모리오카 오도리 빌딩 2 1F",
   },
   fr: {
     pageTitle: "Coupon restaurant",
@@ -168,6 +258,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Agrandir la carte",
     close: "Fermer",
+    holidayLabel: "Jours de fermeture :",
+    shopModalDescription1: "Avec votre coupon ou en montrant cet écran, obtenez gratuitement soit des nouilles froides de Morioka (demi-portion) ou 60g de bœuf Maesawa!!",
+    shopModalDescription2: "Montrez au personnel lors de la commande pour obtenir une première boisson ou un assortiment de sashimi (3 pièces) gratuit par personne.",
+    shopModalDescription3: "Avec votre coupon ou en montrant cet écran, obtenez une première boisson ou un assortiment de sashimi (3 pièces) gratuit par personne!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (Dernière commande 22:30) / Week-ends et jours fériés : 15:00～23:00",
+    shop1Holiday: "Ouvert toute l'année (Fermé du 31 déc au 1er jan)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Préfecture d'Iwate, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori",
+    shop2Hours: "Lun-Sam : 18:00～26:00 (Dernière commande 25:00)\nDimanche : 18:00～24:00",
+    shop2Holiday: "Fermé le jeudi",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Préfecture d'Iwate 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori",
+    shop3Hours: "Dim & Sam : 11:30～22:30\nLun-Ven : 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Ouvert toute l'année",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Préfecture d'Iwate, Bâtiment PIVOT Morioka Odori 2 1F",
   },
   de: {
     pageTitle: "Restaurant-Gutschein",
@@ -184,6 +290,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Karte vergrößern",
     close: "Schließen",
+    holidayLabel: "Ruhetag:",
+    shopModalDescription1: "Mit Ihrem Gutschein oder durch Zeigen dieses Bildschirms erhalten Sie kostenlos entweder Morioka-Kaltnudeln (halbe Portion) oder 60g Maesawa-Rindfleisch!!",
+    shopModalDescription2: "Zeigen Sie dem Personal beim Bestellen, um ein erstes Getränk oder eine Sashimi-Platte (3 Stück) kostenlos pro Person zu erhalten.",
+    shopModalDescription3: "Mit Ihrem Gutschein oder durch Zeigen dieses Bildschirms erhalten Sie ein erstes Getränk oder eine Sashimi-Platte (3 Stück) kostenlos pro Person!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (Letzte Bestellung 22:30) / Wochenenden & Feiertage: 15:00～23:00",
+    shop1Holiday: "Ganzjährig geöffnet (Geschlossen 31. Dez - 1. Jan)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Präfektur Iwate, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori",
+    shop2Hours: "Mo-Sa: 18:00～26:00 (Letzte Bestellung 25:00)\nSo: 18:00～24:00",
+    shop2Holiday: "Donnerstags geschlossen",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Präfektur Iwate 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori",
+    shop3Hours: "So & Sa: 11:30～22:30\nMo-Fr: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Ganzjährig geöffnet",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Präfektur Iwate, PIVOT Morioka Odori Gebäude 2 1F",
   },
   es: {
     pageTitle: "Cupón de restaurante",
@@ -200,6 +322,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Ver mapa más grande",
     close: "Cerrar",
+    holidayLabel: "Día de descanso:",
+    shopModalDescription1: "Con su cupón o mostrando esta pantalla, obtenga gratis fideos fríos de Morioka (media porción) o 60g de carne de res Maesawa!!",
+    shopModalDescription2: "Muestre al personal al hacer el pedido para obtener una primera bebida o un plato de sashimi (3 piezas) gratis por persona.",
+    shopModalDescription3: "Con su cupón o mostrando esta pantalla, obtenga una primera bebida o un plato de sashimi (3 piezas) gratis por persona!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (Último pedido 22:30) / Fines de semana y festivos: 15:00～23:00",
+    shop1Holiday: "Abierto todo el año (Cerrado 31 dic - 1 ene)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Prefectura de Iwate, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori",
+    shop2Hours: "Lun-Sáb: 18:00～26:00 (Último pedido 25:00)\nDom: 18:00～24:00",
+    shop2Holiday: "Cerrado los jueves",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Prefectura de Iwate 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori",
+    shop3Hours: "Dom & Sáb: 11:30～22:30\nLun-Vie: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Abierto todo el año",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Prefectura de Iwate, Edificio PIVOT Morioka Odori 2 1F",
   },
   it: {
     pageTitle: "Coupon ristorante",
@@ -216,6 +354,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Visualizza mappa più grande",
     close: "Chiudi",
+    holidayLabel: "Giorno di chiusura:",
+    shopModalDescription1: "Con il tuo coupon o mostrando questo schermo, ottieni gratis noodles freddi di Morioka (mezza porzione) o 60g di manzo Maesawa!!",
+    shopModalDescription2: "Mostra al personale quando ordini per ottenere una prima bevanda o un piatto di sashimi (3 pezzi) gratis a persona.",
+    shopModalDescription3: "Con il tuo coupon o mostrando questo schermo, ottieni una prima bevanda o un piatto di sashimi (3 pezzi) gratis a persona!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (Ultimo ordine 22:30) / Weekend e festivi: 15:00～23:00",
+    shop1Holiday: "Aperto tutto l'anno (Chiuso 31 dic - 1 gen)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Prefettura di Iwate, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori",
+    shop2Hours: "Lun-Sab: 18:00～26:00 (Ultimo ordine 25:00)\nDom: 18:00～24:00",
+    shop2Holiday: "Chiuso il giovedì",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Prefettura di Iwate 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori",
+    shop3Hours: "Dom & Sab: 11:30～22:30\nLun-Ven: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Aperto tutto l'anno",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Prefettura di Iwate, Edificio PIVOT Morioka Odori 2 1F",
   },
   th: {
     pageTitle: "คูปองร้านอาหาร",
@@ -232,6 +386,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "แสดงแผนที่ขนาดใหญ่",
     close: "ปิด",
+    holidayLabel: "วันหยุด:",
+    shopModalDescription1: "นำคูปองมาหรือแสดงหน้าจอนี้ รับบะหมี่เย็นโมริโอกะ (ครึ่งส่วน) หรือเนื้อเมะซาวะ 60g ฟรี!!",
+    shopModalDescription2: "แสดงให้พนักงานเมื่อสั่งอาหารเพื่อรับเครื่องดื่มแรกหรือซาชิมิ 3 ชิ้น ฟรีต่อคน",
+    shopModalDescription3: "นำคูปองมาหรือแสดงหน้าจอนี้ รับเครื่องดื่มแรกหรือซาชิมิ 3 ชิ้น ฟรีต่อคน!",
+    shop1Name: "โมริโอกะ ซุมิบิ อิซากายะ เก็งกะ อิชิบะ",
+    shop1Hours: "16:00～23:00 (สั่งสุดท้าย 22:30) / วันหยุดสุดสัปดาห์และวันหยุดนักขัตฤกษ์: 15:00～23:00",
+    shop1Holiday: "เปิดทุกวัน (ปิด 31 ธ.ค. - 1 ม.ค.)",
+    shop1Address: "〒020-0022 2-7-19 โอโดริ โมริโอกะ จังหวัดอิวาเตะ ชิราซากิ นิบังคัง 2F",
+    shop2Name: "ซากานะ โดโคโระ อิชิยะ โอโดริ",
+    shop2Hours: "จ-ส: 18:00～26:00 (สั่งสุดท้าย 25:00)\nอา: 18:00～24:00",
+    shop2Holiday: "ปิดทุกวันพฤหัสบดี",
+    shop2Address: "〒020-0022 2-3-14 โอโดริ โมริโอกะ จังหวัดอิวาเตะ 1F",
+    shop3Name: "ยามิตสึกิ โฮรุมง ริคิว โอโดริ",
+    shop3Hours: "อา & ส: 11:30～22:30\nจ-ศ: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "เปิดทุกวัน",
+    shop3Address: "〒020-0022 1-10-21 โอโดริ โมริโอกะ จังหวัดอิวาเตะ อาคาร PIVOT โมริโอกะ โอโดริ 2 1F",
   },
   vi: {
     pageTitle: "Phiếu giảm giá nhà hàng",
@@ -248,6 +418,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Hiện bản đồ lớn hơn",
     close: "Đóng",
+    holidayLabel: "Ngày nghỉ:",
+    shopModalDescription1: "Mang theo phiếu hoặc hiển thị màn hình này để nhận miễn phí mì lạnh Morioka (nửa phần) hoặc 60g thịt bò Maesawa!!",
+    shopModalDescription2: "Hiển thị cho nhân viên khi đặt hàng để nhận đồ uống đầu tiên hoặc đĩa sashimi (3 miếng) miễn phí mỗi người.",
+    shopModalDescription3: "Mang theo phiếu hoặc hiển thị màn hình này để nhận đồ uống đầu tiên hoặc đĩa sashimi (3 miếng) miễn phí mỗi người!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (Đặt món cuối 22:30) / Cuối tuần và ngày lễ: 15:00～23:00",
+    shop1Holiday: "Mở quanh năm (Đóng 31/12 - 1/1)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Tỉnh Iwate, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori",
+    shop2Hours: "T2-T7: 18:00～26:00 (Đặt món cuối 25:00)\nCN: 18:00～24:00",
+    shop2Holiday: "Đóng vào thứ Năm",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Tỉnh Iwate 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori",
+    shop3Hours: "CN & T7: 11:30～22:30\nT2-T6: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Mở quanh năm",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Tỉnh Iwate, Tòa nhà PIVOT Morioka Odori 2 1F",
   },
   id: {
     pageTitle: "Kupon restoran",
@@ -264,6 +450,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Tampilkan peta lebih besar",
     close: "Tutup",
+    holidayLabel: "Hari libur:",
+    shopModalDescription1: "Dengan kupon Anda atau dengan menampilkan layar ini, dapatkan gratis mie dingin Morioka (setengah porsi) atau 60g daging sapi Maesawa!!",
+    shopModalDescription2: "Tunjukkan kepada staf saat memesan untuk mendapatkan minuman pertama atau piring sashimi (3 potong) gratis per orang.",
+    shopModalDescription3: "Dengan kupon Anda atau dengan menampilkan layar ini, dapatkan minuman pertama atau piring sashimi (3 potong) gratis per orang!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (Pesanan terakhir 22:30) / Akhir pekan & hari libur: 15:00～23:00",
+    shop1Holiday: "Buka sepanjang tahun (Tutup 31 Des - 1 Jan)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Prefektur Iwate, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori",
+    shop2Hours: "Sen-Sab: 18:00～26:00 (Pesanan terakhir 25:00)\nMin: 18:00～24:00",
+    shop2Holiday: "Tutup pada hari Kamis",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Prefektur Iwate 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori",
+    shop3Hours: "Min & Sab: 11:30～22:30\nSen-Jum: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Buka sepanjang tahun",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Prefektur Iwate, Gedung PIVOT Morioka Odori 2 1F",
   },
   pt: {
     pageTitle: "Cupom de restaurante",
@@ -280,6 +482,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Mostrar mapa maior",
     close: "Fechar",
+    holidayLabel: "Dia de descanso:",
+    shopModalDescription1: "Com seu cupom ou mostrando esta tela, obtenha gratuitamente macarrão frio de Morioka (meia porção) ou 60g de carne bovina Maesawa!!",
+    shopModalDescription2: "Mostre à equipe ao fazer o pedido para obter uma primeira bebida ou prato de sashimi (3 peças) grátis por pessoa.",
+    shopModalDescription3: "Com seu cupom ou mostrando esta tela, obtenha uma primeira bebida ou prato de sashimi (3 peças) grátis por pessoa!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (Último pedido 22:30) / Fins de semana e feriados: 15:00～23:00",
+    shop1Holiday: "Aberto o ano todo (Fechado 31 dez - 1 jan)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Prefeitura de Iwate, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori",
+    shop2Hours: "Seg-Sáb: 18:00～26:00 (Último pedido 25:00)\nDom: 18:00～24:00",
+    shop2Holiday: "Fechado às quintas-feiras",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Prefeitura de Iwate 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori",
+    shop3Hours: "Dom & Sáb: 11:30～22:30\nSeg-Sex: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Aberto o ano todo",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Prefeitura de Iwate, Edifício PIVOT Morioka Odori 2 1F",
   },
   tl: {
     pageTitle: "Coupon ng restaurant",
@@ -296,6 +514,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Ipakita ang mas malaking mapa",
     close: "Isara",
+    holidayLabel: "Araw ng pahinga:",
+    shopModalDescription1: "Sa iyong coupon o sa pagpapakita ng screen na ito, makakuha ng libreng malamig na noodles ng Morioka (kalahating bahagi) o 60g ng karne ng baka na Maesawa!!",
+    shopModalDescription2: "Ipakita sa staff kapag umorder upang makakuha ng unang inumin o plato ng sashimi (3 piraso) libre bawat tao.",
+    shopModalDescription3: "Sa iyong coupon o sa pagpapakita ng screen na ito, makakuha ng unang inumin o plato ng sashimi (3 piraso) libre bawat tao!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (Huling order 22:30) / Weekend at holidays: 15:00～23:00",
+    shop1Holiday: "Bukas buong taon (Sarado Dis 31 - Ene 1)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Prepektura ng Iwate, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori",
+    shop2Hours: "Lun-Sab: 18:00～26:00 (Huling order 25:00)\nDom: 18:00～24:00",
+    shop2Holiday: "Sarado tuwing Huwebes",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Prepektura ng Iwate 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori",
+    shop3Hours: "Dom & Sab: 11:30～22:30\nLun-Biy: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Bukas buong taon",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Prepektura ng Iwate, Gusali PIVOT Morioka Odori 2 1F",
   },
   ms: {
     pageTitle: "Kupon restoran",
@@ -312,6 +546,22 @@ const couponTranslations: Record<
     tel: "TEL",
     showLargerMap: "Tunjukkan peta lebih besar",
     close: "Tutup",
+    holidayLabel: "Hari cuti:",
+    shopModalDescription1: "Dengan kupon anda atau dengan menunjukkan skrin ini, dapatkan mi sejuk Morioka (separuh bahagian) atau 60g daging lembu Maesawa percuma!!",
+    shopModalDescription2: "Tunjukkan kepada kakitangan semasa membuat pesanan untuk mendapatkan minuman pertama atau pinggan sashimi (3 keping) percuma setiap orang.",
+    shopModalDescription3: "Dengan kupon anda atau dengan menunjukkan skrin ini, dapatkan minuman pertama atau pinggan sashimi (3 keping) percuma setiap orang!",
+    shop1Name: "Morioka Sumibi Izakaya Genka Ichiba",
+    shop1Hours: "16:00～23:00 (Pesanan terakhir 22:30) / Hujung minggu & cuti: 15:00～23:00",
+    shop1Holiday: "Buka sepanjang tahun (Tutup 31 Dis - 1 Jan)",
+    shop1Address: "〒020-0022 2-7-19 Odori, Morioka, Wilayah Iwate, Shirasaki Niban-kan 2F",
+    shop2Name: "Sakana Dokoro Ichiya Odori",
+    shop2Hours: "Isn-Sab: 18:00～26:00 (Pesanan terakhir 25:00)\nAhad: 18:00～24:00",
+    shop2Holiday: "Tutup pada hari Khamis",
+    shop2Address: "〒020-0022 2-3-14 Odori, Morioka, Wilayah Iwate 1F",
+    shop3Name: "Yamitsuki Horumon Rikyu Odori",
+    shop3Hours: "Ahad & Sab: 11:30～22:30\nIsn-Jum: 11:30～14:30, 17:00～22:30",
+    shop3Holiday: "Buka sepanjang tahun",
+    shop3Address: "〒020-0022 1-10-21 Odori, Morioka, Wilayah Iwate, Bangunan PIVOT Morioka Odori 2 1F",
   },
 };
 
@@ -606,7 +856,22 @@ export default function CouponPage() {
         {/* 3店舗クーポンカード（MAPボタン下端揃え） */}
         <section className="grid grid-cols-1 gap-6 md:grid-cols-3 md:items-stretch">
           {shopsBase.map((shop, i) => {
-            const name = shopNames[shop.nameKey] ?? "";
+            const name = 
+              i === 0 ? t.shop1Name :
+              i === 1 ? t.shop2Name :
+              t.shop3Name;
+            const hours = 
+              i === 0 ? t.shop1Hours :
+              i === 1 ? t.shop2Hours :
+              t.shop3Hours;
+            const holiday = 
+              i === 0 ? t.shop1Holiday :
+              i === 1 ? t.shop2Holiday :
+              t.shop3Holiday;
+            const address = 
+              i === 0 ? t.shop1Address :
+              i === 1 ? t.shop2Address :
+              t.shop3Address;
             const couponContent =
               i === 0 ? (
                 <>
@@ -675,16 +940,10 @@ export default function CouponPage() {
                   <div className="min-h-0 flex-1">
                     {shop.branches.map((b, j) => (
                       <div key={j} className={j > 0 ? "mt-3 pt-3 border-t border-gray-200" : ""}>
-                        {"name" in b && b.name != null && (
-                          <p className="font-semibold text-gray-900">{b.name}</p>
-                        )}
-                        {"hours" in b && b.hours != null && (
-                          <p className="mt-1 text-xs whitespace-pre-line">{b.hours}</p>
-                        )}
-                        {"holiday" in b && b.holiday != null && (
-                          <p className="mt-0.5 text-xs">定休日：{b.holiday}</p>
-                        )}
-                        <p className="mt-1">{b.address}</p>
+                        <p className="font-semibold text-gray-900">{name}</p>
+                        <p className="mt-1 text-xs whitespace-pre-line">{hours}</p>
+                        <p className="mt-0.5 text-xs">{t.holidayLabel}{holiday}</p>
+                        <p className="mt-1">{address}</p>
                         <p className="mt-0.5">{t.tel} {b.tel}</p>
                         {"validity" in b && b.validity != null && typeof b.validity === "string" && (
                           <p className="mt-1 text-xs">{b.validity}</p>
@@ -720,9 +979,27 @@ export default function CouponPage() {
       {/* 店舗詳細モーダル（MAP押下時・外部へ飛ばず画面内で表示） */}
       {openModalShopIndex !== null && (() => {
         const shop = shopsBase[openModalShopIndex];
-        const modalName = shopNames[shopsBase[openModalShopIndex].nameKey] ?? "";
+        const modalName = 
+          openModalShopIndex === 0 ? t.shop1Name :
+          openModalShopIndex === 1 ? t.shop2Name :
+          t.shop3Name;
         const modalImages = shopModalImages[openModalShopIndex] ?? [];
-        const description = shopModalDescriptions[openModalShopIndex];
+        const description = 
+          openModalShopIndex === 0 ? t.shopModalDescription1 :
+          openModalShopIndex === 1 ? t.shopModalDescription2 :
+          t.shopModalDescription3;
+        const modalHours = 
+          openModalShopIndex === 0 ? t.shop1Hours :
+          openModalShopIndex === 1 ? t.shop2Hours :
+          t.shop3Hours;
+        const modalHoliday = 
+          openModalShopIndex === 0 ? t.shop1Holiday :
+          openModalShopIndex === 1 ? t.shop2Holiday :
+          t.shop3Holiday;
+        const modalAddress = 
+          openModalShopIndex === 0 ? t.shop1Address :
+          openModalShopIndex === 1 ? t.shop2Address :
+          t.shop3Address;
         return (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
@@ -880,17 +1157,11 @@ export default function CouponPage() {
                         className={`min-w-0 ${branchIndex > 0 ? "mt-6 border-t border-gray-200 pt-4" : "mt-4 border-t border-gray-200 pt-4"}`}
                       >
                         <div className="text-sm text-gray-900">
-                          {"name" in branch && branch.name != null && (
-                            <p className="font-semibold">{branch.name}</p>
-                          )}
-                          <p className="mt-1">{branch.address}</p>
+                          <p className="font-semibold">{modalName}</p>
+                          <p className="mt-1">{modalAddress}</p>
                           <p className="mt-1">{t.tel} {branch.tel}</p>
-                          {"hours" in branch && branch.hours != null && (
-                            <p className="mt-2 text-xs text-gray-600 whitespace-pre-line">{branch.hours}</p>
-                          )}
-                          {"holiday" in branch && branch.holiday != null && (
-                            <p className="mt-0.5 text-xs text-gray-600 whitespace-pre-line">{branch.holiday}</p>
-                          )}
+                          <p className="mt-2 text-xs text-gray-600 whitespace-pre-line">{modalHours}</p>
+                          <p className="mt-0.5 text-xs text-gray-600 whitespace-pre-line">{t.holidayLabel}{modalHoliday}</p>
                         </div>
                         {/* 各店舗のミニマップ（見切れ防止のためmin-w-0と十分な高さを確保） */}
                         <div className="mt-3 w-full min-w-0 overflow-hidden rounded-lg border border-gray-200 bg-gray-100">
