@@ -115,6 +115,8 @@ const translations = {
     parkingNote4: '※カーナビ検索の場合は022-223-3863の番号を入力して下さい。',
     officialHP: '公式HPはこちら',
     preparing: '詳細情報は準備中です。',
+    dinnerCouponLine1: '今夜のご夕食にどうぞ',
+    dinnerCouponLine2: 'お得な飲食店クーポン',
   },
   en: {
     hotelName: '',
@@ -222,6 +224,8 @@ const translations = {
     parkingNote4: '*For car navigation search, please enter 022-223-3863.',
     officialHP: 'Official Website',
     preparing: 'Detailed information is being prepared.',
+    dinnerCouponLine1: 'For tonight\'s dinner',
+    dinnerCouponLine2: 'Great restaurant coupons',
   },
   zh: {
     hotelName: '',
@@ -1650,14 +1654,6 @@ return (
                   </button>
                 ))}
               </div>
-
-              {/* 飲食店クーポンボタン（内部ページ） */}
-              <Link
-                href="/coupon"
-                className="bg-red-500 hover:bg-red-600 text-white px-1 sm:px-1.5 md:px-2.5 lg:px-3 py-0.5 sm:py-1 md:py-1.5 rounded-md text-[7px] sm:text-[9px] md:text-xs lg:text-sm font-semibold transition-colors whitespace-nowrap shadow-sm inline-block"
-              >
-                {t.restaurantCoupon}
-              </Link>
             </div>
           </div>
         </div>
@@ -1831,6 +1827,47 @@ return (
                 </button>
               )
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 飲食店クーポンとグリーンハウスボタン */}
+      <section className="bg-white py-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            {/* 飲食店クーポンボタン */}
+            <Link
+              href="/coupon"
+              className="bg-red-500 hover:bg-red-600 text-white p-4 sm:p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px]"
+            >
+              <div className="text-center">
+                <div className="text-sm sm:text-base md:text-lg font-semibold leading-tight mb-1">
+                  {t.dinnerCouponLine1}
+                </div>
+                <div className="text-xs sm:text-sm md:text-base font-semibold leading-tight">
+                  {t.dinnerCouponLine2}
+                </div>
+              </div>
+            </Link>
+
+            {/* グリーンハウスボタン */}
+            <a
+              href="https://share.google/07ahmvGKgGyn44mSQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#3E8668] hover:bg-[#2D6550] text-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] relative"
+            >
+              <div className="absolute inset-0 p-6 sm:p-8">
+                <Image
+                  src="/main-page/icon-matome/logo.svg"
+                  alt="GREENHOUSE"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+                  unoptimized
+                />
+              </div>
+            </a>
           </div>
         </div>
       </section>
