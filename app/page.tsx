@@ -547,7 +547,6 @@ const translations = {
     souvenirVending1: 'Distributeur automatique local (Souvenirs d\'Iwate)',
     souvenirVending2: 'Distributeur automatique local (Souvenirs)',
     vendingMachineNote: 'Les distributeurs automatiques sont également disponibles au bâtiment annexe 3F et 6F',
-    laundry: 'Laverie automatique',
     laundryHours: 'Heures disponibles: 10:00～22:00',
   },
   de: {
@@ -648,7 +647,6 @@ const translations = {
     souvenirVending1: 'Lokaler Automat (Iwate-Souvenirs)',
     souvenirVending2: 'Lokaler Automat (Souvenirs)',
     vendingMachineNote: 'Automaten sind auch im Nebengebäude 3F und 6F verfügbar',
-    laundry: 'Münzwaschsalon',
     laundryHours: 'Verfügbare Stunden: 10:00～22:00',
   },
   es: {
@@ -749,7 +747,6 @@ const translations = {
     souvenirVending1: 'Máquina expendedora local (Souvenirs de Iwate)',
     souvenirVending2: 'Máquina expendedora local (Souvenirs)',
     vendingMachineNote: 'Las máquinas expendedoras también están disponibles en el edificio anexo 3F y 6F',
-    laundry: 'Lavandería de monedas',
     laundryHours: 'Horas disponibles: 10:00～22:00',
   },
   it: {
@@ -850,7 +847,6 @@ const translations = {
     souvenirVending1: 'Distributore automatico locale (Souvenir di Iwate)',
     souvenirVending2: 'Distributore automatico locale (Souvenir)',
     vendingMachineNote: 'I distributori automatici sono disponibili anche nell\'edificio annesso 3F e 6F',
-    laundry: 'Lavanderia a gettoni',
     laundryHours: 'Ore disponibili: 10:00～22:00',
   },
   th: {
@@ -951,7 +947,6 @@ const translations = {
     souvenirVending1: 'ตู้กดสินค้าท้องถิ่น（ของฝากอิวาเตะ）',
     souvenirVending2: 'ตู้กดสินค้าท้องถิ่น（ของฝาก）',
     vendingMachineNote: 'ตู้กดสินค้ามีที่อาคารเสริม 3F・6F ด้วย',
-    laundry: 'ร้านซักผ้าเหรียญ',
     laundryHours: 'เวลาทำการ 10:00～22:00',
   },
   vi: {
@@ -1052,7 +1047,6 @@ const translations = {
     souvenirVending1: 'Máy bán hàng tự động địa phương（Đặc sản Iwate）',
     souvenirVending2: 'Máy bán hàng tự động địa phương（Đặc sản）',
     vendingMachineNote: 'Máy bán hàng tự động cũng có ở tòa nhà phụ 3F・6F',
-    laundry: 'Tiệm giặt tự động',
     laundryHours: 'Giờ sử dụng 10:00～22:00',
   },
   id: {
@@ -1153,7 +1147,6 @@ const translations = {
     souvenirVending1: 'Mesin penjual otomatis lokal（Oleh-oleh Iwate）',
     souvenirVending2: 'Mesin penjual otomatis lokal（Oleh-oleh）',
     vendingMachineNote: 'Mesin penjual otomatis juga tersedia di gedung tambahan 3F dan 6F',
-    laundry: 'Binatu koin',
     laundryHours: 'Jam tersedia: 10:00～22:00',
   },
   tl: {
@@ -1254,7 +1247,6 @@ const translations = {
     souvenirVending1: 'Lokal na vending machine（Iwate souvenirs）',
     souvenirVending2: 'Lokal na vending machine（Souvenirs）',
     vendingMachineNote: 'Ang vending machines ay available din sa annex building 3F at 6F',
-    laundry: 'Coin laundry',
     laundryHours: 'Available na oras: 10:00～22:00',
   },
   ms: {
@@ -1355,7 +1347,6 @@ const translations = {
     souvenirVending1: 'Mesin layan diri tempatan（Cenderamata Iwate）',
     souvenirVending2: 'Mesin layan diri tempatan（Cenderamata）',
     vendingMachineNote: 'Mesin layan diri juga tersedia di bangunan tambahan 3F dan 6F',
-    laundry: 'Dobi syiling',
     laundryHours: 'Waktu tersedia: 10:00～22:00',
   },
   pt: {
@@ -1456,7 +1447,6 @@ const translations = {
     souvenirVending1: 'Máquina de venda automática local (Lembranças de Iwate)',
     souvenirVending2: 'Máquina de venda automática local (Lembranças)',
     vendingMachineNote: 'As máquinas de venda automática também estão disponíveis no edifício anexo 3F e 6F',
-    laundry: 'Lavanderia de moedas',
     laundryHours: 'Horas disponíveis: 10:00～22:00',
   },
   'zh-TW': {
@@ -1568,7 +1558,6 @@ const translations = {
     souvenirVending1: '當地自動售貨機（岩手特產）',
     souvenirVending2: '當地自動售貨機（特產）',
     vendingMachineNote: '自動售貨機在別館3F・6F也有',
-    laundry: '投幣式洗衣房',
     laundryHours: '使用時間段 10:00～22:00',
   },
 };
