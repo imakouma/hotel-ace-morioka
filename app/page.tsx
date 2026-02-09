@@ -91,6 +91,10 @@ const translations = {
     smoking: '喫煙コーナー',
     wifiTitle: 'Wi-Fi',
     password: 'Password :',
+    wifiAccessPoint: 'アクセスポイントはお部屋に設置の「客室インターネットのご案内」をご覧くださいませ。',
+    copy: 'コピー',
+    wifiCopyNote: '※ボタンをタップするとパスワードをコピーできます',
+    passwordCopied: 'パスワードをコピーしました！',
     lostTitle: 'お忘れ物',
     lostText1: 'お客様がチェックアウトしたあと、手荷物又は携帯品が当ホテルに保管の依頼が無く残置されていた場合、所有者が破棄したものとして当ホテルの規定に基づき処分させていただきます。',
     lostText2: '',
@@ -99,9 +103,29 @@ const translations = {
     lightingDesc: '入室後、入口脇の電源ソケットにお部屋のキーホルダーを差し込む事で室内照明は点灯致します。',
     lightingNote: '※キーを電源ソケットに差し込みます。',
     longstayTitle: '連泊のお客様へ',
+    cleaningHours: '清掃時間は11:00～15:00までとなっております。',
+    cleaningRequest: 'ご清掃をご希望の場合は、ドンデスカードの「清掃して下さい」を11:00までに外側ドアノブへ掛けて頂きますようお願いいたします。',
     sheetExchange: '清掃をご希望の方は緑のマグネット「清掃してください」を明朝9時までに入口ドア廊下側へ貼付してください。',
     noCleaning: '清掃不要の方は青のマグネット「起こさないでください」を入口ドア廊下側へ貼付してください。マグネットが貼られていない場合は清掃を行わず、タオル類のみドア前にご用意いたします。衛生面の観点から清掃は3日に1回（2泊目まではタオル類のみ交換、3泊目は清掃、4泊目以降は繰り返し）となります。',
     parking: '提携駐車場のご案内',
+    parkingAllPrice: 'P1～P5は全て1泊900円（延長30分100円）',
+    parkingMidExit: '※途中出庫の際は課金額が発生します。',
+    parkingInquiry: '※時間帯によっては駐車場車庫がありますのでお問い合わせください。',
+    parkingP1Name: 'P1 ホテルエース駐車場',
+    parkingP2Name: 'P2 リリカ駐車場',
+    parkingP3Name: 'P3 三井のリパーク',
+    parkingP4Name: 'P4 MOSS駐車場',
+    parkingP5Name: 'P5 クロステラス駐車場',
+    parkingUsageTime: '■利用時間：',
+    parkingP1Time: '15:00～翌11:00',
+    parkingP4Time: '16:00～翌11:00',
+    parkingP5Time: '17:00～翌11:00',
+    parkingExtension: '※延長30分100円',
+    parkingHeightLimit: '■車高制限：',
+    parkingP2Height: '2.30mまで',
+    parkingP4Height: '2.50mまで',
+    parkingP5Height: '2.10mまで',
+    parkingReservation: '■事前予約：利用なし',
     parkingFee: '駐車料金',
     heightLimit: '高さ制限',
     hours24: '24h営業',
@@ -200,6 +224,10 @@ const translations = {
     smoking: 'Smoking Area',
     wifiTitle: 'Wi-Fi',
     password: 'Password:',
+    wifiAccessPoint: 'Please check the "Guest Room Internet Guide" installed in your room for the access point.',
+    copy: 'Copy',
+    wifiCopyNote: '※You can copy the password by tapping the button',
+    passwordCopied: 'Password copied!',
     lostTitle: 'Lost & Found',
     lostText1: 'If luggage or personal belongings are left behind at our hotel without a request for storage after checkout, they will be disposed of in accordance with hotel regulations, assuming the owner has discarded them.',
     lostText2: '',
@@ -208,9 +236,29 @@ const translations = {
     lightingDesc: 'After entering the room, insert your room key holder into the power socket next to the entrance to turn on the room lighting.',
     lightingNote: '*Insert the key into the power socket.',
     longstayTitle: 'For Long-term Guests',
+    cleaningHours: 'Cleaning hours are from 11:00 to 15:00.',
+    cleaningRequest: 'If you wish for cleaning, please hang the Dondes card \"Please clean\" on the outside doorknob by 11:00.',
     sheetExchange: 'Guests who wish to exchange sheets, futon covers, and pillowcases, please display the \"WECO Card\" on the bed. We will not exchange them if the card is not displayed. (We will exchange towels and room wear.)',
     noCleaning: 'Guests who do not need cleaning, please display the green \"WECO\" card on the corridor side, which is located on the inside of the entrance door. In that case, we will not clean or enter the room.',
     parking: 'Partner Parking Information',
+    parkingAllPrice: 'P1～P5: All 900 yen per night (Extension: 100 yen per 30 minutes)',
+    parkingMidExit: '※Charges will apply if you exit mid-stay.',
+    parkingInquiry: '※Please inquire as parking may be full depending on the time.',
+    parkingP1Name: 'P1 Hotel Ace Parking',
+    parkingP2Name: 'P2 Ririka Parking',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 MOSS Parking',
+    parkingP5Name: 'P5 Cross Terrace Parking',
+    parkingUsageTime: '■Usage Hours:',
+    parkingP1Time: '15:00～Next day 11:00',
+    parkingP4Time: '16:00～Next day 11:00',
+    parkingP5Time: '17:00～Next day 11:00',
+    parkingExtension: '※Extension: 100 yen per 30 minutes',
+    parkingHeightLimit: '■Height Limit:',
+    parkingP2Height: 'Up to 2.30m',
+    parkingP4Height: 'Up to 2.50m',
+    parkingP5Height: 'Up to 2.10m',
+    parkingReservation: '■Advance Reservation: Not available',
     parkingFee: 'Parking Fee',
     heightLimit: 'Height Limit',
     hours24: 'Open 24h',
@@ -289,6 +337,10 @@ const translations = {
     laundryNote: '※洗衣机/每次200日元 烘干机/10分钟100日元（洗涤剂在前台免费提供）',
     wifiTitle: 'Wi-Fi',
     password: '密码：',
+    wifiAccessPoint: '请查看您房间内设置的「客房互联网指南」以了解接入点。',
+    copy: '复制',
+    wifiCopyNote: '※点击按钮即可复制密码',
+    passwordCopied: '密码已复制！',
     lostTitle: '遗失物品',
     lostText1: '原则上，酒店不会就遗失物品联系客人。',
     lostText2: '如果没有联系，根据遗失物品法，将在3个月后处理。',
@@ -297,9 +349,29 @@ const translations = {
     lightingDesc: '进入房间后，将房间钥匙扣插入入口旁的电源插座即可点亮室内照明。',
     lightingNote: '※将钥匙插入电源插座。',
     longstayTitle: '连住客人须知',
+    cleaningHours: '清扫时间为11:00～15:00。',
+    cleaningRequest: '如需清扫，请在11:00前将Dondes卡"请清扫"挂在门外侧门把手上。',
     sheetExchange: '如需清扫，请在早上9点前将绿色磁铁"请打扫"贴在门外走廊侧。',
     noCleaning: '如不需要清扫，请将蓝色磁铁"请勿打扰"贴在门外走廊侧。如果没有贴磁铁，我们将不进行清扫，仅在门前准备毛巾类物品。出于卫生考虑，清扫为每3天1次（前2晚仅更换毛巾类，第3晚清扫，第4晚以后重复）。',
     parking: '合作停车场信息',
+    parkingAllPrice: 'P1～P5：全部一晚900日元（延长30分钟100日元）',
+    parkingMidExit: '※中途出库时会产生费用。',
+    parkingInquiry: '※根据时间段，停车场可能满库，请咨询。',
+    parkingP1Name: 'P1 盛冈Ace酒店停车场',
+    parkingP2Name: 'P2 利利卡停车场',
+    parkingP3Name: 'P3 三井Re-Park',
+    parkingP4Name: 'P4 MOSS停车场',
+    parkingP5Name: 'P5 Cross Terrace停车场',
+    parkingUsageTime: '■使用时间：',
+    parkingP1Time: '15:00～次日11:00',
+    parkingP4Time: '16:00～次日11:00',
+    parkingP5Time: '17:00～次日11:00',
+    parkingExtension: '※延长30分钟100日元',
+    parkingHeightLimit: '■车高限制：',
+    parkingP2Height: '2.30m以下',
+    parkingP4Height: '2.50m以下',
+    parkingP5Height: '2.10m以下',
+    parkingReservation: '■提前预约：不可用',
     parkingFee: '停车费',
     heightLimit: '高度限制',
     hours24: '24小时营业',
@@ -400,6 +472,10 @@ const translations = {
     laundryNote: '※세탁기/1회 200엔 건조기/10분 100엔 (세제는 프런트에서 무료 배포)',
     wifiTitle: 'Wi-Fi',
     password: '비밀번호:',
+    wifiAccessPoint: '액세스 포인트는 객실에 설치된「객실 인터넷 안내」를 참고해 주세요.',
+    copy: '복사',
+    wifiCopyNote: '※버튼을 탭하면 비밀번호를 복사할 수 있습니다',
+    passwordCopied: '비밀번호를 복사했습니다!',
     lostTitle: '분실물',
     lostText1: '분실물에 대해서는 원칙적으로 호텔에서 연락하지 않습니다.',
     lostText2: '또한 연락이 없는 경우 유실물법에 따라 3개월 경과 후 처분됩니다.',
@@ -408,9 +484,29 @@ const translations = {
     lightingDesc: '입실 후 입구 옆 전원 소켓에 객실 키홀더를 꽂으면 실내 조명이 켜집니다.',
     lightingNote: '※키를 전원 소켓에 꽂습니다.',
     longstayTitle: '연박 고객 안내',
+    cleaningHours: '청소 시간은 11:00～15:00까지입니다.',
+    cleaningRequest: '청소를 원하시는 경우, 돈데스 카드 "청소해 주세요"를 11:00까지 외부 도어 손잡이에 걸어 주시기 바랍니다.',
     sheetExchange: '청소를 희망하시는 분은 초록색 마그넷 "청소해 주세요"를 아침 9시까지 입구 도어 복도 쪽에 부착해 주세요.',
     noCleaning: '청소가 필요 없으신 분은 파란색 마그넷 "깨우지 마세요"를 입구 도어 복도 쪽에 부착해 주세요. 마그넷이 부착되지 않은 경우 청소를 하지 않고 타월류만 도어 앞에 준비합니다. 위생상의 관점에서 청소는 3일에 1회(2박까지는 타월류만 교환, 3박째는 청소, 4박째 이후는 반복)입니다.',
     parking: '제휴 주차장 안내',
+    parkingAllPrice: 'P1～P5 모두 1박 900엔（연장 30분 100엔）',
+    parkingMidExit: '※중간 출고 시 요금이 발생합니다.',
+    parkingInquiry: '※시간대에 따라 주차장이 만차일 수 있으니 문의해 주세요.',
+    parkingP1Name: 'P1 호텔 에이스 주차장',
+    parkingP2Name: 'P2 리리카 주차장',
+    parkingP3Name: 'P3 미쓰이 리파크',
+    parkingP4Name: 'P4 MOSS 주차장',
+    parkingP5Name: 'P5 크로스 테라스 주차장',
+    parkingUsageTime: '■이용 시간：',
+    parkingP1Time: '15:00～다음날 11:00',
+    parkingP4Time: '16:00～다음날 11:00',
+    parkingP5Time: '17:00～다음날 11:00',
+    parkingExtension: '※연장 30분 100엔',
+    parkingHeightLimit: '■차고 제한：',
+    parkingP2Height: '2.30m까지',
+    parkingP4Height: '2.50m까지',
+    parkingP5Height: '2.10m까지',
+    parkingReservation: '■사전 예약：이용 불가',
     parkingFee: '주차 요금',
     heightLimit: '높이 제한',
     hours24: '24시간 영업',
@@ -511,6 +607,10 @@ const translations = {
     laundryNote: '*Détergent, machine à laver/gratuit, sèche-linge/payant (¥100 par 30 minutes)',
     wifiTitle: 'Wi-Fi',
     password: 'Mot de passe:',
+    wifiAccessPoint: 'Veuillez consulter le "Guide Internet de la chambre" installé dans votre chambre pour le point d\'accès.',
+    copy: 'Copier',
+    wifiCopyNote: '※Vous pouvez copier le mot de passe en appuyant sur le bouton',
+    passwordCopied: 'Mot de passe copié !',
     lostTitle: 'Objets trouvés',
     lostText1: 'En principe, l\'hôtel ne vous contactera pas concernant les objets perdus.',
     lostText2: 'Si non contact, les objets seront éliminés après 3 mois conformément à la Loi sur les objets perdus.',
@@ -519,9 +619,29 @@ const translations = {
     lightingDesc: 'Après être entré dans la chambre, insérez le porte-clés de votre chambre dans la prise électrique à côté de l\'entrée pour allumer l\'éclairage de la chambre.',
     lightingNote: '*Insérez la clé dans la prise électrique.',
     longstayTitle: 'Pour les clients longue durée',
+    cleaningHours: 'Les heures de nettoyage sont de 11:00 à 15:00.',
+    cleaningRequest: 'Si vous souhaitez un nettoyage, veuillez accrocher la carte Dondes \"Veuillez nettoyer\" sur la poignée de porte extérieure avant 11:00.',
     sheetExchange: 'Les clients qui souhaitent échanger les draps, housses de futon et taies d\'oreiller, veuillez afficher la \"Carte WECO\" sur le lit. Nous ne les échangerons pas si la carte n\'est pas affichée. (Nous échangerons les serviettes et les vêtements de chambre.)',
     noCleaning: 'Les clients qui n\'ont pas besoin de nettoyage, veuillez afficher la carte verte \"WECO\" du côté du couloir, qui se trouve à l\'intérieur de la porte d\'entrée. Dans ce cas, nous ne nettoierons pas et n\'entrerons pas dans la chambre.',
     parking: 'Informations sur les parkings partenaires',
+    parkingAllPrice: 'P1～P5: Tous 900 yens par nuit (Prolongation: 100 yens par 30 minutes)',
+    parkingMidExit: '※Des frais s\'appliqueront si vous sortez en cours de séjour.',
+    parkingInquiry: '※Veuillez vous renseigner car le parking peut être complet selon l\'heure.',
+    parkingP1Name: 'P1 Parking Hotel Ace',
+    parkingP2Name: 'P2 Parking Ririka',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 Parking MOSS',
+    parkingP5Name: 'P5 Parking Cross Terrace',
+    parkingUsageTime: '■Heures d\'utilisation:',
+    parkingP1Time: '15:00～Le lendemain 11:00',
+    parkingP4Time: '16:00～Le lendemain 11:00',
+    parkingP5Time: '17:00～Le lendemain 11:00',
+    parkingExtension: '※Prolongation: 100 yens par 30 minutes',
+    parkingHeightLimit: '■Limite de hauteur:',
+    parkingP2Height: 'Jusqu\'à 2.30m',
+    parkingP4Height: 'Jusqu\'à 2.50m',
+    parkingP5Height: 'Jusqu\'à 2.10m',
+    parkingReservation: '■Réservation à l\'avance: Non disponible',
     officialHP: 'Site Web officiel',
     preparing: 'Les informations détaillées sont en cours de préparation.',
     dinnerCouponLine1: 'Pour le dîner de ce soir',
@@ -611,6 +731,10 @@ const translations = {
     laundryNote: '*Waschmittel, Waschmaschine/kostenlos, Trockner/gebührenpflichtig (¥100 pro 30 Minuten)',
     wifiTitle: 'Wi-Fi',
     password: 'Passwort:',
+    wifiAccessPoint: 'Bitte überprüfen Sie den "Gästezimmer-Internetführer" in Ihrem Zimmer für den Zugangspunkt.',
+    copy: 'Kopieren',
+    wifiCopyNote: '※Sie können das Passwort durch Tippen auf die Schaltfläche kopieren',
+    passwordCopied: 'Passwort kopiert!',
     lostTitle: 'Fundsachen',
     lostText1: 'Grundsätzlich wird das Hotel Sie nicht bezüglich verlorener Gegenstände kontaktieren.',
     lostText2: 'Wenn kein Kontakt besteht, werden die Gegenstände nach 3 Monaten gemäß dem Fundrecht entsorgt.',
@@ -619,9 +743,29 @@ const translations = {
     lightingDesc: 'Nach dem Betreten des Zimmers stecken Sie den Zimmerschlüsselhalter in die Steckdose neben dem Eingang, um die Raumbeleuchtung einzuschalten.',
     lightingNote: '*Stecken Sie den Schlüssel in die Steckdose.',
     longstayTitle: 'Für Langzeitgäste',
+    cleaningHours: 'Die Reinigungszeiten sind von 11:00 bis 15:00.',
+    cleaningRequest: 'Wenn Sie eine Reinigung wünschen, hängen Sie bitte die Dondes-Karte \"Bitte reinigen\" bis 11:00 an die äußere Türklinke.',
     sheetExchange: 'Gäste, die Bettwäsche, Futonbezüge und Kissenbezüge wechseln möchten, bitte zeigen Sie die \"WECO-Karte\" auf dem Bett. Wir tauschen sie nicht aus, wenn die Karte nicht angezeigt wird. (Wir tauschen Handtücher und Nachtwäsche aus.)',
     noCleaning: 'Gäste, die keine Reinigung benötigen, bitte zeigen Sie die grüne \"WECO\"-Karte auf der Korridorseite, die sich an der Innenseite der Eingangstür befindet. In diesem Fall reinigen wir nicht und betreten das Zimmer nicht.',
     parking: 'Informationen zu Partnerparkhäusern',
+    parkingAllPrice: 'P1～P5: Alle 900 Yen pro Nacht (Verlängerung: 100 Yen pro 30 Minuten)',
+    parkingMidExit: '※Gebühren fallen an, wenn Sie während des Aufenthalts ausfahren.',
+    parkingInquiry: '※Bitte erkundigen Sie sich, da der Parkplatz je nach Tageszeit voll sein kann.',
+    parkingP1Name: 'P1 Hotel Ace Parkplatz',
+    parkingP2Name: 'P2 Ririka Parkplatz',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 MOSS Parkplatz',
+    parkingP5Name: 'P5 Cross Terrace Parkplatz',
+    parkingUsageTime: '■Nutzungszeiten:',
+    parkingP1Time: '15:00～Am nächsten Tag 11:00',
+    parkingP4Time: '16:00～Am nächsten Tag 11:00',
+    parkingP5Time: '17:00～Am nächsten Tag 11:00',
+    parkingExtension: '※Verlängerung: 100 Yen pro 30 Minuten',
+    parkingHeightLimit: '■Höhenbegrenzung:',
+    parkingP2Height: 'Bis zu 2.30m',
+    parkingP4Height: 'Bis zu 2.50m',
+    parkingP5Height: 'Bis zu 2.10m',
+    parkingReservation: '■Vorausbuchung: Nicht verfügbar',
     officialHP: 'Offizielle Website',
     preparing: 'Detaillierte Informationen werden vorbereitet.',
     dinnerCouponLine1: 'Für das Abendessen heute',
@@ -711,6 +855,10 @@ const translations = {
     laundryNote: '*Detergente, lavadora/gratis, secadora/de pago (¥100 por 30 minutos)',
     wifiTitle: 'Wi-Fi',
     password: 'Contraseña:',
+    wifiAccessPoint: 'Por favor, consulte la "Guía de Internet de la Habitación" instalada en su habitación para el punto de acceso.',
+    copy: 'Copiar',
+    wifiCopyNote: '※Puede copiar la contraseña tocando el botón',
+    passwordCopied: '¡Contraseña copiada!',
     lostTitle: 'Objetos perdidos',
     lostText1: 'Como regla, el hotel no se pondrá en contacto con usted sobre objetos perdidos.',
     lostText2: 'Si no hay contacto, los objetos se eliminarán después de 3 meses de acuerdo con la Ley de Objetos Perdidos.',
@@ -719,9 +867,29 @@ const translations = {
     lightingDesc: 'Después de entrar en la habitación, inserte el portallaves de su habitación en el enchufe eléctrico junto a la entrada para encender la iluminación de la habitación.',
     lightingNote: '*Inserte la llave en el enchufe eléctrico.',
     longstayTitle: 'Para huéspedes de larga estancia',
+    cleaningHours: 'Las horas de limpieza son de 11:00 a 15:00.',
+    cleaningRequest: 'Si desea limpieza, por favor cuelgue la tarjeta Dondes \"Por favor limpie\" en el pomo exterior de la puerta antes de las 11:00.',
     sheetExchange: 'Los huéspedes que deseen cambiar las sábanas, fundas de futón y fundas de almohada, por favor muestren la \"Tarjeta WECO\" en la cama. No las cambiaremos si la tarjeta no se muestra. (Cambiaremos toallas y ropa de habitación.)',
     noCleaning: 'Los huéspedes que no necesiten limpieza, por favor muestren la tarjeta verde \"WECO\" en el lado del pasillo, que se encuentra en el interior de la puerta de entrada. En ese caso, no limpiaremos ni entraremos en la habitación.',
     parking: 'Información de aparcamientos asociados',
+    parkingAllPrice: 'P1～P5: Todos 900 yenes por noche (Prolongación: 100 yenes por 30 minutos)',
+    parkingMidExit: '※Se aplicarán cargos si sale durante la estancia.',
+    parkingInquiry: '※Por favor consulte, ya que el estacionamiento puede estar lleno según la hora.',
+    parkingP1Name: 'P1 Estacionamiento Hotel Ace',
+    parkingP2Name: 'P2 Estacionamiento Ririka',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 Estacionamiento MOSS',
+    parkingP5Name: 'P5 Estacionamiento Cross Terrace',
+    parkingUsageTime: '■Horas de uso:',
+    parkingP1Time: '15:00～Al día siguiente 11:00',
+    parkingP4Time: '16:00～Al día siguiente 11:00',
+    parkingP5Time: '17:00～Al día siguiente 11:00',
+    parkingExtension: '※Prolongación: 100 yenes por 30 minutos',
+    parkingHeightLimit: '■Límite de altura:',
+    parkingP2Height: 'Hasta 2.30m',
+    parkingP4Height: 'Hasta 2.50m',
+    parkingP5Height: 'Hasta 2.10m',
+    parkingReservation: '■Reserva anticipada: No disponible',
     officialHP: 'Sitio web oficial',
     preparing: 'La información detallada se está preparando.',
     dinnerCouponLine1: 'Para la cena de esta noche',
@@ -811,6 +979,10 @@ const translations = {
     laundryNote: '*Detergente, lavatrice/gratis, asciugatrice/a pagamento (¥100 per 30 minuti)',
     wifiTitle: 'Wi-Fi',
     password: 'Password:',
+    wifiAccessPoint: 'Si prega di controllare la "Guida Internet della Camera" installata nella vostra camera per il punto di accesso.',
+    copy: 'Copia',
+    wifiCopyNote: '※È possibile copiare la password toccando il pulsante',
+    passwordCopied: 'Password copiata!',
     lostTitle: 'Oggetti smarriti',
     lostText1: 'Di norma, l\'hotel non vi contatterà riguardo agli oggetti smarriti.',
     lostText2: 'Se non c\'è contatto, gli oggetti verranno eliminati dopo 3 mesi secondo la Legge sugli Oggetti Smarriti.',
@@ -819,9 +991,29 @@ const translations = {
     lightingDesc: 'Dopo essere entrati nella camera, inserire il portachiavi della camera nella presa elettrica accanto all\'ingresso per accendere l\'illuminazione della camera.',
     lightingNote: '*Inserire la chiave nella presa elettrica.',
     longstayTitle: 'Per ospiti soggiorno prolungato',
+    cleaningHours: 'Le ore di pulizia sono dalle 11:00 alle 15:00.',
+    cleaningRequest: 'Se desiderate la pulizia, si prega di appendere la carta Dondes \"Si prega di pulire\" sulla maniglia esterna della porta entro le 11:00.',
     sheetExchange: 'Gli ospiti che desiderano cambiare lenzuola, coperture futon e federe, si prega di mostrare la \"Carta WECO\" sul letto. Non le cambieremo se la carta non viene mostrata. (Cambieremo asciugamani e abbigliamento da camera.)',
     noCleaning: 'Gli ospiti che non necessitano di pulizia, si prega di mostrare la carta verde \"WECO\" sul lato del corridoio, che si trova all\'interno della porta d\'ingresso. In tal caso, non puliremo né entreremo nella camera.',
     parking: 'Informazioni sui parcheggi partner',
+    parkingAllPrice: 'P1～P5: Tutti 900 yen a notte (Prolungamento: 100 yen per 30 minuti)',
+    parkingMidExit: '※Verranno applicate tariffe se uscite durante il soggiorno.',
+    parkingInquiry: '※Si prega di informarsi, in quanto il parcheggio può essere pieno a seconda dell\'ora.',
+    parkingP1Name: 'P1 Parcheggio Hotel Ace',
+    parkingP2Name: 'P2 Parcheggio Ririka',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 Parcheggio MOSS',
+    parkingP5Name: 'P5 Parcheggio Cross Terrace',
+    parkingUsageTime: '■Orari di utilizzo:',
+    parkingP1Time: '15:00～Il giorno successivo 11:00',
+    parkingP4Time: '16:00～Il giorno successivo 11:00',
+    parkingP5Time: '17:00～Il giorno successivo 11:00',
+    parkingExtension: '※Prolungamento: 100 yen per 30 minuti',
+    parkingHeightLimit: '■Limite di altezza:',
+    parkingP2Height: 'Fino a 2.30m',
+    parkingP4Height: 'Fino a 2.50m',
+    parkingP5Height: 'Fino a 2.10m',
+    parkingReservation: '■Prenotazione anticipata: Non disponibile',
     officialHP: 'Sito web ufficiale',
     preparing: 'Le informazioni dettagliate sono in preparazione.',
     dinnerCouponLine1: 'Per la cena di stasera',
@@ -911,6 +1103,10 @@ const translations = {
     laundryNote: '※เครื่องซักผ้า/ครั้งละ 200 เยน เครื่องอบผ้า/10 นาที 100 เยน (ผงซักฟอกแจกฟรีที่แผนกต้อนรับ)',
     wifiTitle: 'Wi-Fi',
     password: 'รหัสผ่าน:',
+    wifiAccessPoint: 'กรุณาตรวจสอบ "คู่มืออินเทอร์เน็ตห้องพัก" ที่ติดตั้งในห้องของคุณสำหรับจุดเชื่อมต่อ',
+    copy: 'คัดลอก',
+    wifiCopyNote: '※คุณสามารถคัดลอกรหัสผ่านโดยแตะที่ปุ่ม',
+    passwordCopied: 'คัดลอกรหัสผ่านแล้ว!',
     lostTitle: 'ของหาย',
     lostText1: 'โดยหลักการแล้ว ทางโรงแรมจะไม่ติดต่อเกี่ยวกับของหาย',
     lostText2: 'หากไม่มีการติดต่อ จะดำเนินการตามกฎหมายของหายหลังจากผ่านไป 3 เดือน',
@@ -919,9 +1115,29 @@ const translations = {
     lightingDesc: 'หลังจากเข้าห้อง ให้เสียบพวงกุญแจห้องเข้าในเต้ารับไฟฟ้าข้างทางเข้า แสงสว่างในห้องจะเปิดขึ้น',
     lightingNote: '※เสียบกุญแจเข้าในเต้ารับไฟฟ้า',
     longstayTitle: 'สำหรับแขกพักหลายคืน',
+    cleaningHours: 'เวลาทำความสะอาดคือ 11:00～15:00',
+    cleaningRequest: 'หากต้องการทำความสะอาด กรุณาแขวนบัตร Dondes "กรุณาทำความสะอาด" ที่ลูกบิดประตูด้านนอกก่อน 11:00',
     sheetExchange: 'หากต้องการบริการทำความสะอาด กรุณาติดแม่เหล็กสีเขียว "กรุณาทำความสะอาด" ที่ด้านนอกประตูห้องทางด้านทางเดินก่อน 9:00 น. ของเช้าวันถัดไป',
     noCleaning: 'หากไม่ต้องการทำความสะอาด กรุณาติดแม่เหล็กสีน้ำเงิน "ห้ามรบกวน" ที่ด้านนอกประตูห้องทางด้านทางเดิน หากไม่มีการติดแม่เหล็ก เราจะไม่ทำความสะอาดและจะวางผ้าเช็ดตัวไว้หน้าประตูเท่านั้น จากมุมมองด้านสุขอนามัย การทำความสะอาดจะเป็นทุก 3 วัน (2 คืนแรกเปลี่ยนผ้าเช็ดตัวเท่านั้น คืนที่ 3 ทำความสะอาด คืนที่ 4 เป็นต้นไปวนซ้ำ)',
     parking: 'ข้อมูลที่จอดรถพันธมิตร',
+    parkingAllPrice: 'P1～P5 ทั้งหมด 900 เยนต่อคืน（ต่อเวลา 30 นาที 100 เยน）',
+    parkingMidExit: '※หากออกกลางคันจะมีการเรียกเก็บเงิน',
+    parkingInquiry: '※กรุณาสอบถามเนื่องจากที่จอดรถอาจเต็มตามช่วงเวลา',
+    parkingP1Name: 'P1 ที่จอดรถโรงแรมเอซ',
+    parkingP2Name: 'P2 ที่จอดรถริริกะ',
+    parkingP3Name: 'P3 มิตซูอิ รีพาร์ค',
+    parkingP4Name: 'P4 ที่จอดรถ MOSS',
+    parkingP5Name: 'P5 ที่จอดรถ Cross Terrace',
+    parkingUsageTime: '■เวลาทำการ：',
+    parkingP1Time: '15:00～วันถัดไป 11:00',
+    parkingP4Time: '16:00～วันถัดไป 11:00',
+    parkingP5Time: '17:00～วันถัดไป 11:00',
+    parkingExtension: '※ต่อเวลา 30 นาที 100 เยน',
+    parkingHeightLimit: '■จำกัดความสูง：',
+    parkingP2Height: 'สูงสุด 2.30m',
+    parkingP4Height: 'สูงสุด 2.50m',
+    parkingP5Height: 'สูงสุด 2.10m',
+    parkingReservation: '■จองล่วงหน้า：ไม่สามารถใช้ได้',
     officialHP: 'เว็บไซต์อย่างเป็นทางการ',
     preparing: 'ข้อมูลรายละเอียดกำลังเตรียมการ',
     dinnerCouponLine1: 'สำหรับอาหารเย็นคืนนี้',
@@ -1011,6 +1227,10 @@ const translations = {
     laundryNote: '※Máy giặt/1 lần 200 yên Máy sấy/10 phút 100 yên (Bột giặt phát miễn phí tại lễ tân)',
     wifiTitle: 'Wi-Fi',
     password: 'Mật khẩu:',
+    wifiAccessPoint: 'Vui lòng kiểm tra "Hướng dẫn Internet phòng khách" được lắp đặt trong phòng của bạn để biết điểm truy cập.',
+    copy: 'Sao chép',
+    wifiCopyNote: '※Bạn có thể sao chép mật khẩu bằng cách nhấn vào nút',
+    passwordCopied: 'Đã sao chép mật khẩu!',
     lostTitle: 'Đồ thất lạc',
     lostText1: 'Về nguyên tắc, khách sạn sẽ không liên lạc về đồ thất lạc.',
     lostText2: 'Nếu không có liên lạc, sẽ được xử lý sau 3 tháng theo luật đồ thất lạc.',
@@ -1019,9 +1239,29 @@ const translations = {
     lightingDesc: 'Sau khi vào phòng, cắm móc khóa phòng vào ổ cắm điện bên cạnh lối vào để bật đèn trong phòng.',
     lightingNote: '※Cắm chìa khóa vào ổ cắm điện.',
     longstayTitle: 'Dành cho khách lưu trú dài hạn',
+    cleaningHours: 'Giờ dọn phòng là từ 11:00 đến 15:00.',
+    cleaningRequest: 'Nếu muốn dọn phòng, vui lòng treo thẻ Dondes "Vui lòng dọn phòng" trên tay nắm cửa bên ngoài trước 11:00.',
     sheetExchange: 'Nếu muốn dọn phòng, vui lòng dán nam châm màu xanh lá "Vui lòng dọn phòng" ở phía hành lang cửa ra vào trước 9 giờ sáng mai.',
     noCleaning: 'Nếu không cần dọn phòng, vui lòng dán nam châm màu xanh dương "Xin đừng làm phiền" ở phía hành lang cửa ra vào. Nếu không có nam châm, chúng tôi sẽ không dọn phòng và chỉ chuẩn bị khăn trước cửa. Vì lý do vệ sinh, việc dọn phòng sẽ là 3 ngày một lần (2 đêm đầu chỉ thay khăn, đêm thứ 3 dọn phòng, từ đêm thứ 4 trở đi lặp lại).',
     parking: 'Thông tin bãi đỗ xe đối tác',
+    parkingAllPrice: 'P1～P5: Tất cả 900 yên mỗi đêm (Gia hạn: 100 yên mỗi 30 phút)',
+    parkingMidExit: '※Sẽ tính phí nếu bạn xuất xe giữa chừng.',
+    parkingInquiry: '※Vui lòng liên hệ vì bãi đỗ có thể đầy tùy theo thời gian.',
+    parkingP1Name: 'P1 Bãi đỗ xe Hotel Ace',
+    parkingP2Name: 'P2 Bãi đỗ xe Ririka',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 Bãi đỗ xe MOSS',
+    parkingP5Name: 'P5 Bãi đỗ xe Cross Terrace',
+    parkingUsageTime: '■Giờ sử dụng:',
+    parkingP1Time: '15:00～Ngày hôm sau 11:00',
+    parkingP4Time: '16:00～Ngày hôm sau 11:00',
+    parkingP5Time: '17:00～Ngày hôm sau 11:00',
+    parkingExtension: '※Gia hạn: 100 yên mỗi 30 phút',
+    parkingHeightLimit: '■Giới hạn chiều cao:',
+    parkingP2Height: 'Lên đến 2.30m',
+    parkingP4Height: 'Lên đến 2.50m',
+    parkingP5Height: 'Lên đến 2.10m',
+    parkingReservation: '■Đặt trước: Không có sẵn',
     officialHP: 'Trang web chính thức',
     preparing: 'Thông tin chi tiết đang được chuẩn bị.',
     dinnerCouponLine1: 'Cho bữa tối tối nay',
@@ -1111,6 +1351,10 @@ const translations = {
     laundryNote: '※Mesin cuci/1 kali 200 yen Pengering/10 menit 100 yen (Deterjen gratis di resepsionis)',
     wifiTitle: 'Wi-Fi',
     password: 'Kata sandi:',
+    wifiAccessPoint: 'Silakan periksa "Panduan Internet Kamar Tamu" yang terpasang di kamar Anda untuk titik akses.',
+    copy: 'Salin',
+    wifiCopyNote: '※Anda dapat menyalin kata sandi dengan mengetuk tombol',
+    passwordCopied: 'Kata sandi disalin!',
     lostTitle: 'Barang hilang',
     lostText1: 'Sebagai aturan, hotel tidak akan menghubungi mengenai barang hilang.',
     lostText2: 'Jika tidak ada kontak, akan dibuang setelah 3 bulan sesuai dengan Undang-Undang Barang Hilang.',
@@ -1119,9 +1363,29 @@ const translations = {
     lightingDesc: 'Setelah memasuki kamar, masukkan gantungan kunci kamar ke soket listrik di samping pintu masuk untuk menyalakan lampu kamar.',
     lightingNote: '※Masukkan kunci ke soket listrik.',
     longstayTitle: 'Untuk tamu menginap jangka panjang',
+    cleaningHours: 'Jam pembersihan adalah dari 11:00 hingga 15:00.',
+    cleaningRequest: 'Jika ingin pembersihan, silakan gantungkan kartu Dondes "Silakan bersihkan" pada gagang pintu luar sebelum jam 11:00.',
     sheetExchange: 'Jika ingin pembersihan, silakan tempel magnet hijau "Silakan bersihkan" di sisi koridor pintu masuk sebelum jam 9 pagi besok.',
     noCleaning: 'Jika tidak perlu pembersihan, silakan tempel magnet biru "Jangan ganggu" di sisi koridor pintu masuk. Jika tidak ada magnet, kami tidak akan membersihkan dan hanya menyiapkan handuk di depan pintu. Dari sudut pandang kebersihan, pembersihan dilakukan 3 hari sekali (2 malam pertama hanya ganti handuk, malam ke-3 pembersihan, malam ke-4 dan seterusnya berulang).',
     parking: 'Informasi parkir mitra',
+    parkingAllPrice: 'P1～P5: Semua 900 yen per malam (Perpanjangan: 100 yen per 30 menit)',
+    parkingMidExit: '※Biaya akan dikenakan jika Anda keluar di tengah-tengah menginap.',
+    parkingInquiry: '※Silakan tanyakan karena parkir mungkin penuh tergantung waktu.',
+    parkingP1Name: 'P1 Parkir Hotel Ace',
+    parkingP2Name: 'P2 Parkir Ririka',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 Parkir MOSS',
+    parkingP5Name: 'P5 Parkir Cross Terrace',
+    parkingUsageTime: '■Jam penggunaan:',
+    parkingP1Time: '15:00～Hari berikutnya 11:00',
+    parkingP4Time: '16:00～Hari berikutnya 11:00',
+    parkingP5Time: '17:00～Hari berikutnya 11:00',
+    parkingExtension: '※Perpanjangan: 100 yen per 30 menit',
+    parkingHeightLimit: '■Batas tinggi:',
+    parkingP2Height: 'Hingga 2.30m',
+    parkingP4Height: 'Hingga 2.50m',
+    parkingP5Height: 'Hingga 2.10m',
+    parkingReservation: '■Pemesanan di muka: Tidak tersedia',
     officialHP: 'Situs web resmi',
     preparing: 'Informasi detail sedang disiapkan.',
     dinnerCouponLine1: 'Untuk makan malam malam ini',
@@ -1211,6 +1475,10 @@ const translations = {
     laundryNote: '※Washing machine/1 beses 200 yen Dryer/10 minuto 100 yen (Detergent libreng kuha sa front desk)',
     wifiTitle: 'Wi-Fi',
     password: 'Password:',
+    wifiAccessPoint: 'Mangyaring suriin ang "Guest Room Internet Guide" na naka-install sa inyong kwarto para sa access point.',
+    copy: 'Kopyahin',
+    wifiCopyNote: '※Maaari mong kopyahin ang password sa pamamagitan ng pag-tap sa button',
+    passwordCopied: 'Nakopya na ang password!',
     lostTitle: 'Nawawalang gamit',
     lostText1: 'Bilang patakaran, ang hotel ay hindi makikipag-ugnayan tungkol sa nawawalang gamit.',
     lostText2: 'Kung walang contact, itatapon pagkatapos ng 3 buwan ayon sa Lost Property Act.',
@@ -1219,9 +1487,29 @@ const translations = {
     lightingDesc: 'Pagkatapos pumasok sa kwarto, ilagay ang key holder ng kwarto sa power socket sa tabi ng entrance para mag-on ang ilaw sa kwarto.',
     lightingNote: '※Ilagay ang susi sa power socket.',
     longstayTitle: 'Para sa mga long-term guests',
+    cleaningHours: 'Ang oras ng paglilinis ay mula 11:00 hanggang 15:00.',
+    cleaningRequest: 'Kung nais ng paglilinis, mangyaring isabit ang Dondes card na "Mangyaring linisin" sa panlabas na doorknob bago mag-11:00.',
     sheetExchange: 'Kung nais ng linis, mangyaring idikit ang berdeng magnet na "Mangyaring linisin" sa gilid ng hallway ng entrance door bago mag-9:00 ng umaga bukas.',
     noCleaning: 'Kung hindi kailangan ng linis, mangyaring idikit ang asul na magnet na "Huwag guluhin" sa gilid ng hallway ng entrance door. Kung walang magnet, hindi kami maglilinis at maghahanda lang ng tuwalya sa harap ng pinto. Para sa kalinisan, ang linis ay bawat 3 araw (2 unang gabi ay palit ng tuwalya lang, 3rd gabi ay linis, 4th gabi pataas ay ulitin).',
     parking: 'Impormasyon sa partner parking',
+    parkingAllPrice: 'P1～P5: Lahat 900 yen bawat gabi (Extension: 100 yen bawat 30 minuto)',
+    parkingMidExit: '※Magkakaroon ng bayad kung lalabas ka sa gitna ng stay.',
+    parkingInquiry: '※Mangyaring magtanong dahil maaaring puno ang parking depende sa oras.',
+    parkingP1Name: 'P1 Hotel Ace Parking',
+    parkingP2Name: 'P2 Ririka Parking',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 MOSS Parking',
+    parkingP5Name: 'P5 Cross Terrace Parking',
+    parkingUsageTime: '■Oras ng paggamit:',
+    parkingP1Time: '15:00～Susunod na araw 11:00',
+    parkingP4Time: '16:00～Susunod na araw 11:00',
+    parkingP5Time: '17:00～Susunod na araw 11:00',
+    parkingExtension: '※Extension: 100 yen bawat 30 minuto',
+    parkingHeightLimit: '■Limitasyon sa taas:',
+    parkingP2Height: 'Hanggang 2.30m',
+    parkingP4Height: 'Hanggang 2.50m',
+    parkingP5Height: 'Hanggang 2.10m',
+    parkingReservation: '■Advance reservation: Hindi available',
     officialHP: 'Official website',
     preparing: 'Ang detalyadong impormasyon ay inihahanda.',
     dinnerCouponLine1: 'Para sa hapunan ngayong gabi',
@@ -1311,6 +1599,10 @@ const translations = {
     laundryNote: '※Mesin basuh/1 kali 200 yen Pengering/10 minit 100 yen (Detergen percuma di kaunter depan)',
     wifiTitle: 'Wi-Fi',
     password: 'Kata laluan:',
+    wifiAccessPoint: 'Sila semak "Panduan Internet Bilik Tetamu" yang dipasang di bilik anda untuk titik akses.',
+    copy: 'Salin',
+    wifiCopyNote: '※Anda boleh menyalin kata laluan dengan menekan butang',
+    passwordCopied: 'Kata laluan disalin!',
     lostTitle: 'Barang hilang',
     lostText1: 'Sebagai peraturan, hotel tidak akan menghubungi mengenai barang hilang.',
     lostText2: 'Jika tiada hubungan, akan dilupuskan selepas 3 bulan mengikut Akta Harta Hilang.',
@@ -1319,9 +1611,29 @@ const translations = {
     lightingDesc: 'Selepas memasuki bilik, masukkan pemegang kunci bilik ke dalam soket kuasa di sebelah pintu masuk untuk menghidupkan lampu bilik.',
     lightingNote: '※Masukkan kunci ke dalam soket kuasa.',
     longstayTitle: 'Untuk tetamu jangka panjang',
+    cleaningHours: 'Waktu pembersihan adalah dari 11:00 hingga 15:00.',
+    cleaningRequest: 'Jika mahu pembersihan, sila gantungkan kad Dondes "Sila bersihkan" pada pemegang pintu luar sebelum jam 11:00.',
     sheetExchange: 'Jika mahu pembersihan, sila lekatkan magnet hijau "Sila bersihkan" di bahagian koridor pintu masuk sebelum jam 9 pagi esok.',
     noCleaning: 'Jika tidak perlukan pembersihan, sila lekatkan magnet biru "Jangan ganggu" di bahagian koridor pintu masuk. Jika tiada magnet, kami tidak akan membersihkan dan hanya menyediakan tuala di hadapan pintu. Dari segi kebersihan, pembersihan adalah setiap 3 hari (2 malam pertama hanya tukar tuala, malam ke-3 pembersihan, malam ke-4 dan seterusnya ulang).',
     parking: 'Maklumat tempat letak kereta rakan kongsi',
+    parkingAllPrice: 'P1～P5: Semua 900 yen semalam (Sambungan: 100 yen setiap 30 minit)',
+    parkingMidExit: '※Bayaran akan dikenakan jika anda keluar di tengah-tengah penginapan.',
+    parkingInquiry: '※Sila tanya kerana tempat letak kereta mungkin penuh bergantung pada masa.',
+    parkingP1Name: 'P1 Tempat Letak Kereta Hotel Ace',
+    parkingP2Name: 'P2 Tempat Letak Kereta Ririka',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 Tempat Letak Kereta MOSS',
+    parkingP5Name: 'P5 Tempat Letak Kereta Cross Terrace',
+    parkingUsageTime: '■Waktu penggunaan:',
+    parkingP1Time: '15:00～Hari berikutnya 11:00',
+    parkingP4Time: '16:00～Hari berikutnya 11:00',
+    parkingP5Time: '17:00～Hari berikutnya 11:00',
+    parkingExtension: '※Sambungan: 100 yen setiap 30 minit',
+    parkingHeightLimit: '■Had ketinggian:',
+    parkingP2Height: 'Sehingga 2.30m',
+    parkingP4Height: 'Sehingga 2.50m',
+    parkingP5Height: 'Sehingga 2.10m',
+    parkingReservation: '■Tempahan awal: Tidak tersedia',
     officialHP: 'Laman web rasmi',
     preparing: 'Maklumat terperinci sedang disediakan.',
     dinnerCouponLine1: 'Untuk makan malam malam ini',
@@ -1411,6 +1723,10 @@ const translations = {
     laundryNote: '※Máquina de lavar/1 vez 200 ienes Secadora/10 minutos 100 ienes (Detergente grátis na recepção)',
     wifiTitle: 'Wi-Fi',
     password: 'Senha:',
+    wifiAccessPoint: 'Por favor, verifique o "Guia de Internet do Quarto" instalado no seu quarto para o ponto de acesso.',
+    copy: 'Copiar',
+    wifiCopyNote: '※Você pode copiar a senha tocando no botão',
+    passwordCopied: 'Senha copiada!',
     lostTitle: 'Objetos perdidos',
     lostText1: 'Como regra, o hotel não entrará em contato sobre objetos perdidos.',
     lostText2: 'Se não houver contato, será descartado após 3 meses de acordo com a Lei de Objetos Perdidos.',
@@ -1419,9 +1735,29 @@ const translations = {
     lightingDesc: 'Após entrar no quarto, insira o porta-chaves do quarto na tomada elétrica ao lado da entrada para acender a iluminação do quarto.',
     lightingNote: '※Insira a chave na tomada elétrica.',
     longstayTitle: 'Para hóspedes de longa estadia',
+    cleaningHours: 'As horas de limpeza são das 11:00 às 15:00.',
+    cleaningRequest: 'Se desejar limpeza, por favor pendure o cartão Dondes "Por favor limpe" na maçaneta externa da porta antes das 11:00.',
     sheetExchange: 'Se desejar limpeza, por favor cole o ímã verde "Por favor limpe" no lado do corredor da porta de entrada antes das 9h da manhã seguinte.',
     noCleaning: 'Se não precisar de limpeza, por favor cole o ímã azul "Não perturbe" no lado do corredor da porta de entrada. Se não houver ímã, não faremos limpeza e apenas prepararemos toalhas na frente da porta. Do ponto de vista de higiene, a limpeza é a cada 3 dias (2 primeiras noites apenas troca de toalhas, 3ª noite limpeza, da 4ª noite em diante repete).',
     parking: 'Informações de estacionamento parceiro',
+    parkingAllPrice: 'P1～P5: Todos 900 ienes por noite (Prolongação: 100 ienes por 30 minutos)',
+    parkingMidExit: '※Taxas serão aplicadas se você sair durante a estadia.',
+    parkingInquiry: '※Por favor, consulte, pois o estacionamento pode estar cheio dependendo do horário.',
+    parkingP1Name: 'P1 Estacionamento Hotel Ace',
+    parkingP2Name: 'P2 Estacionamento Ririka',
+    parkingP3Name: 'P3 Mitsui Re-Park',
+    parkingP4Name: 'P4 Estacionamento MOSS',
+    parkingP5Name: 'P5 Estacionamento Cross Terrace',
+    parkingUsageTime: '■Horários de uso:',
+    parkingP1Time: '15:00～Dia seguinte 11:00',
+    parkingP4Time: '16:00～Dia seguinte 11:00',
+    parkingP5Time: '17:00～Dia seguinte 11:00',
+    parkingExtension: '※Prolongação: 100 ienes por 30 minutos',
+    parkingHeightLimit: '■Limite de altura:',
+    parkingP2Height: 'Até 2.30m',
+    parkingP4Height: 'Até 2.50m',
+    parkingP5Height: 'Até 2.10m',
+    parkingReservation: '■Reserva antecipada: Não disponível',
     officialHP: 'Site oficial',
     preparing: 'Informações detalhadas estão sendo preparadas.',
     dinnerCouponLine1: 'Para o jantar desta noite',
@@ -1511,6 +1847,10 @@ const translations = {
     laundryNote: '※洗衣機/每次200日圓 烘乾機/10分鐘100日圓（洗滌劑在前台免費提供）',
     wifiTitle: 'Wi-Fi',
     password: '密碼：',
+    wifiAccessPoint: '請查看您房間內設置的「客房互聯網指南」以了解接入點。',
+    copy: '複製',
+    wifiCopyNote: '※點擊按鈕即可複製密碼',
+    passwordCopied: '密碼已複製！',
     lostTitle: '遺失物品',
     lostText1: '原則上，酒店不會就遺失物品聯繫客人。',
     lostText2: '如果沒有聯繫，根據遺失物品法，將在3個月後處理。',
@@ -1519,9 +1859,29 @@ const translations = {
     lightingDesc: '進入房間後，將房間鑰匙扣插入入口旁的電源插座即可點亮室內照明。',
     lightingNote: '※將鑰匙插入電源插座。',
     longstayTitle: '連住客人須知',
+    cleaningHours: '清掃時間為11:00～15:00。',
+    cleaningRequest: '如需清掃，請在11:00前將Dondes卡「請清掃」掛在門外側門把手上。',
     sheetExchange: '如需清掃，請在早上9點前將綠色磁鐵「請打掃」貼在門外走廊側。',
     noCleaning: '如不需要清掃，請將藍色磁鐵「請勿打擾」貼在門外走廊側。如果沒有貼磁鐵，我們將不進行清掃，僅在門前準備毛巾類物品。出於衛生考慮，清掃為每3天1次（前2晚僅更換毛巾類，第3晚清掃，第4晚以後重複）。',
     parking: '合作停車場資訊',
+    parkingAllPrice: 'P1～P5：全部一晚900日圓（延長30分鐘100日圓）',
+    parkingMidExit: '※中途出庫時會產生費用。',
+    parkingInquiry: '※根據時間段，停車場可能滿庫，請諮詢。',
+    parkingP1Name: 'P1 盛岡Ace酒店停車場',
+    parkingP2Name: 'P2 利利卡停車場',
+    parkingP3Name: 'P3 三井Re-Park',
+    parkingP4Name: 'P4 MOSS停車場',
+    parkingP5Name: 'P5 Cross Terrace停車場',
+    parkingUsageTime: '■使用時間：',
+    parkingP1Time: '15:00～次日11:00',
+    parkingP4Time: '16:00～次日11:00',
+    parkingP5Time: '17:00～次日11:00',
+    parkingExtension: '※延長30分鐘100日圓',
+    parkingHeightLimit: '■車高限制：',
+    parkingP2Height: '2.30m以下',
+    parkingP4Height: '2.50m以下',
+    parkingP5Height: '2.10m以下',
+    parkingReservation: '■提前預約：不可用',
     parkingFee: '停車費',
     heightLimit: '高度限制',
     hours24: '24小時營業',
@@ -2485,7 +2845,7 @@ return (
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{t.wifiTitle}</h3>
                 <div className="border-t border-gray-200 pt-4">
                   <p className="text-sm text-gray-700 mb-4">
-                    アクセスポイントはお部屋に設置の「客室インターネットのご案内」をご覧くださいませ。
+                    {t.wifiAccessPoint}
                   </p>
                   <div className="space-y-3">
                     <div className="rounded-lg bg-[#E8F5F0] border border-[#3E8668] px-4 py-3 flex items-center justify-between">
@@ -2496,18 +2856,18 @@ return (
                       <button
                         onClick={() => {
                           navigator.clipboard.writeText('0196543811');
-                          alert('パスワードをコピーしました！');
+                          alert(t.passwordCopied);
                         }}
                         className="ml-4 bg-[#3E8668] hover:bg-[#2D6550] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center gap-1 shrink-0"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
-                        コピー
+                        {t.copy}
                       </button>
                     </div>
                     <p className="text-xs text-gray-600 text-center">
-                      ※ボタンをタップするとパスワードをコピーできます
+                      {t.wifiCopyNote}
                     </p>
                   </div>
                 </div>
@@ -2584,10 +2944,23 @@ return (
                 <div className="space-y-4">
                   <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
                     <p className="text-base text-gray-700 leading-relaxed mb-4">
-                      清掃時間は<span className="font-semibold text-[#3E8668]">11:00～15:00まで</span>となっております。
+                      {t.cleaningHours.split(/(11:00[～\-]?\s*15:00|11:00\s*(to|～|-)\s*15:00)/).map((part, index) => {
+                        if (/11:00[～\-]?\s*15:00|11:00\s*(to|～|-)\s*15:00/.test(part)) {
+                          return <span key={index} className="font-semibold text-[#3E8668]">{part}</span>;
+                        }
+                        return <span key={index}>{part}</span>;
+                      })}
                     </p>
                     <p className="text-base text-gray-700 leading-relaxed">
-                      ご清掃をご希望の場合は、ドンデスカードの<span className="font-semibold text-[#3E8668]">「清掃して下さい」</span>を<span className="font-semibold text-red-600">11:00まで</span>に外側ドアノブへ掛けて頂きますようお願いいたします。
+                      {t.cleaningRequest.split(/(「[^」]+」|"[^"]+"|'[^']+'|11:00[までまでに]|11:00|before\s+11:00|by\s+11:00)/i).map((part, index) => {
+                        if (/11:00[までまでに]|11:00|before\s+11:00|by\s+11:00/i.test(part)) {
+                          return <span key={index} className="font-semibold text-red-600">{part}</span>;
+                        }
+                        if (/「[^」]+」|"[^"]+"|'[^']+'/.test(part)) {
+                          return <span key={index} className="font-semibold text-[#3E8668]">{part}</span>;
+                        }
+                        return <span key={index}>{part}</span>;
+                      })}
                     </p>
                   </div>
                 </div>
@@ -2621,55 +2994,55 @@ return (
                   {/* 共通注意事項 */}
                   <div className="bg-yellow-50 rounded-lg p-4 border-2 border-yellow-300">
                     <div className="font-bold text-base mb-2 text-center text-red-600">
-                      P1～P5は全て1泊900円（延長30分100円）
+                      {t.parkingAllPrice}
                     </div>
                     <div className="text-xs text-gray-700 space-y-1 mt-2">
-                      <p>※途中出庫の際は課金額が発生します。</p>
-                      <p>※時間帯によっては駐車場車庫がありますのでお問い合わせください。</p>
+                      <p>{t.parkingMidExit}</p>
+                      <p>{t.parkingInquiry}</p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <div className="font-semibold text-lg mb-2">P1 ホテルエース駐車場</div>
+                    <div className="font-semibold text-lg mb-2">{t.parkingP1Name}</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：15:00～翌11:00</p>
-                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
+                      <p className="font-semibold text-red-600">{t.parkingUsageTime}{t.parkingP1Time}</p>
+                      <p className="text-xs text-gray-600 mt-2">{t.parkingExtension}</p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <div className="font-semibold text-lg mb-2">P2 リリカ駐車場</div>
+                    <div className="font-semibold text-lg mb-2">{t.parkingP2Name}</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：15:00～翌11:00</p>
-                      <p className="font-semibold">■車高制限：2.30mまで</p>
-                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
+                      <p className="font-semibold text-red-600">{t.parkingUsageTime}{t.parkingP1Time}</p>
+                      <p className="font-semibold">{t.parkingHeightLimit}{t.parkingP2Height}</p>
+                      <p className="text-xs text-gray-600 mt-2">{t.parkingExtension}</p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <div className="font-semibold text-lg mb-2">P3 三井のリパーク</div>
+                    <div className="font-semibold text-lg mb-2">{t.parkingP3Name}</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：15:00～翌11:00</p>
-                      <p className="font-semibold">■事前予約：利用なし</p>
-                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
+                      <p className="font-semibold text-red-600">{t.parkingUsageTime}{t.parkingP1Time}</p>
+                      <p className="font-semibold">{t.parkingReservation}</p>
+                      <p className="text-xs text-gray-600 mt-2">{t.parkingExtension}</p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <div className="font-semibold text-lg mb-2">P4 MOSS駐車場</div>
+                    <div className="font-semibold text-lg mb-2">{t.parkingP4Name}</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：16:00～翌11:00</p>
-                      <p className="font-semibold">■車高制限：2.50mまで</p>
-                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
+                      <p className="font-semibold text-red-600">{t.parkingUsageTime}{t.parkingP4Time}</p>
+                      <p className="font-semibold">{t.parkingHeightLimit}{t.parkingP4Height}</p>
+                      <p className="text-xs text-gray-600 mt-2">{t.parkingExtension}</p>
                     </div>
                   </div>
 
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <div className="font-semibold text-lg mb-2">P5 クロステラス駐車場</div>
+                    <div className="font-semibold text-lg mb-2">{t.parkingP5Name}</div>
                     <div className="space-y-1 text-sm">
-                      <p className="font-semibold text-red-600">■利用時間：17:00～翌11:00</p>
-                      <p className="font-semibold">■車高制限：2.10mまで</p>
-                      <p className="text-xs text-gray-600 mt-2">※延長30分100円</p>
+                      <p className="font-semibold text-red-600">{t.parkingUsageTime}{t.parkingP5Time}</p>
+                      <p className="font-semibold">{t.parkingHeightLimit}{t.parkingP5Height}</p>
+                      <p className="text-xs text-gray-600 mt-2">{t.parkingExtension}</p>
                     </div>
                   </div>
                 </div>
