@@ -2510,7 +2510,7 @@ return (
             {/* 飲食店クーポンボタン */}
             <Link
               href="/coupon"
-              className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] transition-all duration-300 min-h-[100px] sm:min-h-[120px] group hover:scale-[1.02] active:scale-[0.98]"
+              className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] transition-all duration-300 min-h-[144px] sm:min-h-[144px] group hover:scale-[1.02] active:scale-[0.98]"
               style={{
                 background: 'linear-gradient(145deg, #059669, #047857)',
                 padding: '3px',
@@ -2551,7 +2551,7 @@ return (
               <div className="absolute inset-[3px] rounded-[10px] border-2 border-white/20 pointer-events-none"></div>
               
               {/* テキストコンテンツ */}
-              <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px]">
+              <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[138px] sm:min-h-[138px] gap-3">
                 <div className="text-center text-white">
                   <div className="text-base sm:text-lg md:text-xl font-extrabold leading-tight mb-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] tracking-wider" style={{ fontFamily: 'system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif' }}>
                     {t.dinnerCouponLine1}
@@ -2612,7 +2612,7 @@ return (
                 
                 {/* テキスト */}
                 <div className="text-white text-sm sm:text-base md:text-lg font-extrabold text-center drop-shadow-[0_3px_12px_rgba(0,0,0,0.9)] tracking-widest uppercase" style={{ fontFamily: '"Arial Black", "Helvetica", "Hiragino Kaku Gothic ProN", sans-serif', letterSpacing: '0.15em', textShadow: '2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(255,255,255,0.1)' }}>
-                  アウトドア用品あります
+                  チェックアウトの時間は、大自然へチェックイン
                 </div>
               </div>
             </a>
