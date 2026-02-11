@@ -397,7 +397,7 @@ export default function ChatBot() {
           )}
         </button>
         {!isOpen && !hintDismissed && (
-          <div className="relative max-w-[160px] rounded-lg border border-gray-200 bg-white px-3 py-2.5 pr-6 text-left text-[11px] leading-tight text-gray-700 shadow-sm">
+          <div className="relative max-w-[160px] rounded-lg border border-gray-200 bg-white px-3 py-2.5 pr-6 text-left text-[13px] leading-tight text-gray-700 shadow-sm">
             <button
               type="button"
               onClick={() => setHintDismissed(true)}
