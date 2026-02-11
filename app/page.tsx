@@ -2395,7 +2395,7 @@ return (
                     transitionDelay: visibleServices.has(service.id) ? `${index * 100}ms` : '0ms'
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 15px 15px -5px rgba(0, 0, 0, 0.3)';
+                    e.currentTarget.style.boxShadow = '0 0 30px rgba(62, 134, 104, 0.6), 0 25px 50px -12px rgba(0, 0, 0, 0.4)';
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2)';
@@ -2418,7 +2418,7 @@ return (
                     }
                     setSelectedService(service.id);
                   }}
-                  className={`bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-700 ease-out flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] md:min-h-[140px] ${
+                  className={`bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg hover:shadow-[0_0_25px_rgba(62,134,104,0.6)] transition-all duration-300 ease-out flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] md:min-h-[140px] hover:scale-105 ${
                     visibleServices.has(service.id)
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-12'
@@ -2444,7 +2444,7 @@ return (
                     }
                     setSelectedService(service.id);
                   }}
-                  className={`bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-700 ease-out flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] md:min-h-[140px] ${
+                  className={`bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-xl hover:shadow-[0_0_25px_rgba(62,134,104,0.6)] transition-all duration-300 ease-out flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] md:min-h-[140px] hover:scale-105 ${
                     visibleServices.has(service.id)
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-12'
@@ -2481,7 +2481,7 @@ return (
                     }
                     setSelectedService(service.id);
                   }}
-                  className={`bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-700 ease-out flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] md:min-h-[140px] ${
+                  className={`bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-lg hover:shadow-[0_0_25px_rgba(62,134,104,0.6)] transition-all duration-300 ease-out flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] md:min-h-[140px] hover:scale-105 ${
                     visibleServices.has(service.id)
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-4'
@@ -2510,14 +2510,55 @@ return (
             {/* 飲食店クーポンボタン */}
             <Link
               href="/coupon"
-              className="bg-red-500 hover:bg-red-600 text-white p-4 sm:p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px]"
+              className="relative overflow-hidden rounded-xl shadow-2xl hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] transition-all duration-300 min-h-[100px] sm:min-h-[120px] group hover:scale-[1.02] active:scale-[0.98]"
+              style={{
+                background: 'linear-gradient(145deg, #059669, #047857)',
+                padding: '3px',
+              }}
             >
-              <div className="text-center">
-                <div className="text-sm sm:text-base md:text-lg font-semibold leading-tight mb-1">
-                  {t.dinnerCouponLine1}
+              {/* 背景画像グリッド */}
+              <div className="absolute inset-0 grid grid-cols-3 gap-0.5">
+                <div className="relative overflow-hidden">
+                  <Image
+                    src="/coupon-page/rikyuu/スクリーンショット 2026-02-01 22.43.06.png"
+                    alt="お刺身"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
-                <div className="text-xs sm:text-sm md:text-base font-semibold leading-tight">
-                  {t.dinnerCouponLine2}
+                <div className="relative overflow-hidden">
+                  <Image
+                    src="/coupon-page/tama/スクリーンショット 2026-02-06 5.42.41.png"
+                    alt="串焼き"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="relative overflow-hidden">
+                  <Image
+                    src="/coupon-page/toritetu/スクリーンショット 2026-02-06 5.32.32.png"
+                    alt="焼肉"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              
+              {/* オーバーレイ */}
+              <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/50 to-black/60 group-hover:from-black/50 group-hover:via-black/60 group-hover:to-black/70 transition-all duration-300 rounded-xl"></div>
+              
+              {/* 内側の光沢枠 */}
+              <div className="absolute inset-[3px] rounded-[10px] border-2 border-white/20 pointer-events-none"></div>
+              
+              {/* テキストコンテンツ */}
+              <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px]">
+                <div className="text-center text-white">
+                  <div className="text-sm sm:text-base md:text-lg font-bold leading-tight mb-1 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                    {t.dinnerCouponLine1}
+                  </div>
+                  <div className="text-xs sm:text-sm md:text-base font-bold leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                    {t.dinnerCouponLine2}
+                  </div>
                 </div>
               </div>
             </Link>
@@ -2527,17 +2568,52 @@ return (
               href="https://share.google/07ahmvGKgGyn44mSQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#3E8668] hover:bg-[#2D6550] text-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] relative"
+              className="relative rounded-lg shadow-lg hover:shadow-[0_0_30px_rgba(62,134,104,0.6)] transition-all duration-300 min-h-[100px] sm:min-h-[120px] hover:scale-[1.02] active:scale-[0.98] overflow-hidden group"
             >
-              <div className="absolute inset-0 p-6 sm:p-8">
-                <Image
-                  src="/main-page/icon-matome/logo.svg"
-                  alt="GREENHOUSE"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
-                  unoptimized
-                />
+              {/* 背景画像グリッド */}
+              <div className="absolute inset-0 grid grid-cols-2 gap-0.5">
+                <div className="relative overflow-hidden">
+                  <Image
+                    src="/main-page/431897.jpg"
+                    alt="アウトドア用品店内"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="relative overflow-hidden">
+                  <Image
+                    src="/main-page/431898.jpg"
+                    alt="キャンプ用品展示"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              
+              {/* オーバーレイ */}
+              <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/40 to-black/60 group-hover:from-black/60 group-hover:via-black/50 group-hover:to-black/70 transition-all duration-300"></div>
+              
+              {/* 内側の光沢枠 */}
+              <div className="absolute inset-[3px] rounded-[10px] border-2 border-white/20 pointer-events-none"></div>
+              
+              {/* コンテンツ */}
+              <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] gap-3">
+                {/* ロゴ */}
+                <div className="relative w-32 sm:w-40 h-12 sm:h-14">
+                  <Image
+                    src="/main-page/icon-matome/logo.svg"
+                    alt="GREENHOUSE"
+                    fill
+                    className="object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                    sizes="(max-width: 640px) 128px, 160px"
+                    unoptimized
+                  />
+                </div>
+                
+                {/* テキスト */}
+                <div className="text-white text-xs sm:text-sm font-bold text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                  アウトドア用品あります
+                </div>
               </div>
             </a>
           </div>
@@ -2858,7 +2934,7 @@ return (
                           navigator.clipboard.writeText('0196543811');
                           alert(t.passwordCopied);
                         }}
-                        className="ml-4 bg-[#3E8668] hover:bg-[#2D6550] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center gap-1 shrink-0"
+                        className="ml-4 bg-[#3E8668] hover:bg-[#2D6550] text-white px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-300 flex items-center gap-1 shrink-0 shadow-lg hover:shadow-[0_0_20px_rgba(62,134,104,0.6)] hover:scale-105 active:scale-95"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
