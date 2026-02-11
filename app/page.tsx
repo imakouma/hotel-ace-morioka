@@ -2510,7 +2510,7 @@ return (
             {/* 飲食店クーポンボタン */}
             <Link
               href="/coupon"
-              className="relative overflow-hidden rounded-xl shadow-2xl hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] transition-all duration-300 min-h-[100px] sm:min-h-[120px] group hover:scale-[1.02] active:scale-[0.98]"
+              className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] transition-all duration-300 min-h-[100px] sm:min-h-[120px] group hover:scale-[1.02] active:scale-[0.98]"
               style={{
                 background: 'linear-gradient(145deg, #059669, #047857)',
                 padding: '3px',
@@ -2545,7 +2545,7 @@ return (
               </div>
               
               {/* オーバーレイ */}
-              <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/50 to-black/60 group-hover:from-black/50 group-hover:via-black/60 group-hover:to-black/70 transition-all duration-300 rounded-xl"></div>
+              <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/50 to-black/60 group-hover:from-black/50 group-hover:via-black/60 group-hover:to-black/70 transition-all duration-300 rounded-lg"></div>
               
               {/* 内側の光沢枠 */}
               <div className="absolute inset-[3px] rounded-[10px] border-2 border-white/20 pointer-events-none"></div>
@@ -2553,10 +2553,10 @@ return (
               {/* テキストコンテンツ */}
               <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px]">
                 <div className="text-center text-white">
-                  <div className="text-sm sm:text-base md:text-lg font-bold leading-tight mb-1 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                  <div className="text-base sm:text-lg md:text-xl font-extrabold leading-tight mb-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] tracking-wider" style={{ fontFamily: 'system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif' }}>
                     {t.dinnerCouponLine1}
                   </div>
-                  <div className="text-xs sm:text-sm md:text-base font-bold leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                  <div className="text-sm sm:text-base md:text-lg font-bold leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] tracking-wide" style={{ fontFamily: 'system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif' }}>
                     {t.dinnerCouponLine2}
                   </div>
                 </div>
@@ -2599,13 +2599,13 @@ return (
               {/* コンテンツ */}
               <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] gap-3">
                 {/* ロゴ */}
-                <div className="relative w-32 sm:w-40 h-12 sm:h-14">
+                <div className="relative w-64 sm:w-80 h-20 sm:h-24">
                   <Image
                     src="/main-page/icon-matome/logo.svg"
                     alt="GREENHOUSE"
                     fill
                     className="object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
-                    sizes="(max-width: 640px) 128px, 160px"
+                    sizes="(max-width: 640px) 256px, 320px"
                     unoptimized
                   />
                 </div>
