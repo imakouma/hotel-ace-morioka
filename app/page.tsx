@@ -2568,7 +2568,7 @@ return (
               href="https://share.google/07ahmvGKgGyn44mSQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative rounded-lg shadow-lg hover:shadow-[0_0_30px_rgba(62,134,104,0.6)] transition-all duration-300 min-h-[100px] sm:min-h-[120px] hover:scale-[1.02] active:scale-[0.98] overflow-hidden group"
+              className="relative rounded-lg shadow-lg hover:shadow-[0_0_30px_rgba(62,134,104,0.6)] transition-all duration-300 min-h-[144px] sm:min-h-[144px] hover:scale-[1.02] active:scale-[0.98] overflow-hidden group"
             >
               {/* 背景画像グリッド */}
               <div className="absolute inset-0 grid grid-cols-2 gap-0.5">
@@ -2597,7 +2597,7 @@ return (
               <div className="absolute inset-[3px] rounded-[10px] border-2 border-white/20 pointer-events-none"></div>
               
               {/* コンテンツ */}
-              <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[100px] sm:min-h-[120px] gap-3">
+              <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[138px] sm:min-h-[138px] gap-3">
                 {/* ロゴ */}
                 <div className="relative w-64 sm:w-80 h-20 sm:h-24">
                   <Image
