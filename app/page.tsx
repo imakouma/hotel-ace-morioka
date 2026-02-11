@@ -2611,7 +2611,7 @@ return (
                 </div>
                 
                 {/* テキスト */}
-                <div className="text-white text-xs sm:text-sm font-bold text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                <div className="text-white text-sm sm:text-base md:text-lg font-extrabold text-center drop-shadow-[0_3px_12px_rgba(0,0,0,0.9)] tracking-widest uppercase" style={{ fontFamily: '"Arial Black", "Helvetica", "Hiragino Kaku Gothic ProN", sans-serif', letterSpacing: '0.15em', textShadow: '2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(255,255,255,0.1)' }}>
                   アウトドア用品あります
                 </div>
               </div>
