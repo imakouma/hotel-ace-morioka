@@ -2607,22 +2607,22 @@ return (
               <div className="absolute inset-[3px] rounded-[10px] border-2 border-white/20 pointer-events-none"></div>
               
               {/* コンテンツ */}
-              <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[138px] sm:min-h-[138px] gap-3">
+              <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[138px] sm:min-h-[138px] gap-1">
                 {/* ロゴ */}
-                <div className="relative w-64 sm:w-80 h-20 sm:h-24">
+                <div className="relative w-80 sm:w-96 h-24 sm:h-24">
                   <Image
                     src="/main-page/icon-matome/logo.svg"
                     alt="GREENHOUSE"
                     fill
                     className="object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
-                    sizes="(max-width: 640px) 256px, 320px"
+                    sizes="(max-width: 640px) 320px, 384px"
                     unoptimized
                   />
                 </div>
                 
                 {/* テキスト */}
-                <div className="text-white text-sm sm:text-base md:text-lg font-extrabold text-center drop-shadow-[0_3px_12px_rgba(0,0,0,0.9)] tracking-widest uppercase" style={{ fontFamily: '"Arial Black", "Helvetica", "Hiragino Kaku Gothic ProN", sans-serif', letterSpacing: '0.15em', textShadow: '2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(255,255,255,0.1)' }}>
-                  チェックアウトの時間は、大自然へチェックイン
+                <div className="text-white text-xs sm:text-sm md:text-base font-extrabold text-center drop-shadow-[0_3px_12px_rgba(0,0,0,0.9)] tracking-widest uppercase leading-tight" style={{ fontFamily: '"Arial Black", "Helvetica", "Hiragino Kaku Gothic ProN", sans-serif', letterSpacing: '0.15em', textShadow: '2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(255,255,255,0.1)' }}>
+                  チェックアウトの時間は、<br />大自然へチェックイン
                 </div>
               </div>
             </a>
