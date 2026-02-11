@@ -2621,8 +2621,8 @@ return (
                 </div>
                 
                 {/* テキスト */}
-                <div className="text-white text-xs sm:text-sm md:text-base font-extrabold text-center drop-shadow-[0_3px_12px_rgba(0,0,0,0.9)] tracking-widest uppercase leading-tight" style={{ fontFamily: '"Arial Black", "Helvetica", "Hiragino Kaku Gothic ProN", sans-serif', letterSpacing: '0.15em', textShadow: '2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(255,255,255,0.1)' }}>
-                  チェックアウトの時間は、<br />大自然へチェックイン
+                <div className="text-white text-[10px] sm:text-xs md:text-sm font-extrabold text-center drop-shadow-[0_3px_12px_rgba(0,0,0,0.9)] tracking-widest uppercase leading-tight" style={{ fontFamily: '"Arial Black", "Helvetica", "Hiragino Kaku Gothic ProN", sans-serif', letterSpacing: '0.15em', textShadow: '2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(255,255,255,0.1)' }}>
+                  チェックアウトの時間は<br />大自然へチェックイン
                 </div>
               </div>
             </a>
