@@ -2552,11 +2552,21 @@ return (
               
               {/* テキストコンテンツ */}
               <div className="relative z-10 p-4 sm:p-6 flex flex-col items-center justify-center min-h-[138px] sm:min-h-[138px] gap-3">
-                <div className="text-center text-white">
-                  <div className="text-base sm:text-lg md:text-xl font-extrabold leading-tight mb-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] tracking-wider" style={{ fontFamily: 'system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif' }}>
+                <div className="text-center">
+                  <div className="text-lg sm:text-xl md:text-2xl font-black leading-tight mb-2" style={{ 
+                    fontFamily: '"Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif',
+                    color: '#FFE66D',
+                    textShadow: '0 0 20px rgba(255, 230, 109, 0.8), 0 0 10px rgba(255, 200, 0, 0.6), 3px 3px 6px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(255, 255, 255, 0.3)',
+                    letterSpacing: '0.05em'
+                  }}>
                     {t.dinnerCouponLine1}
                   </div>
-                  <div className="text-sm sm:text-base md:text-lg font-bold leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] tracking-wide" style={{ fontFamily: 'system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif' }}>
+                  <div className="text-base sm:text-lg md:text-xl font-black leading-tight" style={{ 
+                    fontFamily: '"Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif',
+                    color: '#FFFFFF',
+                    textShadow: '0 0 15px rgba(255, 140, 0, 0.7), 0 0 8px rgba(255, 100, 0, 0.5), 2px 2px 6px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(255, 200, 0, 0.4)',
+                    letterSpacing: '0.08em'
+                  }}>
                     {t.dinnerCouponLine2}
                   </div>
                 </div>
