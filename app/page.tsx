@@ -3202,7 +3202,7 @@ return (
               </div>
             </div>
 
-            {/* 右側：Googleマップ */}
+            {/* 右側：Googleマップ（Androidではiframeが表示されない場合があるため「地図を開く」リンクを併設） */}
             <div className="md:col-span-3">
               <div className="w-full h-64 sm:h-80 bg-gray-200 rounded-lg overflow-hidden border border-gray-300 shadow-sm">
                 <iframe
@@ -3211,12 +3211,20 @@ return (
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
-                  loading="lazy"
+                  allow="geolocation; fullscreen"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
                   title="ホテルエース盛岡"
-                ></iframe>
+                />
               </div>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('岩手県盛岡市中央通2丁目11-35 ホテルエース盛岡')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block text-sm font-medium text-[#304E84] underline underline-offset-2"
+              >
+                地図を開く（Androidで表示されない場合）
+              </a>
             </div>
           </div>
 

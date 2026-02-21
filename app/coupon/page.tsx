@@ -1163,7 +1163,7 @@ export default function CouponPage() {
                           <p className="mt-2 text-xs text-gray-600 whitespace-pre-line">{modalHours}</p>
                           <p className="mt-0.5 text-xs text-gray-600 whitespace-pre-line">{t.holidayLabel}{modalHoliday}</p>
                         </div>
-                        {/* 各店舗のミニマップ（見切れ防止のためmin-w-0と十分な高さを確保） */}
+                        {/* 各店舗のミニマップ（Androidではiframeが表示されない場合があるため拡大地図リンクで代替可能） */}
                         <div className="mt-3 w-full min-w-0 overflow-hidden rounded-lg border border-gray-200 bg-gray-100">
                           <iframe
                             title={branchLabel}
@@ -1172,7 +1172,7 @@ export default function CouponPage() {
                             height="240"
                             style={{ border: 0, display: "block", minHeight: 240 }}
                             allowFullScreen
-                            loading="lazy"
+                            allow="geolocation; fullscreen"
                             referrerPolicy="no-referrer-when-downgrade"
                             className="block w-full"
                           />
