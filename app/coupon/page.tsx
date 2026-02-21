@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage, type LanguageCode } from "@/contexts/LanguageContext";
+import { MapFallbackLinkGeneric } from "@/components/MapFallbackLink";
 
 /** バナーは縦の要素が多いため 4:3 で全体が切れずに見える */
 const BANNER_ASPECT = "aspect-[4/3]";
@@ -1142,11 +1143,6 @@ export default function CouponPage() {
                   {shop.branches.map((branch, branchIndex) => {
                     const branchAddress = branch.address || ("name" in branch && typeof branch.name === "string" ? branch.name : "") || modalName;
                     const branchName = ("name" in branch && typeof branch.name === "string" ? branch.name : "") || modalName;
-                    const branchMapUrl =
-                      "placeUrl" in branch && typeof branch.placeUrl === "string"
-                        ? branch.placeUrl
-                        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(branchName)}`;
-                    
                     // 店舗名で検索（ホームページと同様）
                     const branchMapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(branchName)}&output=embed&hl=ja&z=17`;
                     
@@ -1177,11 +1173,9 @@ export default function CouponPage() {
                             className="block w-full"
                           />
                         </div>
-                        {/* 各店舗の拡大地図を表示 */}
-                        <a
-                          href={branchMapUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        {/* 各店舗の拡大地図を表示（Android WebViewでは geo: でアプリを開く） */}
+                        <MapFallbackLinkGeneric
+                          address={branchAddress || branchName}
                           className="mt-2 flex items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
                           style={{ backgroundColor: MAP_BTN_BG }}
                         >
@@ -1189,7 +1183,7 @@ export default function CouponPage() {
                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                           </svg>
                           {t.showLargerMap}
-                        </a>
+                        </MapFallbackLinkGeneric>
                       </div>
                     );
                   })}

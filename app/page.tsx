@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage, type LanguageCode } from '@/contexts/LanguageContext';
+import { MapFallbackLink } from '@/components/MapFallbackLink';
 
 const translations = {
   ja: {
@@ -3217,14 +3218,7 @@ return (
                   title="ホテルエース盛岡"
                 />
               </div>
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('岩手県盛岡市中央通2丁目11-35 ホテルエース盛岡')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-block text-sm font-medium text-[#304E84] underline underline-offset-2"
-              >
-                地図を開く（Androidで表示されない場合）
-              </a>
+              <MapFallbackLink />
             </div>
           </div>
 
